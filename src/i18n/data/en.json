@@ -5,7 +5,7 @@
     { "label": "Reply window", "value": "< 4 hrs" }
   ],
   "discoverFilters": [
-    { "id": "verified", "label": "Verified by RoomMatch", "tone": "verified" },
+    { "id": "verified", "label": "Verified by find-your-room", "tone": "verified" },
     { "id": "included", "label": "Bills mostly included", "tone": "quiet" },
     { "id": "metro", "label": "Near metro links", "tone": "quiet" },
     { "id": "privacy", "label": "Privacy-first homes", "tone": "accent" },
@@ -65,14 +65,14 @@
       "availability": "Move in from mid-May",
       "fitReasons": ["Budget fit", "Quiet evenings", "English + Arabic household"],
       "trustSnapshot": [
-        { "id": "identity-reviewed", "label": "Identity status reviewed", "sourceKey": "roommatch" },
+        { "id": "identity-reviewed", "label": "Identity status reviewed", "sourceKey": "find-your-room" },
         { "id": "weekly-cleaning", "label": "Weekly cleaning usually included", "sourceKey": "host" },
         { "id": "area-only", "label": "Exact address shared later", "sourceKey": "later" }
       ],
       "trustSummary": ["Verified host status", "Updated this week", "Approximate location only"],
       "trustSections": {
         "verified": {
-          "title": "Verified by RoomMatch",
+          "title": "Verified by find-your-room",
           "items": ["Host identity status reviewed", "Listing photos reviewed", "Recent activity confirmed"]
         },
         "hostProvided": {
@@ -154,14 +154,14 @@
       "availability": "Available now",
       "fitReasons": ["Lower monthly spend", "Flexible stay length", "Near transport"],
       "trustSnapshot": [
-        { "id": "listing-reviewed", "label": "Listing reviewed", "sourceKey": "roommatch" },
+        { "id": "listing-reviewed", "label": "Listing reviewed", "sourceKey": "find-your-room" },
         { "id": "shared-desk", "label": "Shared desk setup", "sourceKey": "host" },
         { "id": "access-later", "label": "Access details shared later", "sourceKey": "later" }
       ],
       "trustSummary": ["Listing reviewed", "Recent photo set", "Flexible monthly stay"],
       "trustSections": {
         "verified": {
-          "title": "Verified by RoomMatch",
+          "title": "Verified by find-your-room",
           "items": ["Listing details reviewed", "Recent photo set checked", "Contact route confirmed"]
         },
         "hostProvided": {
@@ -243,14 +243,14 @@
       "availability": "Move in from late May",
       "fitReasons": ["Privacy-first home", "Guest policy aligned", "Long-stay stability"],
       "trustSnapshot": [
-        { "id": "setup-reviewed", "label": "Household setup reviewed", "sourceKey": "roommatch" },
+        { "id": "setup-reviewed", "label": "Household setup reviewed", "sourceKey": "find-your-room" },
         { "id": "privacy-zones", "label": "Clear privacy zones", "sourceKey": "host" },
         { "id": "visit-routing", "label": "Visit routing shared later", "sourceKey": "later" }
       ],
       "trustSummary": ["Household setup reviewed", "Privacy-first home", "Address shared later"],
       "trustSections": {
         "verified": {
-          "title": "Verified by RoomMatch",
+          "title": "Verified by find-your-room",
           "items": ["Listing contact reviewed", "Household setup reviewed", "Recent activity confirmed"]
         },
         "hostProvided": {
@@ -351,7 +351,7 @@
     },
     {
       "id": "chat-3",
-      "name": "RoomMatch Support",
+      "name": "find-your-room Support",
       "role": "Trust and safety",
       "snippet": "Your host verification request is complete. Exact address unlocks after mutual interest.",
       "time": "Monday",

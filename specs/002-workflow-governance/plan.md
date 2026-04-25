@@ -9,7 +9,7 @@
 
 ## Summary
 
-Tighten the RoomMatch workflow so non-trivial work cannot drift past vague
+Tighten the find-your-room workflow so non-trivial work cannot drift past vague
 "multi-agent intent." The implementation will make the workflow explicit in the
 rule sources and in the active task artifacts by requiring:
 
@@ -21,14 +21,14 @@ rule sources and in the active task artifacts by requiring:
 
 ## Technical Context
 
-**Language/Version**: Markdown and repository workflow artifacts  
-**Primary Dependencies**: Spec Kit templates, repo governance docs  
-**Storage**: repository files only  
-**Testing**: artifact inspection and rule-consistency review  
-**Target Platform**: local repo workflow for RoomMatch contributors and agents  
-**Project Type**: governance/documentation workflow update  
-**Performance Goals**: reduce workflow ambiguity and coordination conflicts  
-**Constraints**: must preserve spec-first approval gate and avoid contradicting active repo workflow files  
+**Language/Version**: Markdown and repository workflow artifacts
+**Primary Dependencies**: Spec Kit templates, repo governance docs
+**Storage**: repository files only
+**Testing**: artifact inspection and rule-consistency review
+**Target Platform**: local repo workflow for find-your-room contributors and agents
+**Project Type**: governance/documentation workflow update
+**Performance Goals**: reduce workflow ambiguity and coordination conflicts
+**Constraints**: must preserve spec-first approval gate and avoid contradicting active repo workflow files
 **Scale/Scope**: `AGENTS.md`, `.specify/memory/constitution.md`, `docs/spec-driven-workflow.md`, `.specify/templates/tasks-template.md`, and the active feature planning/task artifacts
 
 ## Constitution Check

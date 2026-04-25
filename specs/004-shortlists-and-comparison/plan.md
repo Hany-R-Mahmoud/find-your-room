@@ -7,7 +7,7 @@
 
 ## Summary
 
-This feature turns RoomMatch from a one-listing-at-a-time browsing prototype
+This feature turns find-your-room from a one-listing-at-a-time browsing prototype
 into a decision-support product that helps seekers:
 
 - save promising listings into meaningful shortlists
@@ -20,14 +20,14 @@ phases.
 
 ## Technical Context
 
-**Language/Version**: TypeScript, React Native via Expo  
-**Primary Dependencies**: Expo Router, React Native, existing RoomMatch UI primitives  
-**Storage**: initially local/frontend state or lightweight mock persistence unless a later slice approves deeper persistence  
-**Testing**: `npm run typecheck`, `npx expo export --platform web`, manual EN/AR and RTL/LTR validation across shortlist and comparison flows  
-**Target Platform**: Expo mobile prototype and web export  
-**Project Type**: mobile/web app prototype  
-**Performance Goals**: shortlist actions must feel lightweight; comparison should stay bounded and not degrade scrolling or screen transitions  
-**Constraints**: frontend-first, bilingual, privacy-safe, trust-first, no hotel-style booking mechanics, no loyalty or payment systems  
+**Language/Version**: TypeScript, React Native via Expo
+**Primary Dependencies**: Expo Router, React Native, existing find-your-room UI primitives
+**Storage**: initially local/frontend state or lightweight mock persistence unless a later slice approves deeper persistence
+**Testing**: `npm run typecheck`, `npx expo export --platform web`, manual EN/AR and RTL/LTR validation across shortlist and comparison flows
+**Target Platform**: Expo mobile prototype and web export
+**Project Type**: mobile/web app prototype
+**Performance Goals**: shortlist actions must feel lightweight; comparison should stay bounded and not degrade scrolling or screen transitions
+**Constraints**: frontend-first, bilingual, privacy-safe, trust-first, no hotel-style booking mechanics, no loyalty or payment systems
 **Scale/Scope**: `discover`, likely a new shortlist surface, comparison surface, and shared saved-listing state/contracts
 
 ## Constitution Check
@@ -36,7 +36,7 @@ phases.
 
 - Starts from an approved spec and approved research-backed direction
 - Builds on the trust-rich listing work instead of restarting discovery from scratch
-- Keeps the feature within RoomMatch's current maturity and trust model
+- Keeps the feature within find-your-room's current maturity and trust model
 - Uses specialist-owned planning and sequential execution by default
 
 ### Required Cautions
@@ -73,7 +73,7 @@ src/
 │   ├── Pill.tsx
 │   └── Screen.tsx
 ├── data/
-│   └── roommatch.ts
+│   └── find-your-room.ts
 ├── i18n/
 │   ├── common/
 │   ├── data/
@@ -157,7 +157,7 @@ Establish the frontend contract for shortlists, saved entries, and comparison.
 
 **Likely files**
 
-- `src/data/roommatch.ts`
+- `src/data/find-your-room.ts`
 - possibly a new shortlist state/helper file under `src/`
 
 ### Workstream 2: Save Affordances On Core Listing Surfaces

@@ -1,5 +1,5 @@
 {
-  "appName": "RoomMatch",
+  "appName": "find-your-room",
   "brandTag": "Trusted shared living",
   "languageToggle": {
     "label": "العربية",
@@ -24,7 +24,7 @@
     "fitConfidence": "Confidence note",
     "languages": "Languages",
     "host": "Host",
-    "verified": "Verified by RoomMatch",
+    "verified": "Verified by find-your-room",
     "hostProvided": "Shared by host",
     "availableLater": "Shared later",
     "reviewedPhotos": "Reviewed photos",
@@ -41,7 +41,7 @@
     "photos": "photos"
   },
   "trustSources": {
-    "roommatch": "Reviewed by RoomMatch",
+    "find-your-room": "Reviewed by find-your-room",
     "host": "Shared by host",
     "later": "Shared later"
   },

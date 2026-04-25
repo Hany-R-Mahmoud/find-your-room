@@ -24,14 +24,14 @@ than decorative. The main frontend differentiators for this phase are:
 
 ## Technical Context
 
-**Language/Version**: TypeScript, React Native via Expo  
-**Primary Dependencies**: Expo Router, React Native, expo-linear-gradient  
-**Storage**: local mock data through `src/i18n/data/*.json` and `src/data/roommatch.ts`  
-**Testing**: `npm run typecheck`, `npx expo export --platform web`, manual EN/AR screen validation  
-**Target Platform**: Expo mobile prototype and web export  
-**Project Type**: mobile app prototype  
-**Performance Goals**: maintain smooth scrolling on discover and avoid heavier card rendering during Phase 1  
-**Constraints**: frontend-only, bilingual, RTL/LTR-safe, no misleading verification claims, neighborhood-level privacy only  
+**Language/Version**: TypeScript, React Native via Expo
+**Primary Dependencies**: Expo Router, React Native, expo-linear-gradient
+**Storage**: local mock data through `src/i18n/data/*.json` and `src/data/find-your-room.ts`
+**Testing**: `npm run typecheck`, `npx expo export --platform web`, manual EN/AR screen validation
+**Target Platform**: Expo mobile prototype and web export
+**Project Type**: mobile app prototype
+**Performance Goals**: maintain smooth scrolling on discover and avoid heavier card rendering during Phase 1
+**Constraints**: frontend-only, bilingual, RTL/LTR-safe, no misleading verification claims, neighborhood-level privacy only
 **Scale/Scope**: `discover`, `room/[id]`, shared listing data contract, shared trust/pill primitives as needed
 
 ## Constitution Check
@@ -40,7 +40,7 @@ than decorative. The main frontend differentiators for this phase are:
 
 - Starts from approved spec
 - Keeps the work frontend-only and narrow
-- Aligns with Riyadh-first, trust-first RoomMatch direction
+- Aligns with Riyadh-first, trust-first find-your-room direction
 - Uses specialist-agent collaboration during planning
 
 ### Required Cautions
@@ -76,7 +76,7 @@ src/
 │   ├── Pill.tsx
 │   └── Screen.tsx
 ├── data/
-│   └── roommatch.ts
+│   └── find-your-room.ts
 └── i18n/
     ├── common/
     ├── data/
@@ -150,12 +150,12 @@ No relevant specialist was intentionally skipped during planning for this featur
 
 ### Workstream 1: Reshape The Mock Listing Contract
 
-Update the RoomMatch listing content model before touching UI hierarchy.
+Update the find-your-room listing content model before touching UI hierarchy.
 
 **Required changes**
 
 - Replace flat trust badge usage with structured trust groups:
-  - verified by RoomMatch
+  - verified by find-your-room
   - provided by host
   - gated or shown later
 - Expand pricing content with safe, frontend-only fields:
@@ -174,7 +174,7 @@ Update the RoomMatch listing content model before touching UI hierarchy.
 
 **Likely files**
 
-- `src/data/roommatch.ts`
+- `src/data/find-your-room.ts`
 - `src/i18n/data/en.json`
 - `src/i18n/data/ar.json`
 - `src/i18n/common/en.json`

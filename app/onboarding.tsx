@@ -6,12 +6,12 @@ import { AppHeader } from "@/components/AppHeader";
 import { Pill } from "@/components/Pill";
 import { Screen } from "@/components/Screen";
 import { SectionHeader } from "@/components/SectionHeader";
-import { useRoomMatchData } from "@/data/roommatch";
+import { useFindYourRoomData } from "@/data/find-your-room";
 import { forwardIconFor, rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { palette, radii, spacing } from "@/ui/theme";
 
 export default function OnboardingScreen() {
-  const { onboardingCards } = useRoomMatchData();
+  const { onboardingCards } = useFindYourRoomData();
   const { isRTL, t } = useTranslations<{
     pill: string;
     eyebrow: string;

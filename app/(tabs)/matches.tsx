@@ -6,7 +6,7 @@ import { AppHeader } from "@/components/AppHeader";
 import { Pill } from "@/components/Pill";
 import { Screen } from "@/components/Screen";
 import { SectionHeader } from "@/components/SectionHeader";
-import { formatSarValue } from "@/data/roommatch";
+import { formatSarValue } from "@/data/find-your-room";
 import { rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { useShortlists } from "@/shortlists";
 import { palette, radii, spacing } from "@/ui/theme";

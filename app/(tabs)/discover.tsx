@@ -6,12 +6,12 @@ import { AppHeader } from "@/components/AppHeader";
 import { ListingCard } from "@/components/ListingCard";
 import { Pill } from "@/components/Pill";
 import { SectionHeader } from "@/components/SectionHeader";
-import { useRoomMatchData } from "@/data/roommatch";
+import { useFindYourRoomData } from "@/data/find-your-room";
 import { rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { layout, palette, radii, spacing } from "@/ui/theme";
 
 export default function DiscoverScreen() {
-  const { discoverFilters, heroMetrics, listings, discoverVisual } = useRoomMatchData();
+  const { discoverFilters, heroMetrics, listings, discoverVisual } = useFindYourRoomData();
   const { isRTL, t } = useTranslations<{
     eyebrow: string;
     title: string;

@@ -9,7 +9,7 @@ type Tone =
   | "accent"
   | "verified"
   | "quiet"
-  | "sourceRoomMatch"
+  | "sourceFindYourRoom"
   | "sourceHost"
   | "sourceLater";
 
@@ -34,7 +34,7 @@ const toneStyles: Record<Tone, { backgroundColor: string; borderColor: string; c
     borderColor: palette.line,
     color: palette.ink
   },
-  sourceRoomMatch: {
+  sourceFindYourRoom: {
     backgroundColor: palette.mist,
     borderColor: palette.mistStrong,
     color: palette.palm

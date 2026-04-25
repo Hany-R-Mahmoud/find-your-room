@@ -22,7 +22,7 @@
 
 **⚠️ CRITICAL**: No user story work should start until this phase is complete.
 
-- [x] T003 [owner:agent-orchestrator] Expand the shared listing contract and shortlist entities in `/Users/hanyramadan/find-your-room/src/data/roommatch.ts` and any new shortlist state file needed under `/Users/hanyramadan/find-your-room/src`
+- [x] T003 [owner:agent-orchestrator] Expand the shared listing contract and shortlist entities in `/Users/hanyramadan/find-your-room/src/data/find-your-room.ts` and any new shortlist state file needed under `/Users/hanyramadan/find-your-room/src`
 - [x] T004 [owner:agent-security] Define privacy-safe shortlist and comparison display rules for saved listings, notes, and gated details in the relevant shortlist/comparison source files
 - [x] T005 [owner:agent-docs] Add shortlist/comparison copy keys in the appropriate locale files under `/Users/hanyramadan/find-your-room/src/i18n/`
 

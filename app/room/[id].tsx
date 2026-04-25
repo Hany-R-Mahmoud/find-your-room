@@ -6,16 +6,16 @@ import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native
 import { AppHeader } from "@/components/AppHeader";
 import { Pill } from "@/components/Pill";
 import { Screen } from "@/components/Screen";
-import { getListingById, useRoomMatchData } from "@/data/roommatch";
+import { getListingById, useFindYourRoomData } from "@/data/find-your-room";
 import { forwardIconFor, rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { useShortlists } from "@/shortlists";
 import { defaultSaveReasonForShortlist } from "@/shortlists/rules";
 import { palette, radii, spacing } from "@/ui/theme";
 
-function toneForSource(sourceKey: "roommatch" | "host" | "later") {
+function toneForSource(sourceKey: "find-your-room" | "host" | "later") {
   switch (sourceKey) {
-    case "roommatch":
-      return "sourceRoomMatch" as const;
+    case "find-your-room":
+      return "sourceFindYourRoom" as const;
     case "host":
       return "sourceHost" as const;
     case "later":
@@ -25,7 +25,7 @@ function toneForSource(sourceKey: "roommatch" | "host" | "later") {
 
 export default function RoomDetailScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
-  const { listings, formatSar } = useRoomMatchData();
+  const { listings, formatSar } = useFindYourRoomData();
   const { isRTL, t } = useTranslations<{
     notFound: { title: string; copy: string };
     decisionHeader: { eyebrow: string; caption: string };
@@ -37,7 +37,7 @@ export default function RoomDetailScreen() {
   }>("room");
   const { t: tc } = useTranslations<{
     labels: Record<string, string>;
-    trustSources: Record<"roommatch" | "host" | "later", string>;
+    trustSources: Record<"find-your-room" | "host" | "later", string>;
     hostDisclosure: Record<"roleOnly" | "managedContact", string>;
   }>("common");
   const { shortlists, saveListing } = useShortlists();
@@ -154,7 +154,7 @@ export default function RoomDetailScreen() {
         <View style={styles.groupCard}>
           <Text style={[styles.metaLabel, { textAlign: textAlignFor(isRTL) }]}>{t("trustSectionLabels.reviewed")}</Text>
           <Text style={[styles.groupTitle, { textAlign: textAlignFor(isRTL) }]}>{listing.trustSections.verified.title}</Text>
-          <Pill label={tc("trustSources.roommatch")} tone="sourceRoomMatch" />
+          <Pill label={tc("trustSources.find-your-room")} tone="sourceFindYourRoom" />
           {listing.trustSections.verified.items.map((item) => (
             <Text key={item} style={[styles.bulletText, { textAlign: textAlignFor(isRTL) }]}>
               • {item}

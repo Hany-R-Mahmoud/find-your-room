@@ -3,7 +3,7 @@ For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
 <!-- SPECKIT END -->
 
-# RoomMatch Agent Workflow
+# find-your-room Agent Workflow
 
 This file is the mandatory operating guide for any AI agent working in this
 repository.
@@ -143,7 +143,7 @@ the relevant downstream specialist passes have been considered.
 
 If a specialist agent is skipped, the lead agent should have a concrete reason.
 
-For trust-first RoomMatch work, the default expectation is to include
+For trust-first find-your-room work, the default expectation is to include
 `agent-security` during spec review as well, not only after implementation.
 
 ## Allowed Fast Path
@@ -164,9 +164,9 @@ the spec because the task is trivial or the user explicitly overrode the rule.
 - Use the active spec folder tracked by `.specify/feature.json` when continuing
   an existing feature
 
-## RoomMatch-Specific Guidance
+## find-your-room-Specific Guidance
 
-- Keep specs aligned with the current RoomMatch direction:
+- Keep specs aligned with the current find-your-room direction:
   Riyadh-first, shared-room marketplace, trust-first, compatibility-first
 - Prefer simple, maintainable solutions over broad platform expansion
 - Avoid expanding into payments, contracts, or deep compliance flows unless the

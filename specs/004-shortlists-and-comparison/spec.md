@@ -9,7 +9,7 @@
 
 **Spec Review Status**: Approved feature scope; active slice pending review  
 **User Decision**: Feature scope approved on 2026-04-21; latest slice approval tracked below  
-**Review Notes**: Derived from the approved international research round. The goal is to help seekers save, revisit, and compare serious options across trust, price, household fit, and area context without turning RoomMatch into a generic travel wishlist product.
+**Review Notes**: Derived from the approved international research round. The goal is to help seekers save, revisit, and compare serious options across trust, price, household fit, and area context without turning find-your-room into a generic travel wishlist product.
 
 ### Active Feature Slice
 
@@ -81,10 +81,10 @@ As a room seeker, I want my saved items to remember why I saved them, so the sho
 - **FR-002**: The system MUST allow seekers to organize saved listings into named shortlists.
 - **FR-003**: The system MUST allow seekers to view the contents of a shortlist with enough summary information to re-evaluate each saved listing.
 - **FR-004**: The system MUST allow seekers to compare a bounded number of saved listings in one comparison view.
-- **FR-005**: The comparison view MUST prioritize the factors most relevant to RoomMatch decisions, including price framing, trust framing, household context, and approximate area context.
+- **FR-005**: The comparison view MUST prioritize the factors most relevant to find-your-room decisions, including price framing, trust framing, household context, and approximate area context.
 - **FR-006**: The shortlist workflow MUST support lightweight seeker-owned context such as private notes or save reasons.
 - **FR-007**: The shortlist and comparison experience MUST remain bilingual and RTL/LTR-safe.
-- **FR-008**: The feature MUST preserve RoomMatch's trust-first and privacy-safe product direction and MUST NOT expose exact-address or direct-contact behavior prematurely.
+- **FR-008**: The feature MUST preserve find-your-room's trust-first and privacy-safe product direction and MUST NOT expose exact-address or direct-contact behavior prematurely.
 - **FR-009**: The feature MUST fit both mobile and web layouts without collapsing into an overly dense table-first experience.
 - **FR-010**: The initial version MUST stay within current product maturity and MUST NOT require hotel-style booking, loyalty, or payments infrastructure.
 

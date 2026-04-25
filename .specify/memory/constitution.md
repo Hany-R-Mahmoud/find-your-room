@@ -1,4 +1,4 @@
-# RoomMatch Constitution
+# find-your-room Constitution
 
 ## Core Principles
 
@@ -16,7 +16,7 @@ dependency installation, migrations, code edits, or broad execution should
 continue until the user approves the spec or requests revisions.
 
 ### III. Strategy Alignment
-All specs must align with the current RoomMatch product direction: Riyadh-first,
+All specs must align with the current find-your-room product direction: Riyadh-first,
 shared-room marketplace, trust-first discovery, compatibility-aware matching,
 and simple operational flows over broad platform ambition.
 
@@ -40,7 +40,7 @@ skip reason.
 
 ## Project Constraints
 
-- Primary stack is the existing Expo + TypeScript RoomMatch prototype
+- Primary stack is the existing Expo + TypeScript find-your-room prototype
 - Match existing repo patterns before introducing new structure
 - Avoid `any`, avoid over-engineering, and keep changes surgical
 - Treat trust, accessibility, and user clarity as first-class concerns

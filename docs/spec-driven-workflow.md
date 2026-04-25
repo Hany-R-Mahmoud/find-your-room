@@ -26,7 +26,7 @@ This project uses GitHub Spec Kit as the first step for meaningful work.
 
 ## Why This Exists
 
-- It keeps work aligned with RoomMatch strategy before code is written.
+- It keeps work aligned with find-your-room strategy before code is written.
 - It gives the user a clear chance to redirect scope early.
 - It reduces overbuilding and accidental architecture drift.
 

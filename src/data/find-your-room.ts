@@ -1,7 +1,7 @@
 import { type Locale, useTranslations } from "@/i18n";
 
 export type MatchBand = "strong" | "promising";
-export type TrustSourceKey = "roommatch" | "host" | "later";
+export type TrustSourceKey = "find-your-room" | "host" | "later";
 export type HostDisclosureLevel = "roleOnly" | "managedContact";
 export type LocationPrecisionKey = "area";
 export type ShortlistSaveReasonKey = "commute" | "budget" | "vibe" | "trust" | "moveIn";
@@ -184,7 +184,7 @@ type DiscoverFilter = {
   tone: "neutral" | "accent" | "verified" | "quiet";
 };
 
-type RoomMatchDataMessages = {
+type FindYourRoomDataMessages = {
   heroMetrics: Metric[];
   discoverFilters: DiscoverFilter[];
   onboardingCards: OnboardingCard[];
@@ -199,14 +199,14 @@ type RoomMatchDataMessages = {
   savedShortlists: ShortlistSeed[];
 };
 
-export function useRoomMatchData() {
-  const { locale, messages } = useTranslations<RoomMatchDataMessages>("data");
+export function useFindYourRoomData() {
+  const { locale, messages } = useTranslations<FindYourRoomDataMessages>("data");
 
   const listings = messages.listings.map((listing) => {
     const trustSnapshot = listing.trustSnapshot ?? listing.trustSummary.map((label, index) => ({
       id: `${listing.id}-trust-${index}`,
       label,
-      sourceKey: index === 0 ? "roommatch" : index === 1 ? "host" : "later"
+      sourceKey: index === 0 ? "find-your-room" : index === 1 ? "host" : "later"
     }));
 
     const match = listing.match ?? {

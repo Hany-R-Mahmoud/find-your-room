@@ -7,12 +7,12 @@ import { AppHeader } from "@/components/AppHeader";
 import { Screen } from "@/components/Screen";
 import { Pill } from "@/components/Pill";
 import { SectionHeader } from "@/components/SectionHeader";
-import { useRoomMatchData } from "@/data/roommatch";
+import { useFindYourRoomData } from "@/data/find-your-room";
 import { forwardIconFor, rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { layout, palette, radii, shadows, spacing } from "@/ui/theme";
 
 export default function LandingScreen() {
-  const { heroMetrics, landingVisuals } = useRoomMatchData();
+  const { heroMetrics, landingVisuals } = useFindYourRoomData();
   const { isRTL, t } = useTranslations<{
     eyebrow: string;
     title: string;

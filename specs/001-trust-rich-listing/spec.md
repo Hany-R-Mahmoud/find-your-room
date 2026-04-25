@@ -34,7 +34,7 @@ As a room seeker, I want each room card and room detail page to show clearer
 trust information, so I can quickly decide whether a listing feels credible
 enough to explore further.
 
-**Why this priority**: Trust is RoomMatch's primary wedge and the fastest
+**Why this priority**: Trust is find-your-room's primary wedge and the fastest
 frontend improvement that can materially change perceived product quality.
 
 **Independent Test**: Can be fully tested by opening `discover`, browsing room
@@ -124,7 +124,7 @@ presentation stays approximate rather than exposing full addresses.
   present exact-address behavior in this phase.
 - **FR-008**: The system MUST remain bilingual and preserve RTL/LTR-aware UI
   behavior for all new or revised listing experience components.
-- **FR-009**: The system MUST maintain consistency with the current RoomMatch
+- **FR-009**: The system MUST maintain consistency with the current find-your-room
   visual language and trust-first tone.
 - **FR-010**: Users MUST be able to understand which listing facts are stronger
   signals of trust without needing backend functionality to be live.

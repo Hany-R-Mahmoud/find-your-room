@@ -2,7 +2,7 @@
 
 ## Product Thesis
 
-RoomMatch helps expats and young professionals in Riyadh find a room and compatible household faster and more safely than fragmented listing channels.
+find-your-room helps expats and young professionals in Riyadh find a room and compatible household faster and more safely than fragmented listing channels.
 
 ## Primary Users
 

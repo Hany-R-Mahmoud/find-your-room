@@ -3,13 +3,13 @@
 **Feature Branch**: `[005-compatibility-first-matching]`  
 **Created**: 2026-04-22  
 **Status**: Draft  
-**Input**: User description: "Proceed with the next Spec Kit cycle for Compatibility-First Matching UX based on the roadmap review and the current RoomMatch direction."
+**Input**: User description: "Proceed with the next Spec Kit cycle for Compatibility-First Matching UX based on the roadmap review and the current find-your-room direction."
 
 ## Approval Gate *(mandatory)*
 
 **Spec Review Status**: Pending user approval  
 **User Decision**: Pending  
-**Review Notes**: This feature builds on the completed trust-rich listing and shortlist work. The goal is to make RoomMatch feel clearly compatibility-first by showing why a listing fits, where caution exists, and what remains unclear without drifting into a social or dating tone.
+**Review Notes**: This feature builds on the completed trust-rich listing and shortlist work. The goal is to make find-your-room feel clearly compatibility-first by showing why a listing fits, where caution exists, and what remains unclear without drifting into a social or dating tone.
 
 ### Active Feature Slice
 
@@ -56,7 +56,7 @@ As a room seeker, I want compatibility signals to explain themselves, so I can t
 
 As a room seeker, I want shortlist and match surfaces to preserve compatibility context, so I can move toward a request with clearer judgment instead of restarting the evaluation from scratch.
 
-**Why this priority**: RoomMatch should feel like a decision-support product from browse through action, not just on the listing page.
+**Why this priority**: find-your-room should feel like a decision-support product from browse through action, not just on the listing page.
 
 **Independent Test**: Can be tested by saving listings, revisiting them in `matches`, and confirming the core fit reasons and caution cues remain visible enough to support the next decision.
 
@@ -86,7 +86,7 @@ As a room seeker, I want shortlist and match surfaces to preserve compatibility 
 - **FR-007**: Shortlist and match-oriented surfaces MUST preserve the most important fit context so users can continue decision-making across sessions.
 - **FR-008**: Compatibility framing MUST remain respectful, practical, and housing-focused and MUST NOT read like social discovery or dating language.
 - **FR-009**: Compatibility signals MUST remain bilingual and RTL/LTR-safe across all revised surfaces.
-- **FR-010**: The feature MUST preserve RoomMatch's trust-first and privacy-safe direction and MUST NOT expose exact address, direct contact details, or sensitive identity information earlier than the current product allows.
+- **FR-010**: The feature MUST preserve find-your-room's trust-first and privacy-safe direction and MUST NOT expose exact address, direct contact details, or sensitive identity information earlier than the current product allows.
 - **FR-011**: The feature MUST avoid claiming certainty where the underlying information is incomplete, self-reported, or still pending.
 - **FR-012**: The feature MUST work within the current prototype maturity and MUST NOT require live recommendation engines, payments, or full backend matching infrastructure for the initial slice.
 
@@ -104,7 +104,7 @@ As a room seeker, I want shortlist and match surfaces to preserve compatibility 
 
 - **SC-001**: A seeker can identify the fit state of a listing within one screen view on `discover`, `room detail`, or `matches`.
 - **SC-002**: A seeker can explain at least one positive fit reason and one caution or unknown after reviewing a listing.
-- **SC-003**: The compatibility UX makes RoomMatch feel more differentiated from a generic room board by keeping fit explanations visible across browse and revisit flows.
+- **SC-003**: The compatibility UX makes find-your-room feel more differentiated from a generic room board by keeping fit explanations visible across browse and revisit flows.
 - **SC-004**: Updated compatibility surfaces remain understandable and visually coherent in both English and Arabic.
 - **SC-005**: Compatibility additions do not materially degrade feed scanability or make listing cards feel overloaded.
 

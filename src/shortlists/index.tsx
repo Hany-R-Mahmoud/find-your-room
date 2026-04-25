@@ -5,8 +5,8 @@ import {
   type SavedListingEntry,
   type Shortlist,
   type ShortlistSaveReasonKey,
-  useRoomMatchData
-} from "@/data/roommatch";
+  useFindYourRoomData
+} from "@/data/find-your-room";
 import { clampShortlistNote, SHORTLIST_COMPARE_LIMIT } from "./rules";
 
 type SaveListingInput = {
@@ -59,7 +59,7 @@ function upsertSavedEntry(entries: SavedListingEntry[], input: SaveListingInput)
 }
 
 export function ShortlistsProvider({ children }: PropsWithChildren) {
-  const { savedShortlists } = useRoomMatchData();
+  const { savedShortlists } = useFindYourRoomData();
   const [shortlists, setShortlists] = useState<Shortlist[]>(savedShortlists);
 
   const value = useMemo<ShortlistsContextValue>(

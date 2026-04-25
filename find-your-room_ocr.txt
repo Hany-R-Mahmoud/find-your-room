@@ -1,7 +1,7 @@
 
 ===== page-01.png =====
 
-ROOMMATCH
+FIND-YOUR-ROOM
 
 Matching people before they share homes
 
@@ -19,7 +19,7 @@ Problem
 
 Market Opportunity
 
-Solution (RoomMatch)
+Solution (find-your-room)
 
 Business Model
 
@@ -43,7 +43,7 @@ Financial Projections
 
 EXECUTIVE SUMMARY
 
-What is RoomMatch?
+What is find-your-room?
 The first Al-powered marketplace for shared and flexible living in the GCC.
 Targeting 40M+ expats & young professionals
 
@@ -157,7 +157,7 @@ features.
 4. Smart Door Lock Sales & Management
 
 Selling and managing smart door locks
-for properties.RoomMatch earns from
+for properties.find-your-room earns from
 hardware sales, installation, and monthly
 access-control management for owners
 and tenants.
@@ -210,7 +210,7 @@ WHY NOW
 
 1. Rent Freeze Regulations (5 Years)
 With rental prices capped, landlords are shifting to room-by-room and shared
-housing models to increase ROI — accelerating demand for RoomMatch.
+housing models to increase ROI — accelerating demand for find-your-room.
 
 2. Rising Demand for Affordable Living
 Rising living costs in Riyadh and major cities are pushing expats and young
@@ -299,7 +299,7 @@ shared housing
 
 INVESTMENT ASK
 
-We are raising 1,000,000SR to launch RoomMatch in Riyadh.
+We are raising 1,000,000SR to launch find-your-room in Riyadh.
 
 Use of Funds
 
@@ -389,7 +389,7 @@ Revenue: 18M - 25M SAR
 UNIT ECONOMICS &
 PROFITABILITY
 
-RoomMatch is designed as a high-margin, scalable marketplace
+find-your-room is designed as a high-margin, scalable marketplace
 
 with strong recurring revenue and early break-even potential.
 
@@ -439,7 +439,7 @@ e Corporate contracts activated
 ===== page-14.png =====
 
 wy,
-5s RoomMatch = aN
+5s find-your-room = aN
 
 Present by Mohamed Azab
 

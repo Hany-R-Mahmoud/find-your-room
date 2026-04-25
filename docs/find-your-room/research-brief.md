@@ -2,7 +2,7 @@
 
 ## Source Studied
 
-- Proposal OCR: [`roommatch_ocr.txt`](/Users/hanyramadan/find-your-room/roommatch_ocr.txt)
+- Proposal OCR: [`find-your-room_ocr.txt`](/Users/hanyramadan/find-your-room/find-your-room_ocr.txt)
 
 ## What The Proposal Gets Right
 
@@ -53,7 +53,7 @@
 
 ## Main Research Conclusion
 
-RoomMatch should not launch as a broad `flexible living super app`.
+find-your-room should not launch as a broad `flexible living super app`.
 
 The evidence supports a narrower wedge:
 
@@ -65,5 +65,5 @@ The evidence supports a narrower wedge:
 
 ## Product Decision This Research Supports
 
-`RoomMatch v1 = a verified Riyadh shared-housing marketplace with roommate-fit signals and trust workflows, not a hotel/chalet/B2B/smart-lock platform.`
+`find-your-room v1 = a verified Riyadh shared-housing marketplace with roommate-fit signals and trust workflows, not a hotel/chalet/B2B/smart-lock platform.`
 

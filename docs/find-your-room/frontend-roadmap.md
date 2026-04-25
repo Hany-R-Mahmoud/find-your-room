@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This roadmap tracks the frontend-only evolution of RoomMatch based on the
+This roadmap tracks the frontend-only evolution of find-your-room based on the
 current Riyadh-first, trust-first product direction and the competitor research
 review.
 
@@ -40,7 +40,7 @@ contact.
 
 Research showed that local Saudi alternatives mostly behave like listing boards,
 while stronger adjacent products win by making listings feel safer and easier to
-trust. This is RoomMatch's clearest frontend differentiator without backend
+trust. This is find-your-room's clearest frontend differentiator without backend
 expansion.
 
 **Frontend Focus**
@@ -84,7 +84,7 @@ expansion.
 
 **Goal**
 
-Make RoomMatch feel meaningfully different from room boards by showing fit
+Make find-your-room feel meaningfully different from room boards by showing fit
 logic clearly.
 
 **Frontend Focus**

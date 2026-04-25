@@ -4,12 +4,12 @@ import { AppHeader } from "@/components/AppHeader";
 import { Pill } from "@/components/Pill";
 import { Screen } from "@/components/Screen";
 import { SectionHeader } from "@/components/SectionHeader";
-import { useRoomMatchData } from "@/data/roommatch";
+import { useFindYourRoomData } from "@/data/find-your-room";
 import { rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { palette, radii, spacing } from "@/ui/theme";
 
 export default function ProfileScreen() {
-  const { profilePreferences, verificationChecklist } = useRoomMatchData();
+  const { profilePreferences, verificationChecklist } = useFindYourRoomData();
   const { isRTL, t } = useTranslations<{
     eyebrow: string;
     title: string;

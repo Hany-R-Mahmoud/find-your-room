@@ -22,7 +22,7 @@
 
 **⚠️ CRITICAL**: No user story work should start until this phase is complete.
 
-- [x] T003 [owner:agent-orchestrator] Expand the shared listing contract in `/Users/hanyramadan/find-your-room/src/data/roommatch.ts` for structured trust sources, bounded fit framing, richer pricing breakdowns, safer host disclosure, and household summary fields
+- [x] T003 [owner:agent-orchestrator] Expand the shared listing contract in `/Users/hanyramadan/find-your-room/src/data/find-your-room.ts` for structured trust sources, bounded fit framing, richer pricing breakdowns, safer host disclosure, and household summary fields
 - [x] T004 [owner:agent-docs] Update listing fixture content in `/Users/hanyramadan/find-your-room/src/i18n/data/en.json` to populate the new trust, pricing, host, media, and household contract fields
 - [x] T005 [owner:agent-docs] Update listing fixture content in `/Users/hanyramadan/find-your-room/src/i18n/data/ar.json` to mirror the new trust, pricing, host, media, and household contract fields
 - [x] T006 [owner:agent-docs] Add shared trust, pricing, and disclosure copy keys in `/Users/hanyramadan/find-your-room/src/i18n/common/en.json` and `/Users/hanyramadan/find-your-room/src/i18n/room/en.json` for structured evidence labels and safer verification wording

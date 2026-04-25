@@ -4,12 +4,12 @@ import { AppHeader } from "@/components/AppHeader";
 import { Screen } from "@/components/Screen";
 import { SectionHeader } from "@/components/SectionHeader";
 import { TimelineCard } from "@/components/TimelineCard";
-import { useRoomMatchData } from "@/data/roommatch";
+import { useFindYourRoomData } from "@/data/find-your-room";
 import { textAlignFor, useTranslations } from "@/i18n";
 import { palette, radii, spacing } from "@/ui/theme";
 
 export default function StayScreen() {
-  const { stayMilestones } = useRoomMatchData();
+  const { stayMilestones } = useFindYourRoomData();
   const { isRTL, t } = useTranslations<{
     eyebrow: string;
     title: string;

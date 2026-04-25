@@ -18,8 +18,8 @@
 
 ## Phase 3: Product Translation
 
-- [x] T006 [owner:agent-product] Translate the strongest competitor patterns into RoomMatch-suitable opportunities
-- [x] T007 [owner:agent-product] Separate immediate bets, later-stage bets, and explicit non-bets for the current RoomMatch maturity level
+- [x] T006 [owner:agent-product] Translate the strongest competitor patterns into find-your-room-suitable opportunities
+- [x] T007 [owner:agent-product] Separate immediate bets, later-stage bets, and explicit non-bets for the current find-your-room maturity level
 
 ## Phase 4: Closeout
 

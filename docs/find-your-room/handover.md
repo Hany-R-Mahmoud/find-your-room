@@ -1,8 +1,8 @@
-# RoomMatch Project Handoff
+# find-your-room Project Handoff
 
 ## Executive Summary
 
-RoomMatch is a greenfield Expo/React Native prototype and planning workspace for
+find-your-room is a greenfield Expo/React Native prototype and planning workspace for
 a Riyadh-first shared-room marketplace. The original proposal was broader, but
 the project has intentionally narrowed to a trust-first, compatibility-first
 housing product for room seekers and light host-side validation.
@@ -21,7 +21,7 @@ The repo contains both the prototype and the working planning artifacts:
 - `/Users/hanyramadan/find-your-room/app`: Expo Router screens
 - `/Users/hanyramadan/find-your-room/src`: typed mock data, i18n, components, theme,
   and shortlist state
-- `/Users/hanyramadan/find-your-room/docs/roommatch`: product, research, roadmap,
+- `/Users/hanyramadan/find-your-room/docs/find-your-room`: product, research, roadmap,
   verification, risk, task, and handoff docs
 - `/Users/hanyramadan/find-your-room/specs`: Spec Kit feature specs, plans, tasks,
   and research artifacts
@@ -103,7 +103,7 @@ Core routes:
 
 Shared source areas:
 
-- `src/data/roommatch.ts`: typed data contract and localized mock-data adapter
+- `src/data/find-your-room.ts`: typed data contract and localized mock-data adapter
 - `src/i18n`: bilingual English/Arabic messages and locale helpers
 - `src/components`: reusable UI primitives such as `Screen`, `Pill`,
   `AppHeader`, `SectionHeader`, `TimelineCard`, and `ListingCard`
@@ -119,7 +119,7 @@ Current data is mocked through JSON localization files, especially:
 The main listing contract now includes:
 
 - structured trust snapshots
-- trust provenance groups: RoomMatch-reviewed, host-provided, and later/gated
+- trust provenance groups: find-your-room-reviewed, host-provided, and later/gated
 - pricing summary and included/excluded cost notes
 - household summary, vibe, languages, and expectations
 - approximate area and privacy note
@@ -131,7 +131,7 @@ The main listing contract now includes:
 
 The working product thesis:
 
-RoomMatch helps expats and young professionals in Riyadh find a room and a
+find-your-room helps expats and young professionals in Riyadh find a room and a
 compatible household faster and more safely than fragmented listing channels.
 
 Primary users:
@@ -173,16 +173,16 @@ Important validated points:
 
 Resulting decision:
 
-RoomMatch v1 should be a verified Riyadh shared-housing marketplace with
+find-your-room v1 should be a verified Riyadh shared-housing marketplace with
 roommate-fit signals and trust workflows, not a hotel, chalet, B2B, or
 smart-lock platform.
 
 Primary references:
 
-- `docs/roommatch/research-brief.md`
-- `docs/roommatch/prd.md`
-- `docs/roommatch/plan.md`
-- `docs/roommatch/open-risks.md`
+- `docs/find-your-room/research-brief.md`
+- `docs/find-your-room/prd.md`
+- `docs/find-your-room/plan.md`
+- `docs/find-your-room/open-risks.md`
 
 ### Initial Prototype Build
 
@@ -219,9 +219,9 @@ Remaining gaps:
 Primary references:
 
 - `README.md`
-- `docs/roommatch/tasks.md`
-- `docs/roommatch/verification.md`
-- `docs/roommatch/review.md`
+- `docs/find-your-room/tasks.md`
+- `docs/find-your-room/verification.md`
+- `docs/find-your-room/review.md`
 
 ### Workflow Governance
 
@@ -277,7 +277,7 @@ Verification recorded:
 
 Known status inconsistency:
 
-- `docs/roommatch/frontend-roadmap.md` says Phase 1 manual EN/AR visual review
+- `docs/find-your-room/frontend-roadmap.md` says Phase 1 manual EN/AR visual review
   is pending.
 - `specs/001-trust-rich-listing/tasks.md` marks the final manual review task as
   checked.
@@ -289,7 +289,7 @@ Primary references:
 - `specs/001-trust-rich-listing/spec.md`
 - `specs/001-trust-rich-listing/plan.md`
 - `specs/001-trust-rich-listing/tasks.md`
-- `docs/roommatch/frontend-roadmap.md`
+- `docs/find-your-room/frontend-roadmap.md`
 
 ### International Feature Research
 
@@ -297,7 +297,7 @@ Status: approved and research-complete.
 
 The team researched transferable patterns from Airbnb, Booking.com, and Agoda,
 using official/current source material. The research was not intended as generic
-competitor copying; it translated mature marketplace patterns into RoomMatch-fit
+competitor copying; it translated mature marketplace patterns into find-your-room-fit
 feature opportunities.
 
 Key conclusions:
@@ -371,7 +371,7 @@ Status: draft spec; not approved.
 
 Goal:
 
-Make RoomMatch feel clearly compatibility-first by showing why a listing fits,
+Make find-your-room feel clearly compatibility-first by showing why a listing fits,
 where caution exists, and what remains unclear without drifting into a social or
 dating tone.
 
@@ -396,7 +396,7 @@ Primary reference:
 
 ## Current Roadmap
 
-From `docs/roommatch/frontend-roadmap.md`:
+From `docs/find-your-room/frontend-roadmap.md`:
 
 1. Trust-Rich Listing Experience: implemented, but manual visual closure should
    be reconciled
@@ -438,7 +438,7 @@ decision.
 Current product trust rules:
 
 - do not claim real-world verification unless the app actually has it
-- distinguish RoomMatch-reviewed, host-provided, and gated/later information
+- distinguish find-your-room-reviewed, host-provided, and gated/later information
 - expose area/neighborhood-level location only
 - keep exact address, direct contact, and host personal identity gated
 - preserve seeker notes as private
@@ -508,8 +508,8 @@ Outstanding checks:
 ## Recommended Next Steps For Another Tool
 
 1. Reconcile project status artifacts.
-   Start with `docs/roommatch/frontend-roadmap.md`,
-   `docs/roommatch/tasks.md`, `specs/001-trust-rich-listing/tasks.md`, and
+   Start with `docs/find-your-room/frontend-roadmap.md`,
+   `docs/find-your-room/tasks.md`, `specs/001-trust-rich-listing/tasks.md`, and
    `specs/004-shortlists-and-comparison/*`.
 
 2. Run the missing manual visual and interaction review.

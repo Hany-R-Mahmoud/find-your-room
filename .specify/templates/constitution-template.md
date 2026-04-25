@@ -1,4 +1,4 @@
-# RoomMatch Constitution
+# find-your-room Constitution
 
 ## Core Principles
 
@@ -11,7 +11,7 @@ After drafting a spec, pause for user review. Planning and implementation begin
 only after the user approves the spec or requests revisions that are applied.
 
 ### III. Strategy Alignment
-Keep all work aligned with RoomMatch’s current direction: Riyadh-first,
+Keep all work aligned with find-your-room’s current direction: Riyadh-first,
 shared-room marketplace, trust-first discovery, and compatibility-aware
 matching.
 

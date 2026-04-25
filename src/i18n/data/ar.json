@@ -65,7 +65,7 @@
       "availability": "الانتقال من منتصف مايو",
       "fitReasons": ["ملائم للميزانية", "أمسيات هادئة", "سكن عربي وإنجليزي"],
       "trustSnapshot": [
-        { "id": "identity-reviewed", "label": "تمت مراجعة حالة الهوية", "sourceKey": "roommatch" },
+        { "id": "identity-reviewed", "label": "تمت مراجعة حالة الهوية", "sourceKey": "find-your-room" },
         { "id": "weekly-cleaning", "label": "التنظيف الأسبوعي غالباً مشمول", "sourceKey": "host" },
         { "id": "area-only", "label": "العنوان الدقيق يظهر لاحقاً", "sourceKey": "later" }
       ],
@@ -154,7 +154,7 @@
       "availability": "متاحة الآن",
       "fitReasons": ["تكلفة شهرية أقل", "مدة إقامة مرنة", "قريبة من النقل"],
       "trustSnapshot": [
-        { "id": "listing-reviewed", "label": "تمت مراجعة الإعلان", "sourceKey": "roommatch" },
+        { "id": "listing-reviewed", "label": "تمت مراجعة الإعلان", "sourceKey": "find-your-room" },
         { "id": "shared-desk", "label": "مساحة مكتب خاصة", "sourceKey": "host" },
         { "id": "access-later", "label": "تفاصيل الوصول تظهر لاحقاً", "sourceKey": "later" }
       ],
@@ -243,7 +243,7 @@
       "availability": "الانتقال من أواخر مايو",
       "fitReasons": ["سكن يركز على الخصوصية", "سياسة ضيوف متوافقة", "استقرار لفترة أطول"],
       "trustSnapshot": [
-        { "id": "setup-reviewed", "label": "تمت مراجعة إعدادات السكن", "sourceKey": "roommatch" },
+        { "id": "setup-reviewed", "label": "تمت مراجعة إعدادات السكن", "sourceKey": "find-your-room" },
         { "id": "privacy-zones", "label": "مناطق خصوصية واضحة", "sourceKey": "host" },
         { "id": "visit-routing", "label": "تفاصيل الزيارة تظهر لاحقاً", "sourceKey": "later" }
       ],

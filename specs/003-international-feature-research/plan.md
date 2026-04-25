@@ -9,7 +9,7 @@
 
 This round will study mature international accommodation products, especially
 Airbnb, Booking.com, and Agoda, to identify feature patterns that can enrich
-RoomMatch's website/mobile app without copying hotel-first or operations-heavy
+find-your-room's website/mobile app without copying hotel-first or operations-heavy
 flows blindly.
 
 The work is research-first. The outcome is a feature-opportunity brief that
@@ -21,10 +21,10 @@ separates:
 
 ## Technical Context
 
-**Research Type**: competitor and product-pattern scan  
-**Primary Sources**: official product/help pages, official property pages, and official newsroom/help materials from Airbnb, Booking.com, and Agoda  
-**Output Artifacts**: `plan.md`, `tasks.md`, `research.md`  
-**Quality Bar**: source-grounded, current, RoomMatch-specific, explicit about uncertainty  
+**Research Type**: competitor and product-pattern scan
+**Primary Sources**: official product/help pages, official property pages, and official newsroom/help materials from Airbnb, Booking.com, and Agoda
+**Output Artifacts**: `plan.md`, `tasks.md`, `research.md`
+**Quality Bar**: source-grounded, current, find-your-room-specific, explicit about uncertainty
 **Constraints**: no implementation work, no assumption of enterprise operations, no copying hotel-first mechanics that conflict with trust-first roommate discovery
 
 ## Specialist Planning Passes
@@ -36,7 +36,7 @@ separates:
 3. `agent-researcher`
    Scope: gather current, source-grounded evidence from target benchmark apps and extract the strongest product patterns.
 4. `agent-product`
-   Scope: translate findings into RoomMatch-suitable opportunities and prioritize what should move into the next Spec Kit cycle.
+   Scope: translate findings into find-your-room-suitable opportunities and prioritize what should move into the next Spec Kit cycle.
 
 No named specialist was skipped for this research round.
 
@@ -46,7 +46,7 @@ No named specialist was skipped for this research round.
    most visible in Airbnb, Booking.com, and Agoda today?
 2. Which of those patterns are suitable for a Riyadh-first shared-room product
    rather than a hotel-first travel marketplace?
-3. Which patterns would enrich RoomMatch's website/mobile app the most without
+3. Which patterns would enrich find-your-room's website/mobile app the most without
    requiring heavy backend, payments, or operations systems first?
 4. What should be recommended next for specification: immediate feature bets,
    later-stage bets, and explicit non-bets?
@@ -56,7 +56,7 @@ No named specialist was skipped for this research round.
 1. Confirm research scope from the approved spec
 2. Gather official, current evidence from target apps
 3. Extract the strongest recurring product patterns
-4. Score transferability to RoomMatch
+4. Score transferability to find-your-room
 5. Write the research brief with ranked feature opportunities
 6. Record residual risks and what still needs validation before implementation
 
@@ -78,4 +78,4 @@ No named specialist was skipped for this research round.
 - Airbnb offers stronger inspiration for trust, discovery, and saving flows,
   but some flows still assume short-stay booking behavior.
 - Competitor polish can hide operational complexity; recommendations must stay
-  honest about what RoomMatch can realistically support next.
+  honest about what find-your-room can realistically support next.

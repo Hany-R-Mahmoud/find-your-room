@@ -1,6 +1,6 @@
-# RoomMatch
+# find-your-room
 
-RoomMatch is a greenfield mobile prototype and planning workspace derived from the `roommatch.pdf` proposal.
+find-your-room is a greenfield mobile prototype and planning workspace derived from the `find-your-room.pdf` proposal.
 
 The current build narrows the concept to a Riyadh-first shared-room marketplace focused on:
 
@@ -11,7 +11,7 @@ The current build narrows the concept to a Riyadh-first shared-room marketplace 
 
 The repo contains two parallel outputs:
 
-- `docs/roommatch/*`: research, planning, risks, and task artifacts
+- `docs/find-your-room/*`: research, planning, risks, and task artifacts
 - Expo mobile prototype: a demand-side v1 experience with a light `Host mode`
 
 ## Why The Scope Changed
@@ -41,10 +41,10 @@ Then open the project in Expo Go, an iOS simulator, Android emulator, or the web
 - `app/onboarding.tsx`: v1 onboarding and trust framing
 - `app/(tabs)/*`: discover, matches, inbox, stay, and profile flows
 - `app/room/[id].tsx`: listing detail prototype
-- `src/data/roommatch.ts`: typed mock domain data
+- `src/data/find-your-room.ts`: typed mock domain data
 - `src/components/*`: reusable UI primitives
-- `docs/roommatch/*`: artifact set from the team workflow
-- `docs/roommatch/frontend-roadmap.md`: phase-based frontend roadmap and status tracker
+- `docs/find-your-room/*`: artifact set from the team workflow
+- `docs/find-your-room/frontend-roadmap.md`: phase-based frontend roadmap and status tracker
 
 ## Spec-First Workflow
 

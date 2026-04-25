@@ -15,7 +15,7 @@
     "eyebrow": "Decision support",
     "caption": "Review what is already checked, what the host shared, and what unlocks later."
   },
-  "trustNote": "Some details are reviewed by RoomMatch. Others are shared by the host and confirmed later.",
+  "trustNote": "Some details are reviewed by find-your-room. Others are shared by the host and confirmed later.",
   "trustSectionLabels": {
     "source": "Source",
     "reviewed": "Reviewed now",

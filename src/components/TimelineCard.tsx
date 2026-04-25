@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
 import { rowDirectionFor, textAlignFor, useLocale } from "@/i18n";
-import type { StayMilestone } from "@/data/roommatch";
+import type { StayMilestone } from "@/data/find-your-room";
 import { palette, radii, spacing } from "@/ui/theme";
 
 type TimelineCardProps = {

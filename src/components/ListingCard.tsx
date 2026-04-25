@@ -3,7 +3,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
-import { formatSarValue, type Listing } from "@/data/roommatch";
+import { formatSarValue, type Listing } from "@/data/find-your-room";
 import { useShortlists } from "@/shortlists";
 import { defaultSaveReasonForShortlist } from "@/shortlists/rules";
 import { palette, radii, shadows, spacing } from "@/ui/theme";
@@ -16,8 +16,8 @@ type ListingCardProps = {
 
 function toneForSource(sourceKey: Listing["trustSnapshot"][number]["sourceKey"]) {
   switch (sourceKey) {
-    case "roommatch":
-      return "sourceRoomMatch" as const;
+    case "find-your-room":
+      return "sourceFindYourRoom" as const;
     case "host":
       return "sourceHost" as const;
     case "later":
@@ -43,7 +43,7 @@ export function ListingCard({ listing, onPress }: ListingCardProps) {
       separate: string;
       expectations: string;
     };
-    trustSources: Record<"roommatch" | "host" | "later", string>;
+    trustSources: Record<"find-your-room" | "host" | "later", string>;
   }>("common");
   const { shortlists, saveListing } = useShortlists();
   const { t: ts } = useTranslations<{
@@ -158,7 +158,7 @@ export function ListingCard({ listing, onPress }: ListingCardProps) {
             {listing.host.responseTime} · {listing.media.reviewedLabel} · {listing.pricing.stayLength}
           </Text>
           <Text style={[styles.sourceSummary, { textAlign: textAlignFor(isRTL) }]}>
-            {t(`trustSources.${listing.trustSnapshot[0]?.sourceKey ?? "roommatch"}`)}
+            {t(`trustSources.${listing.trustSnapshot[0]?.sourceKey ?? "find-your-room"}`)}
           </Text>
         </View>
       </View>

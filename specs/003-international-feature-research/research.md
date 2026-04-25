@@ -1,4 +1,4 @@
-# Research Brief: International Marketplace Feature Inspiration For RoomMatch
+# Research Brief: International Marketplace Feature Inspiration For find-your-room
 
 **Date**: 2026-04-21  
 **Feature**: [003-international-feature-research](/Users/hanyramadan/find-your-room/specs/003-international-feature-research/spec.md)
@@ -6,7 +6,7 @@
 ## Goal
 
 Identify feature patterns from Airbnb, Booking.com, and Agoda that can enrich
-RoomMatch's website/mobile app in ways that fit a trust-first, compatibility-
+find-your-room's website/mobile app in ways that fit a trust-first, compatibility-
 first, shared-room marketplace.
 
 ## Method
@@ -15,7 +15,7 @@ first, shared-room marketplace.
   content from Airbnb, Booking.com, and Agoda.
 - The focus was not "what features exist?" in the abstract. The focus was
   "which patterns meaningfully improve seeker decision quality and can be
-  adapted to RoomMatch now or soon?"
+  adapted to find-your-room now or soon?"
 - Findings are labeled as:
   - `Transferable now`
   - `Transferable later`
@@ -60,7 +60,7 @@ uncertainty:
 - Booking.com makes price terms, cancellation, and payment timing very explicit
 - Agoda leans hard on verified reviews and best-price confidence
 
-**Implication for RoomMatch**: the best next features are not "more content"
+**Implication for find-your-room**: the best next features are not "more content"
 features. They are decision-support features that help a seeker say yes or no
 faster.
 
@@ -71,16 +71,16 @@ than generic badges. Agoda explicitly says its reviews come from customers who
 completed a stay. Booking.com repeatedly emphasizes "Real guests. Real stays.
 Real opinions."
 
-**Implication for RoomMatch**: new trust features should come from clearer
+**Implication for find-your-room**: new trust features should come from clearer
 evidence models, not more decorative labels.
 
 ### 3. Mature apps separate public browsing information from post-commit reveal
 
 Booking.com property pages repeatedly show that exact address and contact
 details appear after booking/confirmation, not during early browse. This is
-very aligned with RoomMatch's privacy-safe direction.
+very aligned with find-your-room's privacy-safe direction.
 
-**Implication for RoomMatch**: the product can add richer location and host
+**Implication for find-your-room**: the product can add richer location and host
 context without abandoning gated disclosure. The right pattern is staged
 reveal, not full public transparency.
 
@@ -89,7 +89,7 @@ reveal, not full public transparency.
 Airbnb's wishlists are not just bookmarks. They preserve dates, support
 collaboration, and allow notes and voting.
 
-**Implication for RoomMatch**: RoomMatch currently helps users evaluate a single
+**Implication for find-your-room**: find-your-room currently helps users evaluate a single
 listing better, but it still under-serves multi-listing comparison and return
 visits.
 
@@ -107,7 +107,7 @@ What stands out:
 - `Accessibility filters` show how deep filtering can stay usable when grouped
   by real user needs.
 
-Best RoomMatch inspiration:
+Best find-your-room inspiration:
 
 - ranked trusted-listing label
 - topic-based review or quote highlights
@@ -124,13 +124,13 @@ What stands out:
 - Exact address and contact details are gated until booking/account access.
 - Availability options are shown as concrete choices, not vague descriptions.
 
-Best RoomMatch inspiration:
+Best find-your-room inspiration:
 
 - much stronger move-in and cost breakdown clarity
 - explicit "what unlocks later" disclosure
 - structured option-level differences when the same room has multiple terms or
   move-in paths
-- verified lived-experience reviews when RoomMatch has the data to support them
+- verified lived-experience reviews when find-your-room has the data to support them
 
 ## Agoda
 
@@ -142,7 +142,7 @@ What stands out:
 - Agoda also uses ranking/placement mechanics heavily, but many of those are
   marketing- and supply-scale-dependent.
 
-Best RoomMatch inspiration:
+Best find-your-room inspiration:
 
 - stronger verified social proof
 - better confidence messaging around what has been checked versus what is still
@@ -151,7 +151,7 @@ Best RoomMatch inspiration:
 
 ## Transferability Table
 
-| Pattern | Evidence Source | RoomMatch Fit | Recommendation |
+| Pattern | Evidence Source | find-your-room Fit | Recommendation |
 |---|---|---|---|
 | Trusted quality labels based on reliability and reviews | Airbnb Guest Favorites | Strong | Transferable now |
 | Topic-based review tags and quick evidence scanning | Airbnb review tags | Strong | Transferable now |
@@ -165,7 +165,7 @@ Best RoomMatch inspiration:
 | Sponsored ranking / paid placement mechanics | Agoda partner tools | Conflicts with trust-first product | Not recommended now |
 | Hotel-style instant booking/payment flows | Booking.com / Agoda core flows | Too operations-heavy right now | Transferable later only if strategy changes |
 
-## Recommended Feature Opportunities For RoomMatch
+## Recommended Feature Opportunities For find-your-room
 
 ## 1. Saved Shortlists And Side-By-Side Comparison
 
@@ -176,7 +176,7 @@ and location.
 **Inspired by**: Airbnb wishlists, but adapted away from travel planning into
 shared-living decision support.
 
-**RoomMatch version**:
+**find-your-room version**:
 
 - Save listings into shortlists like `Near work`, `Best vibe`, or `Under budget`
 - Keep move-in month and search context attached to the saved set
@@ -193,14 +193,14 @@ frontend-heavy, and does not require enterprise operations.
 
 ## 2. Trusted Listing Labels And Evidence Ranking
 
-**Why it matters**: RoomMatch already improved trust display, but it still
+**Why it matters**: find-your-room already improved trust display, but it still
 lacks a stronger top-level label that says "this listing is unusually reliable"
 without overstating verification.
 
 **Inspired by**: Airbnb Guest Favorites, verified-review framing on Booking.com
 and Agoda.
 
-**RoomMatch version**:
+**find-your-room version**:
 
 - Add a top-tier trust label such as `Most trusted this week` or
   `Strong response and review history`
@@ -217,13 +217,13 @@ direction instead of starting a new product lane.
 
 ## 3. Decision-Support Reviews And Resident Quotes
 
-**Why it matters**: Major marketplaces make reviews scannable. RoomMatch will
+**Why it matters**: Major marketplaces make reviews scannable. find-your-room will
 eventually need lived-experience proof that helps seekers answer:
 "What is this home actually like to live in?"
 
 **Inspired by**: Airbnb review tags and Booking.com/Agoda verified reviews.
 
-**RoomMatch version**:
+**find-your-room version**:
 
 - Introduce structured quote snippets like:
   - `Quiet on weekdays`
@@ -232,7 +232,7 @@ eventually need lived-experience proof that helps seekers answer:
   - `Host was responsive`
 - Group by topics instead of dumping long testimonials
 - Clearly distinguish:
-  - RoomMatch-verified former-resident feedback
+  - find-your-room-verified former-resident feedback
   - unverified host claims
 
 **Why this is not the first next spec**: valuable, but it likely needs more
@@ -240,12 +240,12 @@ data and verification design than the shortlist/comparison path.
 
 ## 4. Better Filters For Real Shared-Living Needs
 
-**Why it matters**: Mature apps let users filter for real constraints. RoomMatch
+**Why it matters**: Mature apps let users filter for real constraints. find-your-room
 should move beyond broad browsing filters into living-need filters.
 
 **Inspired by**: Airbnb's grouped accessibility filter system.
 
-**RoomMatch version**:
+**find-your-room version**:
 
 - Must-have filters for:
   - women-only / men-only / mixed
@@ -263,12 +263,12 @@ with compatibility-first positioning.
 ## 5. Staged Unlocks For Contact, Address, And Questions
 
 **Why it matters**: Booking.com reinforces that some sensitive details appear
-later. RoomMatch can use that pattern to make trust and privacy feel more
+later. find-your-room can use that pattern to make trust and privacy feel more
 intentional.
 
 **Inspired by**: Booking.com's gated reveal after booking.
 
-**RoomMatch version**:
+**find-your-room version**:
 
 - Public view:
   district, landmark context, commute summary, trust evidence
@@ -290,7 +290,7 @@ Why:
 
 - highest user decision value
 - strongly inspired by proven marketplace behavior
-- low risk of conflicting with RoomMatch's trust-first positioning
+- low risk of conflicting with find-your-room's trust-first positioning
 - can enrich both mobile and web quickly
 
 ### Priority 2
@@ -338,7 +338,7 @@ Why:
 - price-match guarantees
 - package bundles, flights, or trip add-ons
 - paid ranking or sponsored placement mechanics
-- instant-book style flows that imply operational depth RoomMatch does not yet
+- instant-book style flows that imply operational depth find-your-room does not yet
   have
 - deceptive urgency patterns like fake scarcity
 
@@ -349,7 +349,7 @@ travel features." It is:
 
 **Help people narrow, compare, trust, and commit with less uncertainty.**
 
-For RoomMatch, that means the next round should probably shift from pure
+For find-your-room, that means the next round should probably shift from pure
 listing-page enrichment into:
 
 1. shortlist/comparison workflows
@@ -362,7 +362,7 @@ listing-page enrichment into:
   review framing, but weaker as direct models for relationship-led shared-room
   matching.
 - Some later-stage opportunities, especially verified resident reviews, likely
-  depend on systems RoomMatch does not yet have.
+  depend on systems find-your-room does not yet have.
 - The current recommendation assumes the product still wants to stay trust-
   first and privacy-safe rather than move toward open-contact marketplace
   behavior.
@@ -371,7 +371,7 @@ listing-page enrichment into:
 
 Start the next Spec Kit cycle for:
 
-**Saved shortlists and comparison for RoomMatch seekers**
+**Saved shortlists and comparison for find-your-room seekers**
 
 This is the clearest feature area that:
 
