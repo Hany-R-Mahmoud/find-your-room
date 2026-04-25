@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and local config
+.env
+.env.*
+!.env.example
+!.env.sample
+.DS_Store
+Thumbs.db
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Caches
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# Local databases and backups
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+
+# Large local media assets.
+# These should be uploaded to remote storage and referenced by URL instead.
+images/
+image/
+pictures/
+picture/
+photos/
+photo/
+assets/images/
+assets/pictures/
+public/images/
+public/pictures/
+static/images/
+static/pictures/
+
+# Raster image files
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avif
+*.heic
+*.heif
+*.tif
+*.tiff
+*.bmp
