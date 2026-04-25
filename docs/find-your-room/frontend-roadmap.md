@@ -28,6 +28,7 @@ finished, split, merged, or expanded.
 | 4 | Saved Search, Alerts, And Decision Support | Proposed | Search management and shortlist flows |
 | 5 | Move-In Readiness And Post-Match UX | Proposed | Extends `My Stay` into stronger post-match support |
 | 6 | Host Preview And Supply-Side Polish | Deferred | Useful later, but not the next best seeker-side investment |
+| 7 | Civic Trust Visual Redesign Handoff | In Progress | Spec approved and Multica issues created: `SOK-2` through `SOK-10` |
 
 ## Phase 1: Trust-Rich Listing Experience
 
@@ -152,6 +153,32 @@ strong.
 - host profile completeness
 - listing preview polish
 - trust checklist UI
+
+## Phase 7: Civic Trust Visual Redesign Handoff
+
+**Goal**
+
+Translate the Stitch-generated Riyadh Civic Trust direction into an approved
+native app redesign slice before implementation.
+
+**Frontend Focus**
+
+- design-token direction for quiet civic trust surfaces
+- safer trust-language model without unsupported official claims
+- shared component updates for headers, pills, listing cards, and navigation
+- selected screen patterns from landing/onboarding, discover, listing detail,
+  shortlist/comparison, inbox, and stay timeline
+- English and Arabic/RTL verification before completion
+
+**Current Checkpoint**
+
+- Stitch export assessed
+- planning note created at `docs/find-your-room/civic-trust-redesign-handoff.md`
+- Spec Kit draft created at `specs/006-civic-trust-redesign-handoff/spec.md`
+- user approved the spec on 2026-04-25
+- Multica issues created for Product, Design, Architect, Security, Stitch,
+  Performance, Tester, Reviewer, and Docs
+- waiting on specialist execution and post-execution assessment
 
 ## Update Rules
 

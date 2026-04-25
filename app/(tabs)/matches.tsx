@@ -280,7 +280,7 @@ const styles = StyleSheet.create({
     fontWeight: "700"
   },
   compareButton: {
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.palm,
     backgroundColor: palette.surface,
@@ -363,7 +363,7 @@ const styles = StyleSheet.create({
     gap: spacing.xs
   },
   reasonChip: {
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.surface,
@@ -396,7 +396,7 @@ const styles = StyleSheet.create({
     fontWeight: "700"
   },
   inlineAction: {
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.surface,
@@ -457,7 +457,7 @@ const styles = StyleSheet.create({
     fontWeight: "600"
   },
   removeButton: {
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.elevated,
@@ -472,7 +472,7 @@ const styles = StyleSheet.create({
   createButton: {
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: radii.pill,
+    borderRadius: radii.md,
     backgroundColor: palette.surface,
     borderWidth: 1,
     borderColor: palette.line,

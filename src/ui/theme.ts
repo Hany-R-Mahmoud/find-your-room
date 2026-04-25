@@ -1,22 +1,26 @@
 export const palette = {
-  canvas: "#f5efe6",
-  surface: "#fcf9f4",
-  elevated: "#fffdfa",
-  ink: "#172320",
-  inkSoft: "#576663",
-  line: "#d5c8b8",
-  sand: "#e8d8bf",
-  dune: "#cda57a",
-  palm: "#23453d",
-  palmSoft: "#3d6359",
-  clay: "#bd6546",
-  mist: "#eef3ef",
-  mistStrong: "#dfe9e2",
-  success: "#2d6a4f",
-  warning: "#9d5f1c",
-  rose: "#f5ddd7",
-  roseSoft: "#f9ebe7",
-  dusk: "#6c7d79"
+  canvas: "#f8f9fa",
+  surface: "#ffffff",
+  elevated: "#f3f4f5",
+  ink: "#191c1d",
+  inkSoft: "#414844",
+  line: "#c1c8c2",
+  sand: "#e1e4d2",
+  dune: "#c5c8b7",
+  palm: "#012d1d",
+  palmSoft: "#346762",
+  clay: "#8a4f00",
+  mist: "#c1ecd4",
+  mistStrong: "#a5d0b9",
+  success: "#1b4332",
+  warning: "#8a4f00",
+  rose: "#ffdad6",
+  roseSoft: "#fff2f0",
+  dusk: "#717973",
+  teal: "#346762",
+  amber: "#ffb100",
+  amberSoft: "#fff5dc",
+  limestone: "#edeeef"
 } as const;
 
 export const spacing = {
@@ -29,22 +33,22 @@ export const spacing = {
 } as const;
 
 export const radii = {
-  sm: 12,
-  md: 18,
-  lg: 28,
+  sm: 4,
+  md: 8,
+  lg: 8,
   pill: 999
 } as const;
 
 export const shadows = {
   card: {
-    shadowColor: "#7f6d57",
-    shadowOpacity: 0.1,
-    shadowRadius: 18,
+    shadowColor: "#2e3132",
+    shadowOpacity: 0.05,
+    shadowRadius: 8,
     shadowOffset: {
       width: 0,
-      height: 10
+      height: 4
     },
-    elevation: 3
+    elevation: 1
   }
 } as const;
 

@@ -13,7 +13,7 @@ export function SectionHeader({ eyebrow, title, caption }: SectionHeaderProps) {
   const { isRTL } = useLocale();
 
   return (
-      <View style={styles.wrap}>
+    <View style={styles.wrap}>
       {eyebrow ? <Text style={[styles.eyebrow, { textAlign: textAlignFor(isRTL) }]}>{eyebrow}</Text> : null}
       <Text style={[styles.title, { textAlign: textAlignFor(isRTL) }]}>{title}</Text>
       {caption ? <Text style={[styles.caption, { textAlign: textAlignFor(isRTL) }]}>{caption}</Text> : null}
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     color: palette.clay,
     fontSize: 12,
     fontWeight: "700",
-    letterSpacing: 1.2,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   title: {

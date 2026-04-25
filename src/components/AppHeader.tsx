@@ -27,7 +27,7 @@ export function AppHeader({ showBack = false }: AppHeaderProps) {
         </View>
       </View>
 
-      <Pressable onPress={toggleLocale} style={[styles.localeButton, { flexDirection: rowDirectionFor(isRTL) }]}>
+      <Pressable accessibilityLabel={t("languageToggle.label")} onPress={toggleLocale} style={[styles.localeButton, { flexDirection: rowDirectionFor(isRTL) }]}>
         <MaterialIcons color={palette.palm} name="language" size={18} />
         <Text style={styles.localeText}>{t("languageToggle.short")}</Text>
       </Pressable>
@@ -39,7 +39,10 @@ const styles = StyleSheet.create({
   row: {
     alignItems: "center",
     justifyContent: "space-between",
-    gap: spacing.md
+    gap: spacing.md,
+    borderBottomWidth: 1,
+    borderBottomColor: palette.line,
+    paddingBottom: spacing.md
   },
   leading: {
     flex: 1,
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
   backButton: {
     width: 42,
     height: 42,
-    borderRadius: 21,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.surface,
@@ -61,9 +64,11 @@ const styles = StyleSheet.create({
     gap: 2
   },
   brand: {
-    color: palette.ink,
+    color: palette.palm,
     fontSize: 18,
-    fontWeight: "900"
+    fontWeight: "900",
+    letterSpacing: 0,
+    textTransform: "uppercase"
   },
   tag: {
     color: palette.inkSoft,
@@ -73,7 +78,7 @@ const styles = StyleSheet.create({
   localeButton: {
     alignItems: "center",
     gap: 8,
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.surface,
@@ -86,4 +91,3 @@ const styles = StyleSheet.create({
     fontWeight: "900"
   }
 });
-

@@ -1,11 +1,11 @@
 {
   "heroMetrics": [
-    { "label": "Verified rooms", "value": "314" },
+    { "label": "Reviewed rooms", "value": "314" },
     { "label": "Avg. match fit", "value": "89%" },
     { "label": "Reply window", "value": "< 4 hrs" }
   ],
   "discoverFilters": [
-    { "id": "verified", "label": "Verified by find-your-room", "tone": "verified" },
+    { "id": "verified", "label": "Reviewed by find-your-room", "tone": "verified" },
     { "id": "included", "label": "Bills mostly included", "tone": "quiet" },
     { "id": "metro", "label": "Near metro links", "tone": "quiet" },
     { "id": "privacy", "label": "Privacy-first homes", "tone": "accent" },
@@ -14,7 +14,7 @@
   "onboardingCards": [
     {
       "title": "Start with trust",
-      "body": "Phone-first onboarding, explicit house rules, and progressive verification before direct contact."
+      "body": "Phone-first onboarding, explicit house rules, and progressive review before direct contact."
     },
     {
       "title": "Match the household",
@@ -69,10 +69,10 @@
         { "id": "weekly-cleaning", "label": "Weekly cleaning usually included", "sourceKey": "host" },
         { "id": "area-only", "label": "Exact address shared later", "sourceKey": "later" }
       ],
-      "trustSummary": ["Verified host status", "Updated this week", "Approximate location only"],
+      "trustSummary": ["Reviewed host status", "Updated this week", "Approximate location only"],
       "trustSections": {
         "verified": {
-          "title": "Verified by find-your-room",
+          "title": "Reviewed by find-your-room",
           "items": ["Host identity status reviewed", "Listing photos reviewed", "Recent activity confirmed"]
         },
         "hostProvided": {
@@ -114,7 +114,7 @@
       "host": {
         "name": "Primary tenant",
         "safeName": "Primary tenant",
-        "role": "Verified household lead",
+        "role": "Reviewed household lead",
         "responseTime": "Usually replies the same day",
         "verification": "Identity status reviewed",
         "note": "Direct personal details appear later in the request flow.",
@@ -161,7 +161,7 @@
       "trustSummary": ["Listing reviewed", "Recent photo set", "Flexible monthly stay"],
       "trustSections": {
         "verified": {
-          "title": "Verified by find-your-room",
+          "title": "Reviewed by find-your-room",
           "items": ["Listing details reviewed", "Recent photo set checked", "Contact route confirmed"]
         },
         "hostProvided": {
@@ -250,7 +250,7 @@
       "trustSummary": ["Household setup reviewed", "Privacy-first home", "Address shared later"],
       "trustSections": {
         "verified": {
-          "title": "Verified by find-your-room",
+          "title": "Reviewed by find-your-room",
           "items": ["Listing contact reviewed", "Household setup reviewed", "Recent activity confirmed"]
         },
         "hostProvided": {
@@ -336,7 +336,7 @@
     {
       "id": "chat-1",
       "name": "Primary tenant",
-      "role": "Verified household lead",
+      "role": "Reviewed household lead",
       "snippet": "I uploaded the latest kitchen and room photos. Would Wednesday at 7 PM work?",
       "time": "09:10",
       "unread": true
@@ -345,7 +345,7 @@
       "id": "chat-2",
       "name": "Managed housing team",
       "role": "Managed listing contact",
-      "snippet": "We can hold the room for 24 hours once your profile is fully verified.",
+      "snippet": "We can hold the room for 24 hours once your profile is fully reviewed.",
       "time": "Yesterday",
       "unread": false
     },
@@ -353,7 +353,7 @@
       "id": "chat-3",
       "name": "find-your-room Support",
       "role": "Trust and safety",
-      "snippet": "Your host verification request is complete. Exact address unlocks after mutual interest.",
+      "snippet": "Your host review request is complete. Exact address unlocks after mutual interest.",
       "time": "Monday",
       "unread": false
     }
@@ -361,7 +361,7 @@
   "stayMilestones": [
     {
       "id": "stay-1",
-      "title": "Profile and phone verified",
+      "title": "Profile and phone reviewed",
       "description": "Basic trust tier complete. You can request rooms and join waitlists.",
       "state": "done"
     },

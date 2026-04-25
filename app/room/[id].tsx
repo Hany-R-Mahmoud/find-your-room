@@ -1,5 +1,4 @@
 import { MaterialIcons } from "@expo/vector-icons";
-import { LinearGradient } from "expo-linear-gradient";
 import { router, useLocalSearchParams } from "expo-router";
 import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 
@@ -68,19 +67,22 @@ export default function RoomDetailScreen() {
       </View>
 
       <ImageBackground imageStyle={styles.heroImage} source={{ uri: listing.imageUri }} style={styles.heroWrap}>
-        <LinearGradient colors={["rgba(16, 24, 22, 0.08)", "rgba(16, 24, 22, 0.82)"]} style={styles.hero}>
+        <View style={styles.hero}>
           <View style={[styles.heroChipRow, { flexDirection: rowDirectionFor(isRTL) }]}>
             <Pill label={listing.media.reviewedLabel} tone="quiet" />
             <Pill label={tc("labels.approximateArea")} tone="sourceLater" />
           </View>
+        </View>
+      </ImageBackground>
+
+      <View style={styles.heroSummary}>
           <Text style={[styles.heroDistrict, { textAlign: textAlignFor(isRTL) }]}>{listing.district}</Text>
           <Text style={[styles.heroTitle, { textAlign: textAlignFor(isRTL) }]}>{listing.title}</Text>
           <Text style={[styles.heroMeta, { textAlign: textAlignFor(isRTL) }]}>
             {tc("labels.location")}: {listing.locationSummary.label}
           </Text>
           <Text style={[styles.heroCopy, { textAlign: textAlignFor(isRTL) }]}>{listing.intro}</Text>
-        </LinearGradient>
-      </ImageBackground>
+      </View>
 
       <View style={styles.decisionCard}>
         <Text style={[styles.cardEyebrow, { textAlign: textAlignFor(isRTL) }]}>{t("decisionHeader.eyebrow")}</Text>
@@ -296,7 +298,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   heroWrap: {
-    minHeight: 280,
+    minHeight: 240,
     overflow: "hidden",
     borderRadius: radii.lg
   },
@@ -304,10 +306,19 @@ const styles = StyleSheet.create({
     borderRadius: radii.lg
   },
   hero: {
-    minHeight: 280,
+    minHeight: 240,
     padding: spacing.lg,
-    justifyContent: "flex-end",
+    justifyContent: "flex-start",
+    backgroundColor: "rgba(25, 28, 29, 0.08)",
     gap: spacing.sm
+  },
+  heroSummary: {
+    borderRadius: radii.md,
+    borderWidth: 1,
+    borderColor: palette.line,
+    backgroundColor: palette.surface,
+    padding: spacing.lg,
+    gap: spacing.xs
   },
   heroChipRow: {
     alignItems: "flex-start",
@@ -315,26 +326,26 @@ const styles = StyleSheet.create({
     gap: spacing.xs
   },
   heroDistrict: {
-    color: palette.sand,
+    color: palette.palmSoft,
     fontSize: 12,
     fontWeight: "800",
-    letterSpacing: 1,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   heroTitle: {
-    color: palette.surface,
+    color: palette.ink,
     fontSize: 32,
     lineHeight: 36,
     fontWeight: "900"
   },
   heroCopy: {
-    color: palette.surface,
+    color: palette.inkSoft,
     fontSize: 15,
     lineHeight: 23,
     opacity: 0.92
   },
   heroMeta: {
-    color: palette.surface,
+    color: palette.inkSoft,
     fontSize: 13,
     lineHeight: 20,
     fontWeight: "700",
@@ -358,7 +369,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.elevated,
@@ -381,7 +392,7 @@ const styles = StyleSheet.create({
     color: palette.clay,
     fontSize: 12,
     fontWeight: "800",
-    letterSpacing: 1,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   price: {
@@ -504,7 +515,7 @@ const styles = StyleSheet.create({
     color: palette.sand,
     fontSize: 12,
     fontWeight: "700",
-    letterSpacing: 1,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   hostTitle: {
@@ -533,7 +544,7 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     minHeight: 56,
-    borderRadius: radii.pill,
+    borderRadius: radii.md,
     backgroundColor: palette.clay,
     paddingHorizontal: spacing.lg,
     alignItems: "center",

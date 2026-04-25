@@ -1,9 +1,9 @@
 {
   "eyebrow": "Profile",
-  "title": "Household fit and verification live together.",
+  "title": "Household fit and review live together.",
   "caption": "The profile is both a trust surface and a matching surface, so it cannot be an afterthought.",
   "cards": {
-    "verification": "Verification center",
+    "verification": "Review center",
     "preferences": "Household preferences"
   },
   "hostMode": {

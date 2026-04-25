@@ -27,11 +27,16 @@ export default function TabsLayout() {
           fontWeight: "700"
         },
         tabBarStyle: {
-          backgroundColor: palette.elevated,
+          backgroundColor: palette.surface,
           borderTopColor: palette.line,
           height: 86,
           paddingTop: 10,
           paddingBottom: 18
+        },
+        tabBarItemStyle: {
+          borderRadius: 4,
+          marginHorizontal: 4,
+          marginVertical: 6
         },
         tabBarIcon: ({ color, size }) => {
           const name = icons[route.name as keyof typeof icons];

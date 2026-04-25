@@ -34,7 +34,7 @@ export default function LandingScreen() {
         caption={t("caption")}
       />
 
-      <LinearGradient colors={["#efe2cf", "#2d5148"]} style={styles.hero}>
+      <View style={styles.hero}>
         <View style={[styles.heroTop, { flexDirection: rowDirectionFor(isRTL) }]}>
           <Pill label={t("chips.riyadh")} tone="quiet" />
           <Pill label={t("chips.rooms")} tone="accent" />
@@ -55,7 +55,7 @@ export default function LandingScreen() {
             </View>
           ))}
         </View>
-      </LinearGradient>
+      </View>
 
       <View style={[styles.visualRow, { flexDirection: rowDirectionFor(isRTL) }]}>
         {landingVisuals.map((visual, index) => (
@@ -103,6 +103,9 @@ export default function LandingScreen() {
 const styles = StyleSheet.create({
   hero: {
     borderRadius: radii.lg,
+    borderWidth: 1,
+    borderColor: palette.line,
+    backgroundColor: palette.surface,
     padding: spacing.lg,
     gap: spacing.lg,
     ...shadows.card
@@ -119,14 +122,12 @@ const styles = StyleSheet.create({
     color: palette.ink,
     fontSize: 34,
     lineHeight: 38,
-    fontWeight: "900",
-    maxWidth: "85%"
+    fontWeight: "900"
   },
   heroCopy: {
-    color: palette.surface,
+    color: palette.inkSoft,
     fontSize: 15,
     lineHeight: 23,
-    maxWidth: "88%",
     opacity: 0.92
   },
   metricRow: {
@@ -138,7 +139,7 @@ const styles = StyleSheet.create({
     minWidth: 98,
     borderRadius: radii.md,
     padding: spacing.md,
-    backgroundColor: "rgba(255, 253, 250, 0.86)"
+    backgroundColor: palette.elevated
   },
   metricValue: {
     color: palette.ink,
@@ -195,7 +196,7 @@ const styles = StyleSheet.create({
     color: palette.clay,
     fontSize: 12,
     fontWeight: "700",
-    letterSpacing: 1,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   noteTitle: {
@@ -215,7 +216,7 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     minHeight: 56,
-    borderRadius: radii.pill,
+    borderRadius: radii.md,
     backgroundColor: palette.palm,
     paddingHorizontal: spacing.lg,
     alignItems: "center",
@@ -228,7 +229,7 @@ const styles = StyleSheet.create({
   },
   secondaryButton: {
     minHeight: 54,
-    borderRadius: radii.pill,
+    borderRadius: radii.md,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.elevated,

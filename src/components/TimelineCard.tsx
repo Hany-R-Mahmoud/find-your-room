@@ -11,7 +11,7 @@ type TimelineCardProps = {
 export function TimelineCard({ item }: TimelineCardProps) {
   const { isRTL } = useLocale();
   const markerColor =
-    item.state === "done" ? palette.success : item.state === "current" ? palette.clay : palette.line;
+    item.state === "done" ? palette.success : item.state === "current" ? palette.amber : palette.line;
 
   return (
     <View style={[styles.row, { flexDirection: rowDirectionFor(isRTL) }]}>
@@ -50,11 +50,11 @@ const styles = StyleSheet.create({
     gap: 6
   },
   cardCurrent: {
-    borderColor: palette.clay,
-    backgroundColor: "#fff5f0"
+    borderColor: palette.amber,
+    backgroundColor: palette.amberSoft
   },
   cardDone: {
-    borderColor: "#bcd1c6",
+    borderColor: palette.mistStrong,
     backgroundColor: palette.mist
   },
   title: {

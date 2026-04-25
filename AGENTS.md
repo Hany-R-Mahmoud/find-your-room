@@ -48,6 +48,25 @@ spec.
 
 If the user gives adjustments, update the same spec and ask for approval again.
 
+## Mandatory Docs, Spec Kit, And Multica Handoff Loop
+
+This workflow must be followed for all non-trivial planning, research,
+brainstorming, task creation, and execution work:
+
+1. Document planning, research, brainstorming, assessments, and decisions in
+   the project `docs/` folder so the project history stays durable.
+2. Before any task is executed, Codex must create a well-written,
+   descriptive Spec Kit spec. The spec must include:
+   - user story
+   - requirements
+   - definition of done
+   - relevant constraints, risks, and acceptance criteria
+3. Newly created and approved specs must be handed to Multica agents for
+   execution. Codex owns writing the Multica task or issue so the assigned
+   agent can follow and execute the spec clearly.
+4. After spec execution finishes, Codex must assess and report on the result,
+   identify anything missing, and update the relevant docs and roadmaps.
+
 ## Multi-Agent Requirement
 
 When the user asks for planning, specification, execution, or phased delivery,

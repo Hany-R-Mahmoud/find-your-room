@@ -1,5 +1,4 @@
 import { MaterialIcons } from "@expo/vector-icons";
-import { LinearGradient } from "expo-linear-gradient";
 import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 
 import { rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
@@ -55,27 +54,26 @@ export function ListingCard({ listing, onPress }: ListingCardProps) {
   return (
     <Pressable onPress={onPress} style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}>
       <ImageBackground imageStyle={styles.heroImage} source={{ uri: listing.imageUri }} style={styles.heroImageWrap}>
-        <LinearGradient colors={["rgba(18, 30, 27, 0.05)", "rgba(18, 30, 27, 0.78)"]} style={styles.hero}>
-          <View style={styles.heroTop}>
-            <View style={[styles.heroChipRow, { flexDirection: rowDirectionFor(isRTL) }]}>
-              <Pill label={listing.match.confidenceNote} tone="verified" />
-              <Pill label={listing.media.reviewedLabel} tone="quiet" />
-            </View>
-            <View style={[styles.heroChipRow, { flexDirection: rowDirectionFor(isRTL) }]}>
-              <Pill label={t("labels.approximateArea")} tone="sourceLater" />
-            </View>
+        <View style={styles.hero}>
+          <View style={[styles.heroChipRow, { flexDirection: rowDirectionFor(isRTL) }]}>
+            <Pill label={listing.match.confidenceNote} tone="verified" />
+            <Pill label={listing.media.reviewedLabel} tone="quiet" />
           </View>
-          <View style={styles.heroBottom}>
-            <Text style={[styles.district, { textAlign: textAlignFor(isRTL) }]}>{listing.district}</Text>
-            <Text style={[styles.title, { textAlign: textAlignFor(isRTL) }]}>{listing.title}</Text>
-            <Text style={[styles.commute, { textAlign: textAlignFor(isRTL) }]}>
-              {t("labels.location")}: {listing.locationSummary.label}
-            </Text>
+          <View style={[styles.heroChipRow, { flexDirection: rowDirectionFor(isRTL) }]}>
+            <Pill label={t("labels.approximateArea")} tone="sourceLater" />
           </View>
-        </LinearGradient>
+        </View>
       </ImageBackground>
 
       <View style={styles.body}>
+        <View style={styles.titleGroup}>
+          <Text style={[styles.district, { textAlign: textAlignFor(isRTL) }]}>{listing.district}</Text>
+          <Text style={[styles.title, { textAlign: textAlignFor(isRTL) }]}>{listing.title}</Text>
+          <Text style={[styles.commute, { textAlign: textAlignFor(isRTL) }]}>
+            {t("labels.location")}: {listing.locationSummary.label}
+          </Text>
+        </View>
+
         <View style={[styles.row, { flexDirection: rowDirectionFor(isRTL) }]}>
           <Text style={[styles.price, { textAlign: textAlignFor(isRTL) }]}>{formatSarValue(isRTL ? "ar" : "en", listing.priceSar)}</Text>
           <Text style={[styles.availability, { textAlign: textAlignFor(isRTL) }]}>{listing.availability}</Text>
@@ -177,48 +175,44 @@ const styles = StyleSheet.create({
     opacity: 0.94
   },
   heroImageWrap: {
-    minHeight: 220
+    minHeight: 210
   },
   heroImage: {
     borderTopLeftRadius: radii.lg,
     borderTopRightRadius: radii.lg
   },
   hero: {
-    minHeight: 220,
+    minHeight: 210,
     padding: spacing.lg,
-    justifyContent: "space-between"
-  },
-  heroTop: {
-    gap: spacing.xs
+    justifyContent: "space-between",
+    backgroundColor: "rgba(25, 28, 29, 0.08)"
   },
   heroChipRow: {
     alignItems: "flex-start",
     flexWrap: "wrap",
     gap: spacing.xs
   },
-  heroBottom: {
+  titleGroup: {
     gap: 6
   },
   district: {
-    color: palette.sand,
+    color: palette.palmSoft,
     fontSize: 12,
     fontWeight: "800",
-    letterSpacing: 1,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   title: {
-    color: palette.surface,
+    color: palette.ink,
     fontSize: 26,
     lineHeight: 30,
-    fontWeight: "900",
-    maxWidth: "78%"
+    fontWeight: "900"
   },
   commute: {
-    color: palette.surface,
+    color: palette.inkSoft,
     fontSize: 14,
     lineHeight: 20,
-    fontWeight: "600",
-    opacity: 0.92
+    fontWeight: "600"
   },
   body: {
     padding: spacing.lg,
@@ -233,7 +227,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.surface,
@@ -282,7 +276,7 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     fontWeight: "800",
     textTransform: "uppercase",
-    letterSpacing: 0.8
+    letterSpacing: 0
   },
   trustCard: {
     borderRadius: radii.md,

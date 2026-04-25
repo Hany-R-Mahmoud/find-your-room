@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     minHeight: 56,
-    borderRadius: radii.pill,
+    borderRadius: radii.md,
     backgroundColor: palette.clay,
     paddingHorizontal: spacing.lg,
     alignItems: "center",

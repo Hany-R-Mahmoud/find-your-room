@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     color: palette.clay,
     fontSize: 12,
     fontWeight: "700",
-    letterSpacing: 0.8,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   preferenceValue: {
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     color: palette.palmSoft,
     fontSize: 12,
     fontWeight: "700",
-    letterSpacing: 1,
+    letterSpacing: 0,
     textTransform: "uppercase"
   },
   hostModeTitle: {

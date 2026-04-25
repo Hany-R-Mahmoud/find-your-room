@@ -20,8 +20,8 @@ const toneStyles: Record<Tone, { backgroundColor: string; borderColor: string; c
     color: palette.ink
   },
   accent: {
-    backgroundColor: palette.rose,
-    borderColor: palette.rose,
+    backgroundColor: palette.amberSoft,
+    borderColor: palette.amber,
     color: palette.clay
   },
   verified: {
@@ -30,7 +30,7 @@ const toneStyles: Record<Tone, { backgroundColor: string; borderColor: string; c
     color: palette.palm
   },
   quiet: {
-    backgroundColor: palette.sand,
+    backgroundColor: palette.elevated,
     borderColor: palette.line,
     color: palette.ink
   },
@@ -40,14 +40,14 @@ const toneStyles: Record<Tone, { backgroundColor: string; borderColor: string; c
     color: palette.palm
   },
   sourceHost: {
-    backgroundColor: palette.roseSoft,
-    borderColor: palette.rose,
+    backgroundColor: palette.amberSoft,
+    borderColor: palette.amber,
     color: palette.clay
   },
   sourceLater: {
-    backgroundColor: palette.surface,
+    backgroundColor: palette.limestone,
     borderColor: palette.line,
-    color: palette.ink
+    color: palette.inkSoft
   }
 };
 
@@ -83,14 +83,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    borderRadius: radii.pill,
+    borderRadius: radii.sm,
     borderWidth: 1,
     paddingHorizontal: spacing.sm,
     paddingVertical: 7
   },
   text: {
     fontSize: 12,
-    fontWeight: "700",
-    letterSpacing: 0.2
+    fontWeight: "800",
+    letterSpacing: 0
   }
 });
