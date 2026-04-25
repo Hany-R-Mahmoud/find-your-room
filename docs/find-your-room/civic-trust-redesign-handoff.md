@@ -1,7 +1,7 @@
 # Civic Trust Visual Redesign Handoff
 
 **Date**: 2026-04-25
-**Status**: Approved spec handed to Multica
+**Status**: Approved spec; Multica paused; local Codex execution active
 **Related Spec**: `specs/006-civic-trust-redesign-handoff/spec.md`
 
 ## Context
@@ -69,7 +69,8 @@ agent starts implementation.
 - `agent-docs`: Required after execution to update docs and roadmap state.
 
 The spec was approved by the user on 2026-04-25. Multica issues were created
-from the approved scope after approval.
+from the approved scope after approval, but Multica did not provide reliable
+visible progress or repo changes. Multica handoff is now paused.
 
 ## Proposed Multica Handoff After Approval
 
@@ -103,8 +104,8 @@ All issues reference `specs/006-civic-trust-redesign-handoff/spec.md`.
 
 ## Local Codex Execution Change
 
-Multica stopped responding in the project UI, so execution moved back into this
-Codex workspace on 2026-04-25.
+Multica stopped responding reliably in the project UI, so execution moved back
+into this Codex workspace on 2026-04-25.
 
 Local execution will proceed sequentially:
 
@@ -125,6 +126,25 @@ Active local agents:
 
 The first local task is the foundation slice because every later screen change
 depends on the token, component, and trust-language baseline.
+
+## Multica Outcome Assessment
+
+The Multica result was disappointing because the issue handoff did not produce
+the minimum evidence this repo needs: visible backlog clarity, task startup
+confidence, blocker recovery, file changes, and verification output.
+
+The likely failure was the orchestration layer, not the approved spec. Issue
+creation succeeded, but issue existence did not guarantee agent execution,
+workspace edits, or artifact return. For this project, Multica is no longer the
+execution path until the user explicitly re-enables it.
+
+The source of truth is now:
+
+- local Spec Kit artifacts
+- local `agent-*` execution
+- changed files in this repository
+- local verification output
+- docs and roadmap updates
 
 ## Roadmap Impact
 

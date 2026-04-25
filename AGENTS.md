@@ -48,7 +48,7 @@ spec.
 
 If the user gives adjustments, update the same spec and ask for approval again.
 
-## Mandatory Docs, Spec Kit, And Multica Handoff Loop
+## Mandatory Docs And Local Spec Kit Execution Loop
 
 This workflow must be followed for all non-trivial planning, research,
 brainstorming, task creation, and execution work:
@@ -61,11 +61,28 @@ brainstorming, task creation, and execution work:
    - requirements
    - definition of done
    - relevant constraints, risks, and acceptance criteria
-3. Newly created and approved specs must be handed to Multica agents for
-   execution. Codex owns writing the Multica task or issue so the assigned
-   agent can follow and execute the spec clearly.
+3. Newly created and approved specs must be executed locally in this Codex
+   workspace unless the user explicitly re-enables an external handoff.
+   Codex owns writing the local task or issue brief so the assigned local
+   specialist flow can follow and execute the spec clearly.
 4. After spec execution finishes, Codex must assess and report on the result,
    identify anything missing, and update the relevant docs and roadmaps.
+
+## Multica Pause
+
+Multica handoff is paused for this project.
+
+- Do not send commands to Multica.
+- Do not create, update, assign, queue, or inspect Multica issues via CLI or
+  API.
+- Do not treat Multica backlog state as the source of truth for project
+  progress.
+- Existing Multica issue IDs may be referenced only as historical context.
+- Work should continue through local Spec Kit specs, local `agent-*` specialist
+  flows, repo docs, and visible file changes.
+
+This pause remains active until the user explicitly says to resume Multica
+handoff.
 
 ## Multi-Agent Requirement
 
