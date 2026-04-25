@@ -1,6 +1,6 @@
 # Implementation Plan: Workflow Governance Tightening
 
-**Branch**: `[002-workflow-governance]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/showrooms/specs/002-workflow-governance/spec.md)
+**Branch**: `[002-workflow-governance]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/find-your-room/specs/002-workflow-governance/spec.md)
 **Input**: Approved feature specification from `/specs/002-workflow-governance/spec.md`
 
 > Gate: this plan is based on an approved governance spec and on an explicit

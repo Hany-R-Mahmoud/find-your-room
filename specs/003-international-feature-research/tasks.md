@@ -1,7 +1,7 @@
 # Tasks: International Marketplace Feature Research Round
 
-**Input**: Design documents from `/Users/hanyramadan/showrooms/specs/003-international-feature-research/`
-**Prerequisites**: [spec.md](/Users/hanyramadan/showrooms/specs/003-international-feature-research/spec.md), [plan.md](/Users/hanyramadan/showrooms/specs/003-international-feature-research/plan.md)
+**Input**: Design documents from `/Users/hanyramadan/find-your-room/specs/003-international-feature-research/`
+**Prerequisites**: [spec.md](/Users/hanyramadan/find-your-room/specs/003-international-feature-research/spec.md), [plan.md](/Users/hanyramadan/find-your-room/specs/003-international-feature-research/plan.md)
 
 **Organization**: Tasks are grouped by specialist-owned slices. Sequential execution is the default.
 
@@ -23,7 +23,7 @@
 
 ## Phase 4: Closeout
 
-- [x] T008 [owner:agent-docs] Write the final research brief in `/Users/hanyramadan/showrooms/specs/003-international-feature-research/research.md`
+- [x] T008 [owner:agent-docs] Write the final research brief in `/Users/hanyramadan/find-your-room/specs/003-international-feature-research/research.md`
 - [x] T009 [owner:agent-reviewer] Review the brief for overreach, unsupported copying, and weak product-fit logic
 
 ## Completion Note

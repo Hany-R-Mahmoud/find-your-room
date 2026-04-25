@@ -54,4 +54,4 @@ This repo now uses GitHub Spec Kit for task intake and change planning.
 - Pause for user approval or requested edits
 - Only after approval continue with `$speckit-plan`, `$speckit-tasks`, and implementation
 
-See [docs/spec-driven-workflow.md](/Users/hanyramadan/showrooms/docs/spec-driven-workflow.md) and [AGENTS.md](/Users/hanyramadan/showrooms/AGENTS.md).
+See [docs/spec-driven-workflow.md](/Users/hanyramadan/find-your-room/docs/spec-driven-workflow.md) and [AGENTS.md](/Users/hanyramadan/find-your-room/AGENTS.md).

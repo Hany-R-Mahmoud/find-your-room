@@ -2,7 +2,7 @@
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2026-04-22  
-**Feature**: [spec.md](/Users/hanyramadan/showrooms/specs/005-compatibility-first-matching/spec.md)
+**Feature**: [spec.md](/Users/hanyramadan/find-your-room/specs/005-compatibility-first-matching/spec.md)
 
 ## Content Quality
 

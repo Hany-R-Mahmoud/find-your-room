@@ -1,7 +1,7 @@
 # Research Brief: International Marketplace Feature Inspiration For RoomMatch
 
 **Date**: 2026-04-21  
-**Feature**: [003-international-feature-research](/Users/hanyramadan/showrooms/specs/003-international-feature-research/spec.md)
+**Feature**: [003-international-feature-research](/Users/hanyramadan/find-your-room/specs/003-international-feature-research/spec.md)
 
 ## Goal
 

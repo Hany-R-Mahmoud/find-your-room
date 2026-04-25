@@ -2,7 +2,7 @@
 
 ## Source Studied
 
-- Proposal OCR: [`roommatch_ocr.txt`](/Users/hanyramadan/showrooms/roommatch_ocr.txt)
+- Proposal OCR: [`roommatch_ocr.txt`](/Users/hanyramadan/find-your-room/roommatch_ocr.txt)
 
 ## What The Proposal Gets Right
 

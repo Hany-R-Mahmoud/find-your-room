@@ -1,6 +1,6 @@
 # Implementation Plan: Trust-Rich Listing Experience
 
-**Branch**: `[001-trust-rich-listing]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/showrooms/specs/001-trust-rich-listing/spec.md)
+**Branch**: `[001-trust-rich-listing]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/find-your-room/specs/001-trust-rich-listing/spec.md)
 **Input**: Approved Phase 1 feature specification from `/specs/001-trust-rich-listing/spec.md`
 
 > Gate: this plan is based on an approved spec and on a multi-agent planning
@@ -279,7 +279,7 @@ Validate that the new UI is clearer without becoming heavier or riskier.
 ## Phase 6 Follow-up Notes
 
 - `npm run typecheck` passes after excluding generated `dist` output from
-  `/Users/hanyramadan/showrooms/tsconfig.json`.
+  `/Users/hanyramadan/find-your-room/tsconfig.json`.
 - `npx expo export --platform web` passes and produces a fresh web export.
 - Manual EN/AR and RTL/LTR visual verification is still pending. The current
   environment exposed Expo dev-server port conflicts, and browser automation

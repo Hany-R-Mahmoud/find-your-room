@@ -1,7 +1,7 @@
 # Tasks: Saved Shortlists And Comparison
 
-**Input**: Design documents from `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/`
-**Prerequisites**: [plan.md](/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/plan.md), [spec.md](/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md)
+**Input**: Design documents from `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/`
+**Prerequisites**: [plan.md](/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/plan.md), [spec.md](/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md)
 
 **Tests**: Use the plan-defined verification gates: `npm run typecheck`, `npx expo export --platform web`, and manual EN/AR validation across shortlist and comparison flows.
 
@@ -11,8 +11,8 @@
 
 **Purpose**: Confirm the execution baseline and establish the feature task artifact.
 
-- [x] T001 [owner:agent-orchestrator] Review `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md` and `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/plan.md` against the current Expo app structure in `/Users/hanyramadan/showrooms/app` and `/Users/hanyramadan/showrooms/src`
-- [x] T002 [owner:agent-docs] Create and maintain the execution checklist in `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/tasks.md`
+- [x] T001 [owner:agent-orchestrator] Review `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md` and `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/plan.md` against the current Expo app structure in `/Users/hanyramadan/find-your-room/app` and `/Users/hanyramadan/find-your-room/src`
+- [x] T002 [owner:agent-docs] Create and maintain the execution checklist in `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/tasks.md`
 
 ---
 
@@ -22,9 +22,9 @@
 
 **⚠️ CRITICAL**: No user story work should start until this phase is complete.
 
-- [x] T003 [owner:agent-orchestrator] Expand the shared listing contract and shortlist entities in `/Users/hanyramadan/showrooms/src/data/roommatch.ts` and any new shortlist state file needed under `/Users/hanyramadan/showrooms/src`
+- [x] T003 [owner:agent-orchestrator] Expand the shared listing contract and shortlist entities in `/Users/hanyramadan/find-your-room/src/data/roommatch.ts` and any new shortlist state file needed under `/Users/hanyramadan/find-your-room/src`
 - [x] T004 [owner:agent-security] Define privacy-safe shortlist and comparison display rules for saved listings, notes, and gated details in the relevant shortlist/comparison source files
-- [x] T005 [owner:agent-docs] Add shortlist/comparison copy keys in the appropriate locale files under `/Users/hanyramadan/showrooms/src/i18n/`
+- [x] T005 [owner:agent-docs] Add shortlist/comparison copy keys in the appropriate locale files under `/Users/hanyramadan/find-your-room/src/i18n/`
 
 **Checkpoint**: Foundation ready. Story work can now begin sequentially.
 
@@ -36,9 +36,9 @@
 
 **Independent Test**: Browse `discover`, save multiple listings into one or more named shortlists, then reopen those shortlists and confirm the saved items persist with recognizable summary information.
 
-- [x] T006 [US1] [owner:agent-product] Confirm the shortlist-saving slice and execution baseline in `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md`
-- [x] T007 [US1] [owner:agent-design] Shape the save affordance and shortlist entry UX in `/Users/hanyramadan/showrooms/src/components/ListingCard.tsx`, `/Users/hanyramadan/showrooms/app/room/[id].tsx`, and the new shortlist route
-- [x] T008 [US1] [owner:agent-implementer] Implement save actions, shortlist creation, and shortlist rendering across the relevant files in `/Users/hanyramadan/showrooms/app/` and `/Users/hanyramadan/showrooms/src/`
+- [x] T006 [US1] [owner:agent-product] Confirm the shortlist-saving slice and execution baseline in `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md`
+- [x] T007 [US1] [owner:agent-design] Shape the save affordance and shortlist entry UX in `/Users/hanyramadan/find-your-room/src/components/ListingCard.tsx`, `/Users/hanyramadan/find-your-room/app/room/[id].tsx`, and the new shortlist route
+- [x] T008 [US1] [owner:agent-implementer] Implement save actions, shortlist creation, and shortlist rendering across the relevant files in `/Users/hanyramadan/find-your-room/app/` and `/Users/hanyramadan/find-your-room/src/`
 - [x] T009 [US1] [owner:agent-security] Review shortlist save behavior for privacy-safe display and note ownership
 - [x] T010 [US1] [owner:agent-reviewer] Review correctness and regression risk across save flows and shortlist state
 - [x] T011 [US1] [owner:agent-tester] Verify shortlist save and revisit behavior on `discover`, `room/[id]`, and the shortlist surface
@@ -53,7 +53,7 @@
 
 **Independent Test**: Save multiple listings, open comparison for two to four options, and confirm the app shows aligned rows for the most important decision signals.
 
-- [x] T012 [US2] [owner:agent-product] Confirm the comparison slice and dependency on shortlist foundation in `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md`
+- [x] T012 [US2] [owner:agent-product] Confirm the comparison slice and dependency on shortlist foundation in `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md`
 - [x] T013 [US2] [owner:agent-design] Shape the comparison hierarchy and mobile/RTL-safe layout in the new comparison route and supporting components
 - [x] T014 [US2] [owner:agent-implementer] Implement bounded comparison selection and rendering in the relevant shortlist/comparison source files
 - [x] T015 [US2] [owner:agent-security] Review comparison rows to ensure no gated details are exposed early
@@ -70,7 +70,7 @@
 
 **Independent Test**: Add lightweight notes or save reasons to saved listings and confirm shortlist views retain those cues clearly in EN and AR.
 
-- [x] T018 [US3] [owner:agent-product] Confirm the save-context slice and dependency on prior shortlist/comparison behavior in `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md`
+- [x] T018 [US3] [owner:agent-product] Confirm the save-context slice and dependency on prior shortlist/comparison behavior in `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md`
 - [x] T019 [US3] [owner:agent-design] Shape note/reason presentation in shortlist cards and comparison entry points without cluttering the UI
 - [x] T020 [US3] [owner:agent-implementer] Implement lightweight note/save-reason behavior in the shortlist state and shortlist UI files
 - [x] T021 [US3] [owner:agent-security] Review seeker note ownership and ensure private notes remain private
@@ -86,10 +86,10 @@
 **Purpose**: Validate the whole feature and close the loop on quality, safety, and documentation.
 
 - [x] T024 [owner:agent-performance] Review `discover`, shortlist, and comparison rendering for responsiveness and bounded comparison scale
-- [x] T025 [owner:agent-tester] Run `npm run typecheck` from `/Users/hanyramadan/showrooms`
-- [x] T026 [owner:agent-tester] Run `npx expo export --platform web` from `/Users/hanyramadan/showrooms`
+- [x] T025 [owner:agent-tester] Run `npm run typecheck` from `/Users/hanyramadan/find-your-room`
+- [x] T026 [owner:agent-tester] Run `npx expo export --platform web` from `/Users/hanyramadan/find-your-room`
 - [x] T027 [owner:agent-tester] Perform manual EN/AR and RTL/LTR verification on the shortlist and comparison flows
-- [x] T028 [owner:agent-docs] Update feature notes and completion artifacts in `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/`
+- [x] T028 [owner:agent-docs] Update feature notes and completion artifacts in `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/`
 
 ---
 

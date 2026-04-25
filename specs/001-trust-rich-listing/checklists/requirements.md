@@ -2,7 +2,7 @@
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2026-04-21  
-**Feature**: [/Users/hanyramadan/showrooms/specs/001-trust-rich-listing/spec.md](/Users/hanyramadan/showrooms/specs/001-trust-rich-listing/spec.md)
+**Feature**: [/Users/hanyramadan/find-your-room/specs/001-trust-rich-listing/spec.md](/Users/hanyramadan/find-your-room/specs/001-trust-rich-listing/spec.md)
 
 ## Content Quality
 

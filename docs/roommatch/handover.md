@@ -18,12 +18,12 @@ The current product direction is:
 
 The repo contains both the prototype and the working planning artifacts:
 
-- `/Users/hanyramadan/showrooms/app`: Expo Router screens
-- `/Users/hanyramadan/showrooms/src`: typed mock data, i18n, components, theme,
+- `/Users/hanyramadan/find-your-room/app`: Expo Router screens
+- `/Users/hanyramadan/find-your-room/src`: typed mock data, i18n, components, theme,
   and shortlist state
-- `/Users/hanyramadan/showrooms/docs/roommatch`: product, research, roadmap,
+- `/Users/hanyramadan/find-your-room/docs/roommatch`: product, research, roadmap,
   verification, risk, task, and handoff docs
-- `/Users/hanyramadan/showrooms/specs`: Spec Kit feature specs, plans, tasks,
+- `/Users/hanyramadan/find-your-room/specs`: Spec Kit feature specs, plans, tasks,
   and research artifacts
 
 ## Current App State

@@ -1,7 +1,7 @@
 # Implementation Plan: International Marketplace Feature Research Round
 
-**Branch**: `[003-international-feature-research]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/showrooms/specs/003-international-feature-research/spec.md)
-**Input**: Approved research specification from `/Users/hanyramadan/showrooms/specs/003-international-feature-research/spec.md`
+**Branch**: `[003-international-feature-research]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/find-your-room/specs/003-international-feature-research/spec.md)
+**Input**: Approved research specification from `/Users/hanyramadan/find-your-room/specs/003-international-feature-research/spec.md`
 
 > Gate: this plan is based on an approved research spec and a sequential specialist pass across orchestration, lead workflow selection, research, and product synthesis.
 

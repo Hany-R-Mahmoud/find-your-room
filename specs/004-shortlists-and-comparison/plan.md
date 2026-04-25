@@ -1,7 +1,7 @@
 # Implementation Plan: Saved Shortlists And Comparison
 
-**Branch**: `[004-shortlists-and-comparison]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md)
-**Input**: Approved feature specification from `/Users/hanyramadan/showrooms/specs/004-shortlists-and-comparison/spec.md`
+**Branch**: `[004-shortlists-and-comparison]` | **Date**: 2026-04-21 | **Spec**: [spec.md](/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md)
+**Input**: Approved feature specification from `/Users/hanyramadan/find-your-room/specs/004-shortlists-and-comparison/spec.md`
 
 > Gate: this plan is based on an approved spec and on a sequential specialist planning pass across product, design, trust/privacy, performance, testing, and docs.
 
