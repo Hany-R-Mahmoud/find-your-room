@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "RoomMatch",
+    "slug": "roommatch",
+    "scheme": "roommatch",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "experiments": {
+      "typedRoutes": false
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f6f1e9"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
+

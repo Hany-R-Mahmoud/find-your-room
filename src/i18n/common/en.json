@@ -1,0 +1,67 @@
+{
+  "appName": "RoomMatch",
+  "brandTag": "Trusted shared living",
+  "languageToggle": {
+    "label": "العربية",
+    "short": "AR"
+  },
+  "tabs": {
+    "discover": "Discover",
+    "matches": "Saved",
+    "inbox": "Inbox",
+    "stay": "My Stay",
+    "profile": "Profile"
+  },
+  "actions": {
+    "back": "Back",
+    "continue": "Continue",
+    "openPrototype": "Open the mobile prototype",
+    "saveToShortlist": "Save to shortlist"
+  },
+  "labels": {
+    "fit": "fit",
+    "fitSignal": "Fit signal",
+    "fitConfidence": "Confidence note",
+    "languages": "Languages",
+    "host": "Host",
+    "verified": "Verified by RoomMatch",
+    "hostProvided": "Shared by host",
+    "availableLater": "Shared later",
+    "reviewedPhotos": "Reviewed photos",
+    "pricingHeadline": "Monthly headline",
+    "pricingDisclosure": "Pricing note",
+    "householdSummary": "Household summary",
+    "privacyNote": "Privacy note",
+    "approximateArea": "Approximate area",
+    "included": "Usually included",
+    "separate": "Usually separate",
+    "expectations": "Household expectations",
+    "stayLength": "Best stay length",
+    "location": "Location",
+    "photos": "photos"
+  },
+  "trustSources": {
+    "roommatch": "Reviewed by RoomMatch",
+    "host": "Shared by host",
+    "later": "Shared later"
+  },
+  "hostDisclosure": {
+    "roleOnly": "Role-first host label shown before mutual interest.",
+    "managedContact": "Managed contact label shown before direct contact details."
+  },
+  "locationDisclosure": {
+    "area": "Neighborhood-level only"
+  },
+  "status": {
+    "new": "New",
+    "complete": "Complete",
+    "inProgress": "In progress",
+    "needed": "Needed",
+    "done": "Done",
+    "current": "Current",
+    "upcoming": "Upcoming",
+    "strongFit": "Strong fit",
+    "needsFollowUp": "Needs follow-up",
+    "waitingOnHost": "Waiting on host"
+  }
+}

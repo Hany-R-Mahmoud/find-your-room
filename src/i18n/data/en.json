@@ -1,0 +1,437 @@
+{
+  "heroMetrics": [
+    { "label": "Verified rooms", "value": "314" },
+    { "label": "Avg. match fit", "value": "89%" },
+    { "label": "Reply window", "value": "< 4 hrs" }
+  ],
+  "discoverFilters": [
+    { "id": "verified", "label": "Verified by RoomMatch", "tone": "verified" },
+    { "id": "included", "label": "Bills mostly included", "tone": "quiet" },
+    { "id": "metro", "label": "Near metro links", "tone": "quiet" },
+    { "id": "privacy", "label": "Privacy-first homes", "tone": "accent" },
+    { "id": "monthly", "label": "Monthly stay", "tone": "neutral" }
+  ],
+  "onboardingCards": [
+    {
+      "title": "Start with trust",
+      "body": "Phone-first onboarding, explicit house rules, and progressive verification before direct contact."
+    },
+    {
+      "title": "Match the household",
+      "body": "Budget, neighborhood, sleep schedule, cleanliness, guest policy, and commute all shape the fit."
+    },
+    {
+      "title": "Move with less friction",
+      "body": "Request a room, track your status, and prepare for move-in without bouncing between five channels."
+    }
+  ],
+  "landingVisuals": [
+    {
+      "id": "city",
+      "label": "Riyadh skyline",
+      "uri": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "home",
+      "label": "Shared apartment interior",
+      "uri": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "discoverVisual": {
+    "uri": "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+  },
+  "listings": [
+    {
+      "id": "olaya-palm-house",
+      "title": "Olaya Palm House",
+      "district": "Al Olaya, Riyadh",
+      "publicLocation": "Al Olaya area, central Riyadh",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "Al Olaya area, central Riyadh",
+        "privacyNote": "Exact address details appear later after mutual interest."
+      },
+      "priceSar": 2850,
+      "matchScore": 92,
+      "match": {
+        "band": "strong",
+        "scoreLabel": "92% fit signal",
+        "rationale": "Quiet evenings, budget fit, and a bilingual household all line up well.",
+        "confidenceNote": "Strong fit"
+      },
+      "matchLabel": "Strong fit",
+      "matchNote": "Quiet evenings, budget fit, and a bilingual household all line up well.",
+      "commute": "Quick access into central Riyadh and weekday office routes",
+      "availability": "Move in from mid-May",
+      "fitReasons": ["Budget fit", "Quiet evenings", "English + Arabic household"],
+      "trustSnapshot": [
+        { "id": "identity-reviewed", "label": "Identity status reviewed", "sourceKey": "roommatch" },
+        { "id": "weekly-cleaning", "label": "Weekly cleaning usually included", "sourceKey": "host" },
+        { "id": "area-only", "label": "Exact address shared later", "sourceKey": "later" }
+      ],
+      "trustSummary": ["Verified host status", "Updated this week", "Approximate location only"],
+      "trustSections": {
+        "verified": {
+          "title": "Verified by RoomMatch",
+          "items": ["Host identity status reviewed", "Listing photos reviewed", "Recent activity confirmed"]
+        },
+        "hostProvided": {
+          "title": "Shared by host",
+          "items": ["Weekly cleaning is usually included", "Quiet weekday routine", "Guests by notice"]
+        },
+        "gated": {
+          "title": "Shared after mutual interest",
+          "items": ["Exact building access notes", "Viewing coordination details"],
+          "note": "Exact address and direct access details unlock after mutual confirmation."
+        }
+      },
+      "highlights": [
+        "Private bedroom in a 3-bed apartment",
+        "Calmer weekday rhythm for working professionals",
+        "Utilities and weekly cleaning usually included"
+      ],
+      "houseRules": ["No indoor smoking", "Quiet after 11 PM", "Guests by notice"],
+      "intro": "A calm shared apartment for professionals who want a predictable weekday rhythm and a short commute into central Riyadh.",
+      "imageUri": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+      "imageCount": 6,
+      "media": {
+        "count": 6,
+        "reviewedLabel": "6 reviewed photos"
+      },
+      "pricing": {
+        "headline": "SAR 2,850 / month",
+        "included": ["Utilities", "Weekly cleaning"],
+        "excluded": ["Personal parking", "Move-in supplies"],
+        "deposit": "Deposit shared after mutual confirmation",
+        "stayLength": "Best for 6 to 12 month stays"
+      },
+      "pricingSummary": {
+        "headline": "SAR 2,850 / month",
+        "includedSummary": "Utilities and weekly cleaning are usually included.",
+        "excludedSummary": "Parking and move-in supplies are handled separately.",
+        "disclosureNote": "Deposit details appear after mutual confirmation."
+      },
+      "host": {
+        "name": "Primary tenant",
+        "safeName": "Primary tenant",
+        "role": "Verified household lead",
+        "responseTime": "Usually replies the same day",
+        "verification": "Identity status reviewed",
+        "note": "Direct personal details appear later in the request flow.",
+        "disclosureLevel": "roleOnly"
+      },
+      "household": {
+        "title": "Professional weekday routine",
+        "residents": "2 current residents",
+        "vibe": "Early work mornings, tidy kitchen, low-noise evenings",
+        "languages": ["Arabic", "English"],
+        "expectations": ["Shared spaces reset nightly", "Low-noise calls after work", "Guest visits planned ahead"],
+        "summaryLine": "2 current residents · Early work mornings, tidy kitchen, low-noise evenings"
+      },
+      "heroColors": ["#e9d6bc", "#35594f"]
+    },
+    {
+      "id": "qurtubah-transit-flat",
+      "title": "Qurtubah Transit Flat",
+      "district": "Qurtubah, Riyadh",
+      "publicLocation": "Qurtubah area near airport road",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "Qurtubah area near airport road",
+        "privacyNote": "Detailed building access appears after a qualified request."
+      },
+      "priceSar": 2250,
+      "matchScore": 88,
+      "match": {
+        "band": "promising",
+        "scoreLabel": "88% fit signal",
+        "rationale": "A practical choice if cost and transport matter more than premium finishes.",
+        "confidenceNote": "Promising fit"
+      },
+      "matchLabel": "Promising fit",
+      "matchNote": "A practical choice if cost and transport matter more than premium finishes.",
+      "commute": "Fast access to airport road and nearby business parks",
+      "availability": "Available now",
+      "fitReasons": ["Lower monthly spend", "Flexible stay length", "Near transport"],
+      "trustSnapshot": [
+        { "id": "listing-reviewed", "label": "Listing reviewed", "sourceKey": "roommatch" },
+        { "id": "shared-desk", "label": "Shared desk setup", "sourceKey": "host" },
+        { "id": "access-later", "label": "Access details shared later", "sourceKey": "later" }
+      ],
+      "trustSummary": ["Listing reviewed", "Recent photo set", "Flexible monthly stay"],
+      "trustSections": {
+        "verified": {
+          "title": "Verified by RoomMatch",
+          "items": ["Listing details reviewed", "Recent photo set checked", "Contact route confirmed"]
+        },
+        "hostProvided": {
+          "title": "Shared by host",
+          "items": ["Best for 6 to 12 month stays", "Shared desk setup", "Monthly deep clean"]
+        },
+        "gated": {
+          "title": "Shared after mutual interest",
+          "items": ["Full move-in policy", "Building access instructions"],
+          "note": "Detailed access and contact information appear after a qualified request."
+        }
+      },
+      "highlights": [
+        "Shared apartment with private desk setup",
+        "Practical price point for longer stays",
+        "Transport-friendly area for shifting schedules"
+      ],
+      "houseRules": ["Shared pantry shelf", "No overnight guests", "Monthly deep clean"],
+      "intro": "A more practical, budget-forward option for someone optimizing for commute and total cost rather than premium finishes.",
+      "imageUri": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+      "imageCount": 4,
+      "media": {
+        "count": 4,
+        "reviewedLabel": "4 reviewed photos"
+      },
+      "pricing": {
+        "headline": "SAR 2,250 / month",
+        "included": ["Basic utilities"],
+        "excluded": ["Parking", "Extra cleaning"],
+        "deposit": "Deposit details shared after shortlist confirmation",
+        "stayLength": "Works best for 6 to 12 month stays"
+      },
+      "pricingSummary": {
+        "headline": "SAR 2,250 / month",
+        "includedSummary": "Basic utilities are usually included.",
+        "excludedSummary": "Parking and extra cleaning sit outside the monthly rate.",
+        "disclosureNote": "Deposit details appear after shortlist confirmation."
+      },
+      "host": {
+        "name": "Managed housing team",
+        "safeName": "Managed housing team",
+        "role": "Managed listing contact",
+        "responseTime": "Usually replies within 4 hours",
+        "verification": "Listing contact reviewed",
+        "note": "Named contact appears later once interest is mutual.",
+        "disclosureLevel": "managedContact"
+      },
+      "household": {
+        "title": "Commute-first setup",
+        "residents": "1 current resident",
+        "vibe": "Mix of office work and airport-adjacent schedules",
+        "languages": ["English", "Hindi", "Arabic"],
+        "expectations": ["Shared pantry space", "Predictable monthly cleaning", "Quiet late-night arrivals"],
+        "summaryLine": "1 current resident · Mix of office work and airport-adjacent schedules"
+      },
+      "heroColors": ["#f0e2c4", "#8b5238"]
+    },
+    {
+      "id": "hittin-courtyard-villa",
+      "title": "Hittin Courtyard Villa",
+      "district": "Hittin, Riyadh",
+      "publicLocation": "Hittin area, north-west Riyadh",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "Hittin area, north-west Riyadh",
+        "privacyNote": "More sensitive household and access details appear after both sides confirm interest."
+      },
+      "priceSar": 3180,
+      "matchScore": 94,
+      "match": {
+        "band": "strong",
+        "scoreLabel": "94% fit signal",
+        "rationale": "Best match for privacy, guest boundaries, and long-stay stability.",
+        "confidenceNote": "Strong fit"
+      },
+      "matchLabel": "Strong fit",
+      "matchNote": "Best match for privacy, guest boundaries, and long-stay stability.",
+      "commute": "Smooth access to north-west Riyadh work and leisure areas",
+      "availability": "Move in from late May",
+      "fitReasons": ["Privacy-first home", "Guest policy aligned", "Long-stay stability"],
+      "trustSnapshot": [
+        { "id": "setup-reviewed", "label": "Household setup reviewed", "sourceKey": "roommatch" },
+        { "id": "privacy-zones", "label": "Clear privacy zones", "sourceKey": "host" },
+        { "id": "visit-routing", "label": "Visit routing shared later", "sourceKey": "later" }
+      ],
+      "trustSummary": ["Household setup reviewed", "Privacy-first home", "Address shared later"],
+      "trustSections": {
+        "verified": {
+          "title": "Verified by RoomMatch",
+          "items": ["Listing contact reviewed", "Household setup reviewed", "Recent activity confirmed"]
+        },
+        "hostProvided": {
+          "title": "Shared by host",
+          "items": ["Clear privacy zones", "Low guest traffic", "Shoes-off common areas"]
+        },
+        "gated": {
+          "title": "Shared after mutual interest",
+          "items": ["Full household introduction", "Visit routing details"],
+          "note": "More sensitive household and access details appear after both sides confirm interest."
+        }
+      },
+      "highlights": [
+        "Villa room with private bathroom",
+        "Clear privacy zones and storage space",
+        "Long-stay structure without losing the shared-home feel"
+      ],
+      "houseRules": ["No shared sublets", "Shoes-off common areas", "Quiet mornings on weekdays"],
+      "intro": "A more premium shared-living option that leans into privacy, order, and long-stay stability without losing the shared-house feel.",
+      "imageUri": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+      "imageCount": 7,
+      "media": {
+        "count": 7,
+        "reviewedLabel": "7 reviewed photos"
+      },
+      "pricing": {
+        "headline": "SAR 3,180 / month",
+        "included": ["Utilities", "Private bathroom access"],
+        "excluded": ["Covered parking", "Move-in extras"],
+        "deposit": "Deposit expectations shared after viewing alignment",
+        "stayLength": "Best for longer shared stays"
+      },
+      "pricingSummary": {
+        "headline": "SAR 3,180 / month",
+        "includedSummary": "Utilities and private bathroom access are usually included.",
+        "excludedSummary": "Covered parking and move-in extras are handled separately.",
+        "disclosureNote": "Deposit expectations appear after viewing alignment."
+      },
+      "host": {
+        "name": "Owner representative",
+        "safeName": "Owner representative",
+        "role": "Household coordinator",
+        "responseTime": "Usually replies within 2 hours",
+        "verification": "Listing contact reviewed",
+        "note": "Personal identity details stay private until later in the flow.",
+        "disclosureLevel": "roleOnly"
+      },
+      "household": {
+        "title": "Privacy-first household",
+        "residents": "3 current residents",
+        "vibe": "Structured routines, high cleanliness standards, minimal guest traffic",
+        "languages": ["Arabic", "English", "French"],
+        "expectations": ["Quiet mornings on weekdays", "Common areas kept clear", "Guest visits discussed in advance"],
+        "summaryLine": "3 current residents · Structured routines, high cleanliness standards, minimal guest traffic"
+      },
+      "heroColors": ["#ecdcc8", "#27413a"]
+    }
+  ],
+  "matchRequests": [
+    {
+      "id": "req-1",
+      "title": "Olaya Palm House",
+      "stateKey": "strongFit",
+      "summary": "Budget, commute, and quiet-hours preference all align.",
+      "compatibility": "Strong household fit"
+    },
+    {
+      "id": "req-2",
+      "title": "Qurtubah Transit Flat",
+      "stateKey": "waitingOnHost",
+      "summary": "Best cost fit, but host still needs final identity confirmation.",
+      "compatibility": "Promising household fit"
+    },
+    {
+      "id": "req-3",
+      "title": "Hittin Courtyard Villa",
+      "stateKey": "needsFollowUp",
+      "summary": "Privacy and guest rules align, but move-in timing needs confirmation.",
+      "compatibility": "Strong household fit"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "chat-1",
+      "name": "Primary tenant",
+      "role": "Verified household lead",
+      "snippet": "I uploaded the latest kitchen and room photos. Would Wednesday at 7 PM work?",
+      "time": "09:10",
+      "unread": true
+    },
+    {
+      "id": "chat-2",
+      "name": "Managed housing team",
+      "role": "Managed listing contact",
+      "snippet": "We can hold the room for 24 hours once your profile is fully verified.",
+      "time": "Yesterday",
+      "unread": false
+    },
+    {
+      "id": "chat-3",
+      "name": "RoomMatch Support",
+      "role": "Trust and safety",
+      "snippet": "Your host verification request is complete. Exact address unlocks after mutual interest.",
+      "time": "Monday",
+      "unread": false
+    }
+  ],
+  "stayMilestones": [
+    {
+      "id": "stay-1",
+      "title": "Profile and phone verified",
+      "description": "Basic trust tier complete. You can request rooms and join waitlists.",
+      "state": "done"
+    },
+    {
+      "id": "stay-2",
+      "title": "Viewing confirmed",
+      "description": "Olaya Palm House walkthrough set for Wednesday, 7 PM.",
+      "state": "current"
+    },
+    {
+      "id": "stay-3",
+      "title": "Agreement review",
+      "description": "Deposit, bills, and move-in checklist appear here before commitment.",
+      "state": "upcoming"
+    },
+    {
+      "id": "stay-4",
+      "title": "Move-in readiness",
+      "description": "Utilities, access notes, and house contact details live in one place.",
+      "state": "upcoming"
+    }
+  ],
+  "verificationChecklist": [
+    { "label": "Phone number", "stateKey": "complete" },
+    { "label": "Identity review", "stateKey": "inProgress" },
+    { "label": "Preferred neighborhoods", "stateKey": "complete" },
+    { "label": "Household rules profile", "stateKey": "complete" },
+    { "label": "Emergency contact", "stateKey": "needed" }
+  ],
+  "profilePreferences": [
+    { "label": "Budget band", "value": "2,200 - 3,200 SAR" },
+    { "label": "Commute anchor", "value": "KAFD / North Riyadh" },
+    { "label": "Household style", "value": "Quiet evenings, no indoor smoking" },
+    { "label": "Stay length", "value": "6 to 12 months" }
+  ],
+  "savedShortlists": [
+    {
+      "id": "shortlist-commute",
+      "name": "Near work",
+      "description": "Fast weekday commute with reliable trust signals.",
+      "entries": [
+        {
+          "id": "shortlist-commute-listing-1",
+          "listingId": "listing-1",
+          "note": "Best balance between commute and calm household rules.",
+          "saveReasonKey": "commute",
+          "savedAtLabel": "Saved today"
+        },
+        {
+          "id": "shortlist-commute-listing-2",
+          "listingId": "listing-2",
+          "note": "Worth comparing if bills stay predictable.",
+          "saveReasonKey": "budget",
+          "savedAtLabel": "Saved yesterday"
+        }
+      ]
+    },
+    {
+      "id": "shortlist-vibe",
+      "name": "Best vibe",
+      "description": "Quiet and respectful options with stronger household fit.",
+      "entries": [
+        {
+          "id": "shortlist-vibe-listing-3",
+          "listingId": "listing-3",
+          "note": "Most aligned with guest rules and privacy expectations.",
+          "saveReasonKey": "vibe",
+          "savedAtLabel": "Saved this week"
+        }
+      ]
+    }
+  ]
+}

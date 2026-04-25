@@ -1,0 +1,67 @@
+{
+  "appName": "روم ماتش",
+  "brandTag": "سكن مشترك موثوق",
+  "languageToggle": {
+    "label": "English",
+    "short": "EN"
+  },
+  "tabs": {
+    "discover": "اكتشف",
+    "matches": "المحفوظة",
+    "inbox": "الرسائل",
+    "stay": "إقامتي",
+    "profile": "حسابي"
+  },
+  "actions": {
+    "back": "رجوع",
+    "continue": "متابعة",
+    "openPrototype": "افتح النموذج",
+    "saveToShortlist": "احفظ في القائمة المختصرة"
+  },
+  "labels": {
+    "fit": "توافق",
+    "fitSignal": "إشارة التوافق",
+    "fitConfidence": "مستوى الثقة",
+    "languages": "اللغات",
+    "host": "المضيف",
+    "verified": "موثق عبر روم ماتش",
+    "hostProvided": "مذكور من المضيف",
+    "availableLater": "يظهر لاحقاً",
+    "reviewedPhotos": "صور تمت مراجعتها",
+    "pricingHeadline": "السعر الشهري",
+    "pricingDisclosure": "ملاحظة التسعير",
+    "householdSummary": "ملخص السكن",
+    "privacyNote": "ملاحظة الخصوصية",
+    "approximateArea": "منطقة تقريبية",
+    "included": "غالباً مشمول",
+    "separate": "غالباً منفصل",
+    "expectations": "توقعات السكن",
+    "stayLength": "أنسب مدة إقامة",
+    "location": "الموقع",
+    "photos": "صور"
+  },
+  "trustSources": {
+    "roommatch": "تمت مراجعته عبر روم ماتش",
+    "host": "مذكور من المضيف",
+    "later": "يظهر لاحقاً"
+  },
+  "hostDisclosure": {
+    "roleOnly": "يظهر وصف الدور فقط قبل وجود اهتمام متبادل.",
+    "managedContact": "تظهر صفة جهة التواصل المدارة قبل تفاصيل التواصل المباشر."
+  },
+  "locationDisclosure": {
+    "area": "على مستوى الحي فقط"
+  },
+  "status": {
+    "new": "جديد",
+    "complete": "مكتمل",
+    "inProgress": "قيد التنفيذ",
+    "needed": "مطلوب",
+    "done": "تم",
+    "current": "حالي",
+    "upcoming": "قادم",
+    "strongFit": "توافق قوي",
+    "needsFollowUp": "يحتاج متابعة",
+    "waitingOnHost": "بانتظار المضيف"
+  }
+}

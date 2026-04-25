@@ -1,0 +1,15 @@
+{
+  "eyebrow": "Profile",
+  "title": "Household fit and verification live together.",
+  "caption": "The profile is both a trust surface and a matching surface, so it cannot be an afterthought.",
+  "cards": {
+    "verification": "Verification center",
+    "preferences": "Household preferences"
+  },
+  "hostMode": {
+    "label": "Host mode",
+    "title": "One app, lighter host tooling.",
+    "copy": "Supply-side actions stay narrow in v1: submit listing details, upload proof, respond to matches, and keep occupancy moving without building a full landlord operating system yet."
+  }
+}
+

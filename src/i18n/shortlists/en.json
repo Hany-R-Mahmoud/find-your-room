@@ -1,0 +1,56 @@
+{
+  "eyebrow": "Saved",
+  "title": "Your decision board for serious options.",
+  "caption": "Keep strong listings together, remember why they matter, and come back without restarting your search.",
+  "callout": {
+    "title": "Shortlists keep trust, price, and vibe in one place.",
+    "copy": "This is where RoomMatch starts acting like a decision-support product instead of a one-listing-at-a-time feed."
+  },
+  "actions": {
+    "save": "Save",
+    "saved": "Saved",
+    "createShortlist": "Create shortlist",
+    "compare": "Compare",
+    "hideComparison": "Hide comparison",
+    "remove": "Remove",
+    "editNote": "Edit note",
+    "doneEditing": "Done"
+  },
+  "labels": {
+    "shortlist": "Shortlist",
+    "shortlists": "Shortlists",
+    "compareLimit": "Compare up to {count}",
+    "comparisonTitle": "Compare these serious options",
+    "comparisonCaption": "Price, trust, household, and approximate area stay aligned so you can narrow down faster.",
+    "privateNote": "Private note",
+    "saveReason": "Save reason",
+    "savedAt": "Saved",
+    "savedJustNow": "Saved just now",
+    "entryCount": "{count} saved",
+    "comparisonSet": "{count} in comparison",
+    "price": "Monthly headline",
+    "includedCosts": "Included costs",
+    "trust": "Trust",
+    "household": "Household",
+    "location": "Approximate area",
+    "notePlaceholder": "Why does this listing stay on your shortlist?"
+  },
+  "states": {
+    "emptyTitle": "Nothing saved yet",
+    "emptyCopy": "Start saving listings from Discover or the room page and they will show up here with your shortlist context.",
+    "comparisonHint": "Save at least two listings in the same shortlist to compare them here."
+  },
+  "saveReasons": {
+    "commute": "Best commute",
+    "budget": "Under budget",
+    "vibe": "Best vibe",
+    "trust": "Strongest trust signals",
+    "moveIn": "Best move-in timing",
+    "defaultShortlistName": "Under budget",
+    "defaultShortlistDescription": "Keep lower-cost options worth revisiting."
+  },
+  "privacy": {
+    "note": "Saved notes stay private to the seeker.",
+    "lockedDetails": "Exact address and direct contact still unlock later."
+  }
+}

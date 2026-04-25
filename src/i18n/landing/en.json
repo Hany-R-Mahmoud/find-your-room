@@ -1,0 +1,32 @@
+{
+  "eyebrow": "RoomMatch",
+  "title": "Matching people before they share homes.",
+  "caption": "A trust-first path from the proposal deck to a focused mobile product for Riyadh shared housing.",
+  "chips": {
+    "riyadh": "Riyadh-first v1",
+    "rooms": "Shared rooms only"
+  },
+  "hero": {
+    "title": "Find the right room and the right household before the lease.",
+    "copy": "The narrowed strategy is simple: verified supply, compatibility signals, request flow, and move-in readiness before we touch hospitality, hardware, or multi-city expansion."
+  },
+  "nowCard": {
+    "label": "What we are building now",
+    "title": "A seeker-first mobile wedge",
+    "copy": "Onboarding, discover, room detail, match requests, inbox, and a move-in timeline. Host operations stay intentionally lighter until supply quality is proven."
+  },
+  "laterCard": {
+    "label": "What we are deferring",
+    "title": "Broad inventory and smart-lock ops",
+    "copy": "Hotels, chalets, B2B dashboards, payment depth, and access-control infrastructure stay out of the first product loop."
+  },
+  "buttons": {
+    "walk": "Walk the v1 onboarding",
+    "open": "Open the mobile prototype"
+  },
+  "visuals": {
+    "city": "Riyadh rhythm",
+    "home": "Calm shared spaces"
+  }
+}
+

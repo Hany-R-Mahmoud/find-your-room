@@ -1,0 +1,41 @@
+{
+  "notFound": {
+    "title": "Room not found",
+    "copy": "The listing data for this route is missing from the current prototype."
+  },
+  "sections": {
+    "offer": "Offer summary",
+    "fit": "Why this looks like a fit",
+    "trust": "Trust signals",
+    "household": "Household snapshot",
+    "highlights": "Room highlights",
+    "rules": "House rules"
+  },
+  "decisionHeader": {
+    "eyebrow": "Decision support",
+    "caption": "Review what is already checked, what the host shared, and what unlocks later."
+  },
+  "trustNote": "Some details are reviewed by RoomMatch. Others are shared by the host and confirmed later.",
+  "trustSectionLabels": {
+    "source": "Source",
+    "reviewed": "Reviewed now",
+    "provided": "Host-shared now",
+    "later": "Unlocked later"
+  },
+  "hostCard": {
+    "title": "Host framing",
+    "caption": "Role-first details stay visible before direct contact details unlock."
+  },
+  "pricingLabels": {
+    "headline": "Monthly headline",
+    "includedSummary": "Included costs summary",
+    "excludedSummary": "Separate costs summary",
+    "deposit": "Deposit and timing"
+  },
+  "householdLabels": {
+    "summary": "Household summary",
+    "residents": "Residents",
+    "vibe": "Home vibe"
+  },
+  "button": "Send match request"
+}

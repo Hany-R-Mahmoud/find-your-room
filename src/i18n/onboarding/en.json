@@ -1,0 +1,19 @@
+{
+  "pill": "V1 seeker flow",
+  "eyebrow": "Onboarding",
+  "title": "Calm certainty, not classified chaos.",
+  "caption": "The first pass collects only the information that materially improves trust and fit.",
+  "choices": {
+    "room": "Find a room",
+    "roommate": "Find a roommate",
+    "both": "Both"
+  },
+  "signal": {
+    "title": "The trust-first inputs we collect early",
+    "line1": "Budget band · move-in date · preferred districts",
+    "line2": "Sleep rhythm · cleanliness · guests · smoking",
+    "line3": "Language comfort · work routine · privacy expectations"
+  },
+  "button": "Continue into discover"
+}
+
