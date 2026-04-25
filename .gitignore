@@ -1,7 +1,67 @@
-node_modules
-.expo
-.expo-shared
-dist
-web-build
-npm-debug.log*
+# Dependencies
+node_modules/
 
+# Expo / React Native local state
+.expo/
+.expo-shared/
+
+# Build output
+dist/
+web-build/
+build/
+out/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment and local config
+.env
+.env.*
+!.env.example
+!.env.sample
+.DS_Store
+
+# Editor and tool-local files
+.idea/
+.vscode/
+.qodo/
+
+# Caches
+.cache/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# Large local media assets.
+# Upload these to remote storage and reference them by URL instead.
+images/
+image/
+pictures/
+picture/
+photos/
+photo/
+roommatch_pages/
+assets/images/
+assets/pictures/
+public/images/
+public/pictures/
+static/images/
+static/pictures/
+
+# Raster image files
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avif
+*.heic
+*.heif
+*.tif
+*.tiff
+*.bmp
