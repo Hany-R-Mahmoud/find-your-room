@@ -146,8 +146,8 @@ const styles = StyleSheet.create({
     lineHeight: 22
   },
   primaryButton: {
-    minHeight: 56,
-    borderRadius: radii.md,
+    minHeight: 52,
+    borderRadius: radii.lg,
     backgroundColor: palette.clay,
     paddingHorizontal: spacing.lg,
     alignItems: "center",
@@ -159,6 +159,6 @@ const styles = StyleSheet.create({
     fontWeight: "800"
   },
   buttonPressed: {
-    opacity: 0.94
+    opacity: 0.88
   }
 });

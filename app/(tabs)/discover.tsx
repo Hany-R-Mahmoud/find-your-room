@@ -146,10 +146,10 @@ const styles = StyleSheet.create({
   bannerCard: {
     minHeight: 180,
     overflow: "hidden",
-    borderRadius: radii.lg
+    borderRadius: radii.xl
   },
   bannerImage: {
-    borderRadius: radii.lg
+    borderRadius: radii.xl
   },
   bannerOverlay: {
     flex: 1,

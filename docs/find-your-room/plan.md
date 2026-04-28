@@ -1,84 +1,104 @@
-# Plan
+# Mock Data & Journey Expansion Plan
 
-## Goal
+## Current State Assessment
 
-Turn the proposal into a buildable, lower-risk pathway from concept to a real mobile product.
+Analyzed: `src/i18n/data/en.json`, `src/data/find-your-room.ts`, and related docs.
 
-## Chosen Path
+**Existing Coverage:**
+- 3 sample listings (Olaya, Qurtubah, Hittin)
+- Trust sections: verified / host-provided / gated
+- 4 discover filters
+- Basic stay milestones (4 stages)
+- 3 match request states
+- Shortlists with save reasons
 
-Build a greenfield mobile prototype around the narrowest credible wedge:
+---
 
-- Riyadh-first
-- room seekers first
-- shared rooms and shared apartments only
-- compatibility + trust + request flow
-- host workflows kept intentionally light
+## Identified Gaps
 
-## Why This Path
+### 1. Roommate-Fit Flow Missing
 
-- Product lane: the specialist product review concluded the deck is too broad for a first build and that shared-room liquidity is the critical wedge.
-- Finance lane: the business review concluded the initial capital should prove a single-city supply-and-demand loop, not fund app polish plus hardware plus multi-city expansion.
-- Design lane: the UX review concluded the app must feel like `calm certainty`, not a listing board and not a social or dating product.
-- Research lane: external sources confirm the Saudi digital rental environment is real, but also confirm separate regulatory surfaces and existing specialized competitors.
+**Current:** The PRD mentions `Find a roommate` as a user choice (line 26), but mock data contains zero roommate-specific listings or matching logic.
 
-## What The MVP Includes
+**Proposed additions:**
+- Roommate-wanted listings with profiles (not physical rooms)
+- Compatibility dimensions: sleep schedule, cleanliness, guests, shared spaces
+- Co-living match vs. room match distinction
 
-- trust-first onboarding
-- lifestyle and compatibility profiling
-- verified room discovery
-- listing detail with trust signals, house rules, and fit cues
-- match request and inbox preview
-- stay readiness timeline
-- lightweight host mode
+### 2. User Journey Gaps
 
-## What The MVP Explicitly Defers
+| Journey | Current Coverage | Missing |
+|---------|--------------|---------|
+| Room seeker | Onboarding → discover → detail | After viewing feedback, rejection state, host rating |
+| Host mode | Lightweight preview | Host dashboard, request management, listing edit |
+| Returning user | None | Re-engagement flow, saved search alerts |
+| Seeker → roommate pivot | None | Switching between modes |
 
-- hotels
-- chalets
-- serviced apartments
-- GCC-wide launch
-- corporate housing dashboards
-- smart-lock deployment
-- full payment orchestration
-- legal-grade automated contract workflows
+### 3. Listing Edge Cases
 
-## 0 To 100 Path
+| Scenario | Current | Needed |
+|----------|---------|--------|
+| Available now | 1 of 3 | More immediate options |
+| No current residents | 0 | "New household forming" state |
+| Shortstay (weekly) | Not represented | Weekly rate display |
+| Unfurnished room | Not represented | Amenity flags |
+| Room in transition | Not represented | Vacancy date clarity |
 
-### 0-20
+### 4. Trust Signal Expansion
 
-- Validate the wedge in Riyadh
-- confirm compliance assumptions
-- manually source verified listings
-- test the trust story with real users
+**Current trust sources:** find-your-room, host, later
 
-### 20-40
+**Proposed additions:**
+- Past household member signals (anonymized, e.g., "2 past tenants stayed 6+ months")
+- Neighborhood quality indicators
+- Building/compound amenities
+- Ejar contract verification status
+- Response time buckets (< 2h, same day, 24h+)
 
-- Launch an operational alpha
-- verify supply, filters, and compatibility logic
-- measure response speed, fake listing rate, and request quality
+### 5. Stay Journey Completeness
 
-### 40-60
+- Move-in readiness → agreement review → post-move follow-up
+- Early departure / transfer scenarios
+- Roommate conflict resolution hints
 
-- Ship seeker mobile beta
-- onboarding, discover, detail, requests, inbox, stay status
-- keep host tooling simple and operationally supported
+---
 
-### 60-80
+## Priority Recommendations
 
-- Improve conversion and trust loops
-- add saved alerts, visit scheduling, better explanations, and moderation signals
+### P0 — Must Have for Feasibility
 
-### 80-100
+1. **Roommate-wanted mock data** — At least 2 profiles seeking roommates (one individual, one managed household)
+2. **"Available now" listing** — Make at least one listing immediately available
+3. **Viewing completion state** — Add milestone for "viewing completed, decision pending"
 
-- Only after liquidity is proven, decide whether to add:
-- second Saudi city
-- B2B staff-housing pilot
-- payment and contract expansion
-- partner-led smart-lock pilots
+### P1 — Improves Realism
 
-## Current Repo Deliverables
+4. **Reject / decline flow** — Mock state for declined requests
+5. **Returning user shortlists** — Show saved lists with older dates
+6. **Host mode mock data** — Host inbox, listing stats, response prompts
+7. **Shortstay pricing** — Weekly rate variant display
 
-- source-grounded planning docs
-- Expo mobile prototype for the v1 wedge
-- task breakdown for next execution phases
+### P2 — Future Differentiation
 
+8. **Past review anonymized** — Tenant feedback signals
+9. **Neighborhood signals** — Proximity to metro, safety perception
+10. **Stay extension flow** — Renewal / stay-length change mock
+
+---
+
+## Deliverable Scoping
+
+**Safe for frontend-only:** All mocks can be added to `src/i18n/data/en.json` and `src/i18n/data/ar.json` without backend changes.
+
+**Types affected:** `Listing`, `MatchRequest`, `StayMilestone`, `VerificationItem`, `DiscoverFilter` — all in `src/data/find-your-room.ts`.
+
+---
+
+## Acceptance Criteria for Implementation
+
+- [ ] At least 2 roommate-wanted entries in listings
+- [ ] At least 1 "available now" listing
+- [ ] Full viewing milestone sequence (pending → completed → decision)
+- [ ] Host mode mock visible in prototype
+- [ ] Returning user sees saved shortlists with dates older than "today"
+- [ ] At least 1 shortstay (weekly) pricing shown

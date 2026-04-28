@@ -7,9 +7,14 @@
 
 ## Approval Gate *(mandatory)*
 
-**Spec Review Status**: Pending user approval  
-**User Decision**: Pending  
-**Review Notes**: Awaiting user review before planning or implementation
+**Spec Review Status**: Pending `agent-pilot` approval  
+**Approval Owner**: `agent-pilot`  
+**Decision**: Pending  
+**Review Notes**: Awaiting delegated approval before planning or implementation
+
+For Paperclip-managed work, `agent-pilot` may approve, reject, request
+revisions, or request priority input from specialist agents. Direct human
+approval is required only when the user explicitly asks for it.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -135,5 +140,6 @@
 
 ## Next Step Gate
 
-This spec must be reviewed by the user before `/speckit.plan`, task generation,
-or implementation begins.
+This spec must be reviewed and approved by `agent-pilot` before
+`/speckit.plan`, task generation, or implementation begins, unless the user
+explicitly requests direct human approval for this feature.

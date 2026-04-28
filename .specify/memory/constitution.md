@@ -1,3 +1,24 @@
+<!--
+Sync Impact Report
+Version change: 1.0.0 -> 2.0.0
+Modified principles:
+- II. Human Approval Gate -> Delegated Agent-Pilot Approval Gate
+- VI. Specialist-Agent Collaboration expanded for Paperclip lifecycle routing
+Added sections:
+- Paperclip Issue Lifecycle
+- Agent-Pilot Delegated Approval
+Removed sections:
+- None
+Templates requiring updates:
+- Updated: .specify/templates/constitution-template.md
+- Updated: .specify/templates/plan-template.md
+- Updated: .specify/templates/spec-template.md
+- Updated: .specify/templates/tasks-template.md
+- Reviewed: .specify/templates/checklist-template.md
+Follow-up TODOs:
+- None
+-->
+
 # find-your-room Constitution
 
 ## Core Principles
@@ -10,10 +31,15 @@ Exceptions are limited to trivial informational work or explicit user override.
 Each new non-trivial phase or execution slice also requires its own spec update
 and renewed approval before planning or implementation continues.
 
-### II. Human Approval Gate
-After drafting a spec, the agent must pause for user review. No planning,
-dependency installation, migrations, code edits, or broad execution should
-continue until the user approves the spec or requests revisions.
+### II. Delegated Agent-Pilot Approval Gate
+After drafting or updating a spec for Paperclip-managed work, agents must route
+approval through `agent-pilot` instead of blocking on direct human review.
+`agent-pilot` may approve, reject, request revisions, or ask other specialist
+agents for priority input. Work may continue only after `agent-pilot` records a
+clear decision inside the issue, spec, plan, or task artifact.
+
+Direct human approval is still valid when the user explicitly requests it, but
+it is no longer the default gate for Paperclip project work.
 
 ### III. Strategy Alignment
 All specs must align with the current find-your-room product direction: Riyadh-first,
@@ -38,6 +64,29 @@ performance, review, testing, and docs agents during planning and execution.
 Plans should explicitly record the specialist passes used, their scope, and any
 skip reason.
 
+### VII. Paperclip Issue Lifecycle
+Every non-trivial Paperclip task must be represented as a parent coordination
+issue with specialist-owned child issues where practical. The parent issue must
+carry or link the planning document, Spec Kit artifact, approval policy,
+dependency order, execution method, follow-up expectations, and validation
+checks.
+
+The default child-ticket shape is:
+
+- product/spec framing
+- UX/design pass
+- architecture/data-boundary pass when relevant
+- security/trust review
+- performance review when frontend-heavy
+- implementation
+- correctness review
+- testing/verification
+- documentation and roadmap update
+
+Additional agents may participate according to their specialty. Parallel work is
+allowed only when the parent or plan explicitly records the parallel-safe scope,
+dependency boundary, and reason.
+
 ## Project Constraints
 
 - Primary stack is the existing Expo + TypeScript find-your-room prototype
@@ -51,20 +100,27 @@ skip reason.
 
 1. Inspect relevant local files first.
 2. Draft or update the feature spec.
-3. Present the spec path and a short summary to the user.
-4. Wait for approval, revisions, or rejection.
-5. After approval, continue with clarification, planning, tasks, and only then
+3. Present or link the spec path and a short summary in the Paperclip issue.
+4. Route approval to `agent-pilot`, who may approve directly or request
+   specialist refinement before deciding.
+5. After `agent-pilot` approval, continue with clarification, planning, tasks,
+   and only then
    implementation.
 6. During approved planning and execution, use as many relevant specialist
    `agent-*` skills as practical, especially for design, impeccable frontend
    polish, security, performance, review, testing, and documentation.
 7. Execute meaningful work sequentially by specialist-owned slices unless the
-   user explicitly approves a parallel exception.
+   parent issue or plan explicitly approves a parallel-safe exception.
+8. Update the parent issue during follow-up with execution status, blockers,
+   review findings, verification results, and visible product impact.
 
 ## Governance
 
-This constitution governs all spec-kit workflows in this repository and works
-alongside `AGENTS.md` and `docs/spec-driven-workflow.md`. If a workflow conflicts
-with these rules, the stricter spec-first and human-approval rule wins.
+This constitution governs all Spec Kit and Paperclip workflows in this
+repository and works alongside `AGENTS.md`,
+`docs/spec-driven-workflow.md`, and
+`docs/find-your-room/paperclip-agent-protocol.md`. If a workflow conflicts with
+these rules, the stricter spec-first rule and the delegated `agent-pilot`
+approval gate win.
 
-**Version**: 1.0.0 | **Ratified**: 2026-04-21 | **Last Amended**: 2026-04-21
+**Version**: 2.0.0 | **Ratified**: 2026-04-21 | **Last Amended**: 2026-04-28

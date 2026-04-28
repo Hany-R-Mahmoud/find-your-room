@@ -296,7 +296,8 @@ const styles = StyleSheet.create({
     borderRadius: radii.sm,
     backgroundColor: palette.elevated,
     padding: spacing.md,
-    gap: spacing.sm
+    gap: spacing.sm,
+    overflow: "hidden"
   },
   compareTitle: {
     color: palette.ink,
@@ -343,7 +344,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: palette.line,
     padding: spacing.md,
-    gap: spacing.sm
+    gap: spacing.sm,
+    overflow: "hidden"
   },
   savedTitle: {
     flex: 1,
@@ -438,10 +440,13 @@ const styles = StyleSheet.create({
     lineHeight: 22
   },
   compareRows: {
-    gap: spacing.xs
+    gap: spacing.xs,
+    flexWrap: "wrap"
   },
   compareRow: {
-    gap: 4
+    gap: 4,
+    flexWrap: "wrap",
+    minWidth: "45%"
   },
   compareLabel: {
     color: palette.clay,

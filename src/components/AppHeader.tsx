@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { backIconFor, rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
+import { useColors } from "@/ui/ThemeContext";
 import { palette, radii, spacing } from "@/ui/theme";
 
 type AppHeaderProps = {
@@ -11,25 +12,26 @@ type AppHeaderProps = {
 
 export function AppHeader({ showBack = false }: AppHeaderProps) {
   const { isRTL, t, toggleLocale } = useTranslations<{ appName: string; brandTag: string; languageToggle: { label: string; short: string } }>("common");
+  const colors = useColors();
 
   return (
-    <View style={[styles.row, { flexDirection: rowDirectionFor(isRTL) }]}>
+    <View style={[styles.row, { flexDirection: rowDirectionFor(isRTL), borderBottomColor: colors.line }]}>
       <View style={[styles.leading, { flexDirection: rowDirectionFor(isRTL) }]}>
         {showBack ? (
-          <Pressable accessibilityLabel={t("actions.back")} onPress={() => router.back()} style={styles.backButton}>
-            <MaterialIcons color={palette.ink} name={backIconFor(isRTL)} size={18} />
+          <Pressable accessibilityLabel={t("actions.back")} onPress={() => router.back()} style={[styles.backButton, { borderColor: colors.line, backgroundColor: colors.surface }]}>
+            <MaterialIcons color={colors.ink} name={backIconFor(isRTL)} size={18} />
           </Pressable>
         ) : null}
 
         <View style={styles.brandWrap}>
-          <Text style={[styles.brand, { textAlign: textAlignFor(isRTL) }]}>{t("appName")}</Text>
-          <Text style={[styles.tag, { textAlign: textAlignFor(isRTL) }]}>{t("brandTag")}</Text>
+          <Text style={[styles.brand, { textAlign: textAlignFor(isRTL), color: colors.palm }]}>{t("appName")}</Text>
+          <Text style={[styles.tag, { textAlign: textAlignFor(isRTL), color: colors.inkSoft }]}>{t("brandTag")}</Text>
         </View>
       </View>
 
-      <Pressable accessibilityLabel={t("languageToggle.label")} onPress={toggleLocale} style={[styles.localeButton, { flexDirection: rowDirectionFor(isRTL) }]}>
-        <MaterialIcons color={palette.palm} name="language" size={18} />
-        <Text style={styles.localeText}>{t("languageToggle.short")}</Text>
+      <Pressable accessibilityLabel={t("languageToggle.label")} onPress={toggleLocale} style={[styles.localeButton, { flexDirection: rowDirectionFor(isRTL), borderColor: colors.line, backgroundColor: colors.surface }]}>
+        <MaterialIcons color={colors.palm} name="language" size={18} />
+        <Text style={[styles.localeText, { color: colors.palm }]}>{t("languageToggle.short")}</Text>
       </Pressable>
     </View>
   );
@@ -41,7 +43,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     gap: spacing.md,
     borderBottomWidth: 1,
-    borderBottomColor: palette.line,
     paddingBottom: spacing.md
   },
   leading: {
@@ -54,8 +55,6 @@ const styles = StyleSheet.create({
     height: 42,
     borderRadius: radii.sm,
     borderWidth: 1,
-    borderColor: palette.line,
-    backgroundColor: palette.surface,
     alignItems: "center",
     justifyContent: "center"
   },
@@ -64,14 +63,12 @@ const styles = StyleSheet.create({
     gap: 2
   },
   brand: {
-    color: palette.palm,
     fontSize: 18,
     fontWeight: "900",
     letterSpacing: 0,
     textTransform: "uppercase"
   },
   tag: {
-    color: palette.inkSoft,
     fontSize: 12,
     fontWeight: "600"
   },
@@ -80,13 +77,10 @@ const styles = StyleSheet.create({
     gap: 8,
     borderRadius: radii.sm,
     borderWidth: 1,
-    borderColor: palette.line,
-    backgroundColor: palette.surface,
     paddingHorizontal: spacing.md,
     paddingVertical: 10
   },
   localeText: {
-    color: palette.palm,
     fontSize: 12,
     fontWeight: "900"
   }

@@ -16,3 +16,5 @@
 | RM-12 | Planning | Create Phase 1 execution plan from approved spec and agent findings | RM-11 | Done |
 | RM-13 | Implementation | Implement Phase 1 trust-rich listing improvements | RM-12 | Done |
 | RM-14 | Verification | Run manual EN/AR visual and interaction review for Phase 1 | RM-13 | Pending |
+| IMP-01 | Implementation | Add roommate-wanted mock data (2 entries) | Research outputs | Done |
+| IMP-02 | Implementation | Verify "available now" listing exists | Research outputs | Done |

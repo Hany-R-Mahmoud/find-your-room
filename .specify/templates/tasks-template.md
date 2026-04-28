@@ -11,12 +11,19 @@ description: "Task list template for feature implementation"
 
 **Tests**: Add verification tasks when the specification or the user explicitly requires them.
 
-**Organization**: Tasks are grouped by user story and assigned to specialist-owned blocks. Sequential execution is the default.
+**Organization**: Tasks are grouped by user story and assigned to
+specialist-owned blocks. Sequential execution is the default unless the parent
+Paperclip issue or plan explicitly approves a parallel-safe exception.
 
 ## Format: `[ID] [Story?] [owner:<specialist>] Description`
 
 - **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
-- **[owner:<specialist>]**: The specialist scope that owns the task block (for example `owner:agent-product`, `owner:agent-security`, `owner:agent-reviewer`, `owner:agent-tester`, `owner:agent-docs`, `owner:agent-orchestrator`, `owner:agent-implementer`)
+- **[owner:<specialist>]**: The specialist scope that owns the task block (for
+  example `owner:agent-pilot`, `owner:agent-product`, `owner:agent-design`,
+  `owner:agent-impeccable`, `owner:agent-architect`,
+  `owner:agent-security`, `owner:agent-performance`,
+  `owner:agent-reviewer`, `owner:agent-tester`, `owner:agent-docs`,
+  `owner:agent-orchestrator`, `owner:agent-implementer`)
 - Include exact file paths in descriptions
 
 ## Path Conventions
@@ -31,7 +38,8 @@ description: "Task list template for feature implementation"
 **Purpose**: Confirm the execution baseline and establish the task artifact.
 
 - [ ] T001 [owner:agent-orchestrator] Confirm scope and execution baseline in [path]
-- [ ] T002 [owner:agent-docs] Prepare or update workflow artifacts in [path]
+- [ ] T002 [owner:agent-pilot] Record delegated approval policy and current approval decision in [path]
+- [ ] T003 [owner:agent-docs] Prepare or update workflow artifacts in [path]
 
 ---
 
@@ -41,9 +49,9 @@ description: "Task list template for feature implementation"
 
 **⚠️ CRITICAL**: No user story work should begin until this phase is complete.
 
-- [ ] T003 [owner:agent-orchestrator] Establish shared prerequisites in [path]
-- [ ] T004 [owner:agent-security] Define or update trust-boundary rules in [path]
-- [ ] T005 [owner:agent-docs] Align shared documentation or templates in [path]
+- [ ] T004 [owner:agent-orchestrator] Establish shared prerequisites in [path]
+- [ ] T005 [owner:agent-security] Define or update trust-boundary rules in [path]
+- [ ] T006 [owner:agent-docs] Align shared documentation or templates in [path]
 
 **Checkpoint**: Foundation ready. Story work can now begin sequentially.
 
@@ -57,12 +65,15 @@ description: "Task list template for feature implementation"
 
 ### Specialist-Owned Execution Block
 
-- [ ] T006 [US1] [owner:agent-product] Confirm the story slice and phase scope in [path]
-- [ ] T007 [US1] [owner:agent-design] Shape the UX or information structure in [path]
-- [ ] T008 [US1] [owner:agent-implementer] Implement the story in [path]
-- [ ] T009 [US1] [owner:agent-security] Review trust, disclosure, or validation risks in [path]
-- [ ] T010 [US1] [owner:agent-reviewer] Review correctness and regression risk in [path]
-- [ ] T011 [US1] [owner:agent-tester] Verify the story outcome in [path]
+- [ ] T007 [US1] [owner:agent-product] Confirm the story slice and phase scope in [path]
+- [ ] T008 [US1] [owner:agent-design] Shape the UX or information structure in [path]
+- [ ] T009 [US1] [owner:agent-impeccable] Review frontend polish, responsiveness, and accessibility in [path]
+- [ ] T010 [US1] [owner:agent-architect] Review structure or data-boundary implications in [path]
+- [ ] T011 [US1] [owner:agent-implementer] Implement the story in [path]
+- [ ] T012 [US1] [owner:agent-security] Review trust, disclosure, or validation risks in [path]
+- [ ] T013 [US1] [owner:agent-performance] Review render, interaction, or loading performance in [path]
+- [ ] T014 [US1] [owner:agent-reviewer] Review correctness and regression risk in [path]
+- [ ] T015 [US1] [owner:agent-tester] Verify the story outcome in [path]
 
 **Checkpoint**: User Story 1 should now be functional and independently testable.
 
@@ -74,12 +85,13 @@ description: "Task list template for feature implementation"
 
 **Independent Test**: [How to verify this story works on its own]
 
-- [ ] T012 [US2] [owner:agent-product] Confirm the story slice and dependency on prior slices in [path]
-- [ ] T013 [US2] [owner:agent-design] Shape the UX or information structure in [path]
-- [ ] T014 [US2] [owner:agent-implementer] Implement the story in [path]
-- [ ] T015 [US2] [owner:agent-security] Review trust, disclosure, or validation risks in [path]
-- [ ] T016 [US2] [owner:agent-reviewer] Review correctness and regression risk in [path]
-- [ ] T017 [US2] [owner:agent-tester] Verify the story outcome in [path]
+- [ ] T016 [US2] [owner:agent-product] Confirm the story slice and dependency on prior slices in [path]
+- [ ] T017 [US2] [owner:agent-design] Shape the UX or information structure in [path]
+- [ ] T018 [US2] [owner:agent-impeccable] Review frontend polish, responsiveness, and accessibility in [path]
+- [ ] T019 [US2] [owner:agent-implementer] Implement the story in [path]
+- [ ] T020 [US2] [owner:agent-security] Review trust, disclosure, or validation risks in [path]
+- [ ] T021 [US2] [owner:agent-reviewer] Review correctness and regression risk in [path]
+- [ ] T022 [US2] [owner:agent-tester] Verify the story outcome in [path]
 
 **Checkpoint**: User Stories 1 and 2 should now both work independently.
 
@@ -91,12 +103,12 @@ description: "Task list template for feature implementation"
 
 **Independent Test**: [How to verify this story works on its own]
 
-- [ ] T018 [US3] [owner:agent-product] Confirm the story slice and dependency on prior slices in [path]
-- [ ] T019 [US3] [owner:agent-design] Shape the UX or information structure in [path]
-- [ ] T020 [US3] [owner:agent-implementer] Implement the story in [path]
-- [ ] T021 [US3] [owner:agent-security] Review trust, disclosure, or validation risks in [path]
-- [ ] T022 [US3] [owner:agent-reviewer] Review correctness and regression risk in [path]
-- [ ] T023 [US3] [owner:agent-tester] Verify the story outcome in [path]
+- [ ] T023 [US3] [owner:agent-product] Confirm the story slice and dependency on prior slices in [path]
+- [ ] T024 [US3] [owner:agent-design] Shape the UX or information structure in [path]
+- [ ] T025 [US3] [owner:agent-implementer] Implement the story in [path]
+- [ ] T026 [US3] [owner:agent-security] Review trust, disclosure, or validation risks in [path]
+- [ ] T027 [US3] [owner:agent-reviewer] Review correctness and regression risk in [path]
+- [ ] T028 [US3] [owner:agent-tester] Verify the story outcome in [path]
 
 **Checkpoint**: All user stories should now be independently functional.
 
@@ -112,6 +124,7 @@ description: "Task list template for feature implementation"
 - [ ] TXXX [owner:agent-tester] Additional verification or regression tasks in tests/ or equivalent
 - [ ] TXXX [owner:agent-security] Security hardening
 - [ ] TXXX [owner:agent-tester] Run quickstart.md validation
+- [ ] TXXX [owner:agent-pilot] Confirm final approval, unresolved tradeoffs, and follow-up routing
 
 ---
 
@@ -134,7 +147,8 @@ description: "Task list template for feature implementation"
 
 - Execute specialist-owned tasks back-to-back.
 - Finish the current specialist-owned block before moving to the next one.
-- Do not add a "parallel opportunities" section unless the user explicitly approves a concurrency exception.
+- Do not add a "parallel opportunities" section unless `agent-pilot` or the
+  parent issue explicitly approves a concurrency exception.
 
 ---
 
@@ -159,13 +173,16 @@ description: "Task list template for feature implementation"
 
 1. Team completes Setup + Foundational together.
 2. Then the team executes specialist-owned story blocks in sequence.
-3. If a concurrency exception is approved, record the exact scope and reason in the task file.
+3. If a concurrency exception is approved, record the exact scope and reason in
+   the task file.
 
 ---
 
 ## Notes
 
 - Every non-trivial task should show specialist ownership.
+- Every non-trivial Paperclip task should link to the parent coordination issue
+  and the current `agent-pilot` decision.
 - [Story] labels map tasks to specific user stories for traceability.
 - Each user story should be independently completable and testable.
 - Sequential execution is the default.

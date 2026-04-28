@@ -215,8 +215,8 @@ const styles = StyleSheet.create({
     paddingBottom: layout.pagePadding
   },
   primaryButton: {
-    minHeight: 56,
-    borderRadius: radii.md,
+    minHeight: 52,
+    borderRadius: radii.lg,
     backgroundColor: palette.palm,
     paddingHorizontal: spacing.lg,
     alignItems: "center",
@@ -228,8 +228,8 @@ const styles = StyleSheet.create({
     fontWeight: "800"
   },
   secondaryButton: {
-    minHeight: 54,
-    borderRadius: radii.md,
+    minHeight: 52,
+    borderRadius: radii.lg,
     borderWidth: 1,
     borderColor: palette.line,
     backgroundColor: palette.elevated,
@@ -242,6 +242,6 @@ const styles = StyleSheet.create({
     fontWeight: "800"
   },
   buttonPressed: {
-    opacity: 0.94
+    opacity: 0.88
   }
 });

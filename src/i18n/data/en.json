@@ -307,6 +307,184 @@
         "summaryLine": "3 current residents · Structured routines, high cleanliness standards, minimal guest traffic"
       },
       "heroColors": ["#ecdcc8", "#27413a"]
+    },
+    {
+      "id": "roommate-sarah-individual",
+      "title": "Sarah looking for room in north Riyadh",
+      "district": "Al Malaz, Riyadh",
+      "publicLocation": "Al Malaz area, north Riyadh",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "Al Malaz area, north Riyadh",
+        "privacyNote": "Flexible on neighborhood within north Riyadh."
+      },
+      "priceSar": 2200,
+      "matchScore": 90,
+      "match": {
+        "band": "strong",
+        "scoreLabel": "90% fit signal",
+        "rationale": "Early riser, quiet lifestyle, flexible on household size.",
+        "confidenceNote": "Strong fit"
+      },
+      "matchLabel": "Strong fit",
+      "matchNote": "Early riser, quiet lifestyle, flexible on household size.",
+      "commute": "Near King Abdullah Financial District",
+      "availability": "Available now",
+      "fitReasons": ["Early morning routine", "Quiet household OK", "North Riyadh preferred"],
+      "trustSnapshot": [
+        { "id": "profile-verified", "label": "Profile reviewed", "sourceKey": "find-your-room" },
+        { "id": "ref-checked", "label": "Reference available", "sourceKey": "host" },
+        { "id": "details-later", "label": "Contact shared after match", "sourceKey": "later" }
+      ],
+      "trustSummary": ["Profile reviewed", "Former landlord reference", "Direct contact after mutual match"],
+      "trustSections": {
+        "verified": {
+          "title": "Reviewed by find-your-room",
+          "items": ["Phone verified", "Employment confirmed", "Former landlord reference checked"]
+        },
+        "hostProvided": {
+          "title": "Former landlord says",
+          "items": ["Always paid on time", "Kept room clean", "Good communication"]
+        },
+        "gated": {
+          "title": "Shared after mutual match",
+          "items": ["Current employer contact", "Emergency contact"],
+          "note": "Contact details unlock after both parties confirm interest."
+        }
+      },
+      "highlights": [
+        "Seeking private room in shared apartment",
+        "Early morning routine (6 AM start)",
+        "Flexible on stay length"
+      ],
+      "houseRules": ["No smoking indoors", "Quiet after 10 PM weekdays", "Low guest traffic"],
+      "intro": "Young professional seeking a quiet room in north Riyadh. Early riser with predictable schedule, looking for clean and respectful household.",
+      "imageUri": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+      "imageCount": 1,
+      "media": {
+        "count": 1,
+        "reviewedLabel": "1 profile photo"
+      },
+      "pricing": {
+        "headline": "SAR 2,200 / month",
+        "included": ["Own room", "Shared household"],
+        "excluded": ["Parking", "Premium amenities"],
+        "deposit": "One month deposit",
+        "stayLength": "6+ month commitment preferred"
+      },
+      "pricingSummary": {
+        "headline": "SAR 2,200 / month",
+        "includedSummary": "Own bedroom in shared apartment.",
+        "excludedSummary": "Premium amenities and parking are extra.",
+        "disclosureNote": "Deposit due at move-in."
+      },
+      "host": {
+        "name": "Sarah M.",
+        "safeName": "Sarah M.",
+        "role": "Room seeker",
+        "responseTime": "Replies within 2 hours",
+        "verification": "Profile reviewed",
+        "note": "Contact details after mutual match.",
+        "disclosureLevel": "roleOnly"
+      },
+      "household": {
+        "title": "Seeking household to join",
+        "residents": "Looking for 2-4 person household",
+        "vibe": "Quiet, clean, professional",
+        "languages": ["English", "Arabic"],
+        "expectations": ["Respectful of space", "Clear communication", "Low noise"],
+        "summaryLine": "Looking to join · Quiet, clean, professional"
+      },
+      "heroColors": ["#d4e5d7", "#3d5a47"]
+    },
+    {
+      "id": "roommate-ali-managed",
+      "title": "Managed household seeking new roommate",
+      "district": "Al Rahah, Riyadh",
+      "publicLocation": "Al Rahah area near Granada Club",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "Al Rahah area near Granada Club",
+        "privacyNote": "Flexible on specific building."
+      },
+      "priceSar": 2500,
+      "matchScore": 85,
+      "match": {
+        "band": "promising",
+        "scoreLabel": "85% fit signal",
+        "rationale": "Managed household with established routines and language mix.",
+        "confidenceNote": "Promising fit"
+      },
+      "matchLabel": "Promising fit",
+      "matchNote": "Managed household with established routines and language mix.",
+      "commute": "Near Granada and Northstar business areas",
+      "availability": "Available from June 1",
+      "fitReasons": ["Managed household", "English-friendly", "Flexible on move-in"],
+      "trustSnapshot": [
+        { "id": "managed-verified", "label": "Managed household verified", "sourceKey": "find-your-room" },
+        { "id": "house-rules", "label": "Clear house rules", "sourceKey": "host" },
+        { "id": "move-in-flex", "label": "Flexible move-in date", "sourceKey": "later" }
+      ],
+      "trustSummary": ["Verified managed household", "Established house rules", "Flexible timing"],
+      "trustSections": {
+        "verified": {
+          "title": "Reviewed by find-your-room",
+          "items": ["Household identity verified", "Rules documented", "Contact confirmed"]
+        },
+        "hostProvided": {
+          "title": "Managed household",
+          "items": ["Weekly cleaning included", "Manager on-call", "Regular household meetings"]
+        },
+        "gated": {
+          "title": "Shared after match",
+          "items": ["Move-in checklist", "Deposit details"],
+          "note": "Move-in details confirm after mutual interest."
+        }
+      },
+      "highlights": [
+        "Managed 3-bed apartment seeking one more",
+        "Female household, English and Arabic spoken",
+        "All utilities and cleaning included"
+      ],
+      "houseRules": ["No smoking indoors", "Guests by 24h notice", "Weekly house meeting"],
+      "intro": "A well-managed household of professionals seeking a fifth roommate. Already settled, clean, and respectful. Ideal for someone who wants hassle-free shared living.",
+      "imageUri": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=400&q=80",
+      "imageCount": 1,
+      "media": {
+        "count": 1,
+        "reviewedLabel": "1 household photo"
+      },
+      "pricing": {
+        "headline": "SAR 2,500 / month",
+        "included": ["Utilities", "Weekly cleaning", "WiFi", "Manager support"],
+        "excluded": ["Premium parking", "Premium TV channels"],
+        "deposit": "One month deposit + admin fee",
+        "stayLength": "6 to 12 month leases"
+      },
+      "pricingSummary": {
+        "headline": "SAR 2,500 / month",
+        "includedSummary": "All utilities, weekly cleaning, WiFi, and on-site manager are included.",
+        "excludedSummary": "Premium parking and TV packages are extra.",
+        "disclosureNote": "Deposit and admin fee due at signing."
+      },
+      "host": {
+        "name": "Riyadh Living Team",
+        "safeName": "Riyadh Living Team",
+        "role": "Managed household coordinator",
+        "responseTime": "Usually replies within 1 hour",
+        "verification": "Household coordinator verified",
+        "note": "Coordinate move-in through management team.",
+        "disclosureLevel": "managedContact"
+      },
+      "household": {
+        "title": "Managed women's household",
+        "residents": "4 current residents",
+        "vibe": "Professional, clean, supportive",
+        "languages": ["Arabic", "English"],
+        "expectations": ["Respect shared spaces", "24h guest notice", "Weekly household sync"],
+        "summaryLine": "4 current residents · Professional, clean, supportive"
+      },
+      "heroColors": ["#f5e1d4", "#6b5344"]
     }
   ],
   "matchRequests": [

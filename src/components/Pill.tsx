@@ -2,7 +2,8 @@ import type { ReactNode } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import { rowDirectionFor, useLocale } from "@/i18n";
-import { palette, radii, spacing } from "@/ui/theme";
+import { useColors } from "@/ui/ThemeContext";
+import { radii, spacing } from "@/ui/theme";
 
 type Tone =
   | "neutral"
@@ -15,39 +16,39 @@ type Tone =
 
 const toneStyles: Record<Tone, { backgroundColor: string; borderColor: string; color: string }> = {
   neutral: {
-    backgroundColor: palette.surface,
-    borderColor: palette.line,
-    color: palette.ink
+    backgroundColor: "surface",
+    borderColor: "line",
+    color: "ink"
   },
   accent: {
-    backgroundColor: palette.amberSoft,
-    borderColor: palette.amber,
-    color: palette.clay
+    backgroundColor: "amberSoft",
+    borderColor: "amber",
+    color: "clay"
   },
   verified: {
-    backgroundColor: palette.mist,
-    borderColor: palette.mistStrong,
-    color: palette.palm
+    backgroundColor: "palm",
+    borderColor: "palm",
+    color: "surface"
   },
   quiet: {
-    backgroundColor: palette.elevated,
-    borderColor: palette.line,
-    color: palette.ink
+    backgroundColor: "elevated",
+    borderColor: "line",
+    color: "ink"
   },
   sourceFindYourRoom: {
-    backgroundColor: palette.mist,
-    borderColor: palette.mistStrong,
-    color: palette.palm
+    backgroundColor: "mist",
+    borderColor: "palm",
+    color: "palm"
   },
   sourceHost: {
-    backgroundColor: palette.amberSoft,
-    borderColor: palette.amber,
-    color: palette.clay
+    backgroundColor: "amberSoft",
+    borderColor: "clay",
+    color: "clay"
   },
   sourceLater: {
-    backgroundColor: palette.limestone,
-    borderColor: palette.line,
-    color: palette.inkSoft
+    backgroundColor: "limestone",
+    borderColor: "line",
+    color: "inkSoft"
   }
 };
 
@@ -59,20 +60,22 @@ type PillProps = {
 
 export function Pill({ label, tone = "neutral", icon }: PillProps) {
   const { isRTL } = useLocale();
+  const colors = useColors();
+  const ts = toneStyles[tone];
 
   return (
     <View
       style={[
         styles.pill,
         {
-          backgroundColor: toneStyles[tone].backgroundColor,
-          borderColor: toneStyles[tone].borderColor,
+          backgroundColor: colors[ts.backgroundColor as keyof typeof colors],
+          borderColor: colors[ts.borderColor as keyof typeof colors],
           flexDirection: rowDirectionFor(isRTL)
         }
       ]}
     >
       {icon}
-      <Text style={[styles.text, { color: toneStyles[tone].color }]}>{label}</Text>
+      <Text style={[styles.text, { color: colors[ts.color as keyof typeof colors] }]}>{label}</Text>
     </View>
   );
 }

@@ -307,6 +307,184 @@
         "summaryLine": "3 مقيمين حالياً · روتين منظم ونظافة عالية وحركة ضيوف محدودة"
       },
       "heroColors": ["#ecdcc8", "#27413a"]
+    },
+    {
+      "id": "roommate-sarah-individual",
+      "title": "سارة تبحث عن غرفة شمال الرياض",
+      "district": "الملك عزوز، الرياض",
+      "publicLocation": "منطقة الملك عزوز، شمال الرياض",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "منطقة الملك عزوز، شمال الرياض",
+        "privacyNote": "مرنة في الموقع ضمن شمال الرياض."
+      },
+      "priceSar": 2200,
+      "matchScore": 90,
+      "match": {
+        "band": "strong",
+        "scoreLabel": "تتوافق ٩٠٪",
+        "rationale": "صباحية مبكرة، نمط هادئ، مرنة في حجم السكن.",
+        "confidenceNote": "توافق قوي"
+      },
+      "matchLabel": "توافق قوي",
+      "matchNote": "صباحية مبكرة، نمط هادئ، مرنة في حجم السكن.",
+      "commute": "قرب منطقة الملك عبد الله المالية",
+      "availability": "متاحة الآن",
+      "fitReasons": ["روتين صباحي مبكر", "سكن هادئ OK", "تفضل شمال الرياض"],
+      "trustSnapshot": [
+        { "id": "profile-verified", "label": "الملف تمت مراجعته", "sourceKey": "find-your-room" },
+        { "id": "ref-checked", "label": "مرجع متاح", "sourceKey": "host" },
+        { "id": "details-later", "label": "معلومات التواصل تظهر بعد التوافق", "sourceKey": "later" }
+      ],
+      "trustSummary": ["ملف تمت مراجعته", "مرجع من المالك السابق", "التواصل المباشر بعد التوافق المتبادل"],
+      "trustSections": {
+        "verified": {
+          "title": "تمت مراجعته عبر روم ماتش",
+          "items": ["الهاتف تم التحقق منه", "التوظيف تم تأكيده", "مرجع المالك السابق تم التحقق منه"]
+        },
+        "hostProvided": {
+          "title": "يقول المالك السابق",
+          "items": ["دائماً يدفع في الوقت", "يحافظ على نظافة الغرفة", "تواصل جيد"]
+        },
+        "gated": {
+          "title": "يظهر بعد التوافق",
+          "items": ["جهة التوظيف الحالية", "جهة طوارئ"],
+          "note": "تفاصيل التواصل تظهر بعد تأكيد كلا الطرفين."
+        }
+      },
+      "highlights": [
+        "تبحث عن غرفة خاصة في شقة مشتركة",
+        "روتين صباحي (٦ صباحاً)",
+        "مرنة في مدة الإقامة"
+      ],
+      "houseRules": ["لا تدخين داخلياً", "هدوء بعد العاشرة ليلاً", "حركة ضيوف محدودة"],
+      "intro": "مهنية شابة تبحث عن غرفة هادئة في شمال الرياض. صاحبة موعد ثابت، تبحث عن سكن نظيف ومحترم.",
+      "imageUri": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+      "imageCount": 1,
+      "media": {
+        "count": 1,
+        "reviewedLabel": "صورة شخصية واحدة"
+      },
+      "pricing": {
+        "headline": "٢٬٢٠٠ ريال / شهر",
+        "included": ["غرفة خاصة", "سكن مشترك"],
+        "excluded": ["موقف", "مرافق مميزة"],
+        "deposit": "عمرون شهر واحد",
+        "stayLength": "تفضل إقامات ٦+ أشهر"
+      },
+      "pricingSummary": {
+        "headline": "٢٬٢٠٠ ريال / شهر",
+        "includedSummary": "غرفة نائمة في شقة مشتركة.",
+        "excludedSummary": "المرافق المميزة والموقف إضافية.",
+        "disclosureNote": "العمرون يدفع عند الانتقال."
+      },
+      "host": {
+        "name": "سارة م.",
+        "safeName": "سارة م.",
+        "role": "طالبة غرفة",
+        "responseTime": "ترد خلال ساعتين",
+        "verification": "الملف تمت مراجعته",
+        "note": "معلومات التواصل بعد التوافق.",
+        "disclosureLevel": "roleOnly"
+      },
+      "household": {
+        "title": "تبحث عن سكن للانضمام",
+        "residents": "تبحث عن سكن ٢-٤ أشخاص",
+        "vibe": "هادئ، نظيف، مهني",
+        "languages": ["الإنجليزية", "العربية"],
+        "expectations": ["احترام الفضاء", "تواصل واضح", "ضوضاء منخفضة"],
+        "summaryLine": "تبحث للانضمام · هادئ، نظيف، مهني"
+      },
+      "heroColors": ["#d4e5d7", "#3d5a47"]
+    },
+{
+      "id": "roommate-ali-managed",
+      "title": "سكن مُدار يبحث عن roommate",
+      "district": "الرحالة، الرياض",
+      "publicLocation": "منطقة الرحالة قرب Granada Club",
+      "locationSummary": {
+        "precisionKey": "area",
+        "label": "منطقة الرحالة قرب Granada Club",
+        "privacyNote": "مرن في المبنى المحدد."
+      },
+      "priceSar": 2500,
+      "matchScore": 85,
+      "match": {
+        "band": "promising",
+        "scoreLabel": "تتوافق ٨٥٪",
+        "rationale": "سكن مُدار بروتين محدد وتنوع لغوي.",
+        "confidenceNote": "توافق واعد"
+      },
+      "matchLabel": "توافق واعد",
+      "matchNote": "سكن مُدار بروتين محدد وتنوع لغوي.",
+      "commute": "قرب غرانادا ومناطق الشمالية للأعمال",
+      "availability": "متاحة من ١ يونيو",
+      "fitReasons": ["سكن مُدار", "إنجليزي", "مرن في تاريخ الانتقال"],
+      "trustSnapshot": [
+        { "id": "managed-verified", "label": "السكن المُدار تمت مراجعته", "sourceKey": "find-your-room" },
+        { "id": "house-rules", "label": "قواعد منزل واضحة", "sourceKey": "host" },
+        { "id": "move-in-flex", "label": "تاريخ انتقال مرن", "sourceKey": "later" }
+      ],
+      "trustSummary": ["سكن مُدار مُراجع", "قواعد منزل موثقة", "توقيت مرن"],
+      "trustSections": {
+        "verified": {
+          "title": "تمت مراجعته عبر روم ماتش",
+          "items": ["هوية السكن تمت مراجعتها", "القواعد موثقة", "التواصل مؤكد"]
+        },
+        "hostProvided": {
+          "title": "سكن مُدار",
+          "items": ["تنظيف أسبوعي مشمول", "مدير متاح", "اجتماعات سكنية منتظمة"]
+        },
+        "gated": {
+          "title": "يظهر بعد التوافق",
+          "items": ["قائمة الانتقال", "تفاصيل العربون"],
+          "note": "تفاصيل الانتقال تؤكد بعد الاهتمام المتبادل."
+        }
+      },
+      "highlights": [
+        "شقة مُدارة لثلاث غرف تبحث عن roommate",
+        "سكن نسائي، إنجليزي وعربي",
+        "الخدمات والتنظيف مشمولة"
+      ],
+      "houseRules": ["لا تدخين داخلياً", "ضيوف بـ ٢٤ ساعة إشعار", "اجتماع أسبوعي"],
+      "intro": "سكن مُدار بشكل جيد من مجموعة مهنيين يبحث عن roommate خامس. مستقر، نظيف، ومحترم. مثالي لشخص يريد سكن مشترك без хлопот.",
+      "imageUri": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=400&q=80",
+      "imageCount": 1,
+      "media": {
+        "count": 1,
+        "reviewedLabel": "صورة سكنية واحدة"
+      },
+      "pricing": {
+        "headline": "٢٬٥٠٠ ريال / شهر",
+        "included": ["الخدمات", "تنظيف أسبوعي", "واي فاي", "دعم المدير"],
+        "excluded": ["موقف مميز", "قنوات تلفزيون مميزة"],
+        "deposit": "عمرون شهر + رسوم إدارية",
+        "stayLength": "عقود ٦ إلى ١٢ شهر"
+      },
+      "pricingSummary": {
+        "headline": "٢٬٥٠٠ ريال / شهر",
+        "includedSummary": "الخدمات الكاملة، التنظيف الأسبوعي، الواي فاي، والمدير المتاح مشمولون.",
+        "excludedSummary": "الموقف المميز وقنوات التلفزيون الإضافية.",
+        "disclosureNote": "العمرون ورسوم إدارية عند التوقيع."
+      },
+      "host": {
+        "name": "فريق رياض ليفينق",
+        "safeName": "فريق رياض ليفينق",
+        "role": "منسق سكن مُدار",
+        "responseTime": "يرد عادة خلال ساعة",
+        "verification": "منسق السكن تمت مراجعته",
+        "note": "تنسيق الانتقال من خلال فريق الإدارة.",
+        "disclosureLevel": "managedContact"
+      },
+      "household": {
+        "title": "سكن نسائي مُدار",
+        "residents": "٤ مقيمين حالياً",
+        "vibe": "مهني، ناعم، داعم",
+        "languages": ["العربية", "الإنجليزية"],
+        "expectations": ["احترام المساحات المشتركة", "إشعار ضيوف ٢٤ ساعة", "تيقن أسبوعي"],
+        "summaryLine": "٤ مقيمين حالياً · مهني، ناعم، داعم"
+      },
+      "heroColors": ["#f5e1d4", "#6b5344"]
     }
   ],
   "matchRequests": [

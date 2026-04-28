@@ -5,8 +5,9 @@
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.
 
-> Gate: only create this plan after the user has reviewed and approved the
-> corresponding `spec.md`.
+> Gate: only create this plan after `agent-pilot` has approved the
+> corresponding `spec.md`, unless the user explicitly requests direct human
+> approval for this feature.
 
 ## Summary
 
@@ -35,6 +36,16 @@
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
 [Gates determined based on constitution file]
+
+Required checks for this repository:
+
+- Spec exists and has an `agent-pilot` approval decision.
+- Paperclip parent issue or equivalent coordination record is linked.
+- Specialist roles used, skipped, and sequenced are recorded with reasons.
+- Parallel work is disabled unless a parallel-safe exception is explicitly
+  documented.
+- Trust, privacy, accessibility, performance, review, testing, and docs impacts
+  are either assigned to relevant agents or explicitly marked not applicable.
 
 ## Project Structure
 

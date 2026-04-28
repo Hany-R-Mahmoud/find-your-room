@@ -28,7 +28,7 @@ finished, split, merged, or expanded.
 | 4 | Saved Search, Alerts, And Decision Support | Proposed | Search management and shortlist flows |
 | 5 | Move-In Readiness And Post-Match UX | Proposed | Extends `My Stay` into stronger post-match support |
 | 6 | Host Preview And Supply-Side Polish | Deferred | Useful later, but not the next best seeker-side investment |
-| 7 | Civic Trust Visual Redesign Handoff | In Progress | Spec approved; Multica paused after unreliable execution; local Codex execution is now the source of truth |
+| 7 | Civic Trust Visual Redesign Handoff | In Progress | Static stabilization passed typecheck and web export on 2026-04-28; rendered EN/AR + RTL visual review remains pending |
 
 ## Phase 1: Trust-Rich Listing Experience
 
@@ -178,7 +178,12 @@ native app redesign slice before implementation.
 - user approved the spec on 2026-04-25
 - Multica issues created for Product, Design, Architect, Security, Stitch,
   Performance, Tester, Reviewer, and Docs
-- waiting on specialist execution and post-execution assessment
+- local static stabilization completed through
+  `specs/008-civic-trust-completion/spec.md`
+- `npm run typecheck` passed on 2026-04-28
+- `npx expo export --platform web` passed on 2026-04-28
+- rendered English and Arabic/RTL visual review remains pending before Phase 7
+  can be marked done
 
 ## Update Rules
 

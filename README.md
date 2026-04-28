@@ -35,9 +35,17 @@ npm run dev
 
 Then open the project in Expo Go, an iOS simulator, Android emulator, or the web preview.
 
-## Project Map
+## Documentation
 
-- `app/index.tsx`: landing and product framing
+- [developer.md](/Users/hanyramadan/find-your-room/docs/find-your-room/developer.md) - Developer documentation
+- [pm.md](/Users/hanyramadan/find-your-room/docs/find-your-room/pm.md) - Product manager documentation
+- [user.md](/Users/hanyramadan/find-your-room/docs/find-your-room/user.md) - User documentation
+- [prd.md](/Users/hanyramadan/find-your-room/docs/find-your-room/prd.md) - Product requirements
+- [frontend-roadmap.md](/Users/hanyramadan/find-your-room/docs/find-your-room/frontend-roadmap.md) - Feature phases and status
+- [verification.md](/Users/hanyramadan/find-your-room/docs/find-your-room/verification.md) - Testing notes
+- [open-risks.md](/Users/hanyramadan/find-your-room/docs/find-your-room/open-risks.md) - Risk register
+
+## Project Map
 - `app/onboarding.tsx`: v1 onboarding and trust framing
 - `app/(tabs)/*`: discover, matches, inbox, stay, and profile flows
 - `app/room/[id].tsx`: listing detail prototype

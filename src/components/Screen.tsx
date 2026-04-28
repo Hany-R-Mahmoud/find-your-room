@@ -4,7 +4,8 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { useLocale } from "@/i18n";
-import { layout, palette } from "@/ui/theme";
+import { useColors } from "@/ui/ThemeContext";
+import { layout } from "@/ui/theme";
 
 type ScreenProps = PropsWithChildren<{
   contentContainerStyle?: StyleProp<ViewStyle>;
@@ -12,9 +13,10 @@ type ScreenProps = PropsWithChildren<{
 
 export function Screen({ children, contentContainerStyle }: ScreenProps) {
   const { isRTL } = useLocale();
+  const colors = useColors();
 
   return (
-    <SafeAreaView edges={["top"]} style={styles.safeArea}>
+    <SafeAreaView edges={["top"]} style={[styles.safeArea, { backgroundColor: colors.canvas }]}>
       <ScrollView
         style={styles.scroll}
         contentContainerStyle={[styles.content, contentContainerStyle]}
@@ -28,8 +30,7 @@ export function Screen({ children, contentContainerStyle }: ScreenProps) {
 
 const styles = StyleSheet.create({
   safeArea: {
-    flex: 1,
-    backgroundColor: palette.canvas
+    flex: 1
   },
   scroll: {
     flex: 1

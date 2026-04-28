@@ -15,12 +15,15 @@ architecture change:
 
 1. Start with Spec Kit, not direct execution.
 2. Create or update a feature spec with `$speckit-specify`.
-3. Stop after the spec is drafted and present it for human review.
-4. Wait for one of these explicit outcomes from the user:
+3. Stop after the spec is drafted and present it for approval.
+4. For Paperclip-managed find-your-room work, route approval to `agent-pilot`
+   instead of waiting for direct human review.
+5. Wait for one of these explicit outcomes from `agent-pilot` or, when the
+   user explicitly requests direct review, from the user:
    - `approved`
    - requested adjustments
    - rejected / do not proceed
-5. Only after approval may the agent continue to:
+6. Only after approval may the agent continue to:
    - `$speckit-clarify` if needed
    - `$speckit-plan`
    - `$speckit-tasks`
@@ -33,20 +36,26 @@ approved feature:
 
 1. Create or update the active Spec Kit spec before continuing.
 2. Present the updated scope for review.
-3. Wait for explicit user approval again.
+3. Wait for explicit `agent-pilot` approval again for Paperclip-managed work,
+   unless the user explicitly requests direct human approval.
 4. Only then continue to planning, tasks, or implementation for that slice.
 
 Feature-level approval is not enough to silently continue through later
 non-trivial phases.
 
-## Human Gate
+## Delegated Approval Gate
 
 After writing or updating `spec.md`, the agent must not move on to planning,
 task generation, code edits, migrations, dependency changes, or command-heavy
-execution until the user has had a chance to approve, adjust, or refuse the
-spec.
+execution until `agent-pilot` has approved, adjusted, or refused the spec for
+Paperclip-managed work.
 
-If the user gives adjustments, update the same spec and ask for approval again.
+`agent-pilot` may approve directly, ask other specialist agents for priority
+input, request plan refinement, or reject the task. If adjustments are requested,
+update the same spec and ask `agent-pilot` for approval again.
+
+Direct human approval remains available when the user explicitly asks for it,
+but it is not the default gate for Paperclip project issues.
 
 ## Mandatory Docs And Local Spec Kit Execution Loop
 
@@ -62,7 +71,8 @@ brainstorming, task creation, and execution work:
    - definition of done
    - relevant constraints, risks, and acceptance criteria
 3. Newly created and approved specs must be executed locally in this Codex
-   workspace unless the user explicitly re-enables an external handoff.
+   workspace unless the approved Paperclip issue explicitly delegates execution
+   to the Paperclip team.
    Codex owns writing the local task or issue brief so the assigned local
    specialist flow can follow and execute the spec clearly.
 4. After spec execution finishes, Codex must assess and report on the result,
@@ -106,6 +116,10 @@ relevant subset of:
 The goal is not agent theater. Use the maximum number of agents that adds real
 value without duplicating the same work.
 
+For Paperclip issues, the parent coordination ticket must record the lifecycle:
+planning and documentation, Spec Kit spec creation, `agent-pilot` approval,
+specialist execution, follow-up, review, verification, and docs updates.
+
 ### Planning Record Requirement
 
 For each non-trivial planning pass, the resulting plan must explicitly record:
@@ -148,12 +162,26 @@ For non-trivial execution:
 - specialist ownership should be visible in the task artifact, not left implied
 - if a task artifact does not show specialist ownership, it is incomplete
 
+For each feature/workstream, create a parent Paperclip issue and specialist child
+issues where practical:
+
+- product/spec framing
+- UX/design pass
+- architecture/data-boundary pass when relevant
+- security/trust review
+- performance review when frontend-heavy
+- implementation
+- review
+- testing/verification
+- docs/roadmap update
+- additional specialist tickets according to task needs
+
 ### Parallel Execution Exception
 
 Parallel execution is not the default for meaningful work in this repository.
 
-- Do not propose or schedule parallel task execution unless the user explicitly
-  approves that exception.
+- Do not propose or schedule parallel task execution unless `agent-pilot`, the
+  parent issue, or the user explicitly approves that exception.
 - If parallel work is approved, record the reason and the exact scope of the
   exception in the task or plan artifact.
 
@@ -212,4 +240,12 @@ the spec because the task is trivial or the user explicitly overrode the rule.
 
 After drafting a spec, end with a short approval checkpoint, for example:
 
-`Spec drafted at specs/00x-.../spec.md. Reply with approved, adjustments, or reject.`
+`Spec drafted at specs/00x-.../spec.md. Routing to agent-pilot for approved, adjustments, or reject.`
+
+## Paperclip Protocol
+
+Paperclip issue creation and routing must follow
+`docs/find-your-room/paperclip-agent-protocol.md`. That protocol is the shared
+reference for FIN project tickets, including the initial FIN-1 lineage,
+delegated `agent-pilot` approval, specialist child-ticket shape, and follow-up
+expectations.

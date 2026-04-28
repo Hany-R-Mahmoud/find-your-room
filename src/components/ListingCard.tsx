@@ -5,7 +5,8 @@ import { rowDirectionFor, textAlignFor, useTranslations } from "@/i18n";
 import { formatSarValue, type Listing } from "@/data/find-your-room";
 import { useShortlists } from "@/shortlists";
 import { defaultSaveReasonForShortlist } from "@/shortlists/rules";
-import { palette, radii, shadows, spacing } from "@/ui/theme";
+import { useColors } from "@/ui/ThemeContext";
+import { radii, shadows, spacing, borders } from "@/ui/theme";
 import { Pill } from "./Pill";
 
 type ListingCardProps = {
@@ -50,6 +51,8 @@ export function ListingCard({ listing, onPress }: ListingCardProps) {
     labels: { savedJustNow: string };
   }>("shortlists");
   const shortlistOptions = shortlists.slice(0, 2);
+  const colors = useColors();
+  const styles = getStyles(colors);
 
   return (
     <Pressable onPress={onPress} style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}>
@@ -102,7 +105,7 @@ export function ListingCard({ listing, onPress }: ListingCardProps) {
                 ]}
               >
                 <MaterialIcons
-                  color={isSaved ? palette.surface : palette.palm}
+                  color={isSaved ? colors.surface : colors.palm}
                   name={isSaved ? "favorite" : "favorite-border"}
                   size={16}
                 />
@@ -164,192 +167,195 @@ export function ListingCard({ listing, onPress }: ListingCardProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  card: {
-    overflow: "hidden",
-    borderRadius: radii.lg,
-    backgroundColor: palette.elevated,
-    ...shadows.card
-  },
-  cardPressed: {
-    opacity: 0.94
-  },
-  heroImageWrap: {
-    minHeight: 210
-  },
-  heroImage: {
-    borderTopLeftRadius: radii.lg,
-    borderTopRightRadius: radii.lg
-  },
-  hero: {
-    minHeight: 210,
-    padding: spacing.lg,
-    justifyContent: "space-between",
-    backgroundColor: "rgba(25, 28, 29, 0.08)"
-  },
-  heroChipRow: {
-    alignItems: "flex-start",
-    flexWrap: "wrap",
-    gap: spacing.xs
-  },
-  titleGroup: {
-    gap: 6
-  },
-  district: {
-    color: palette.palmSoft,
-    fontSize: 12,
-    fontWeight: "800",
-    letterSpacing: 0,
-    textTransform: "uppercase"
-  },
-  title: {
-    color: palette.ink,
-    fontSize: 26,
-    lineHeight: 30,
-    fontWeight: "900"
-  },
-  commute: {
-    color: palette.inkSoft,
-    fontSize: 14,
-    lineHeight: 20,
-    fontWeight: "600"
-  },
-  body: {
-    padding: spacing.lg,
-    gap: spacing.md
-  },
-  shortlistRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: spacing.xs
-  },
-  shortlistButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    borderRadius: radii.sm,
-    borderWidth: 1,
-    borderColor: palette.line,
-    backgroundColor: palette.surface,
-    paddingHorizontal: spacing.md,
-    paddingVertical: 8
-  },
-  shortlistButtonSaved: {
-    borderColor: palette.palm,
-    backgroundColor: palette.palm
-  },
-  shortlistButtonPressed: {
-    opacity: 0.92
-  },
-  shortlistButtonText: {
-    color: palette.palm,
-    fontSize: 12,
-    fontWeight: "800"
-  },
-  shortlistButtonTextSaved: {
-    color: palette.surface
-  },
-  row: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    gap: spacing.sm
-  },
-  price: {
-    color: palette.ink,
-    fontSize: 18,
-    fontWeight: "800"
-  },
-  availability: {
-    color: palette.clay,
-    fontSize: 13,
-    fontWeight: "700"
-  },
-  intro: {
-    color: palette.inkSoft,
-    fontSize: 13,
-    lineHeight: 20,
-    fontWeight: "600"
-  },
-  metaLabel: {
-    color: palette.clay,
-    fontSize: 11,
-    lineHeight: 16,
-    fontWeight: "800",
-    textTransform: "uppercase",
-    letterSpacing: 0
-  },
-  trustCard: {
-    borderRadius: radii.md,
-    backgroundColor: palette.surface,
-    borderWidth: 1,
-    borderColor: palette.line,
-    padding: spacing.md,
-    gap: spacing.xs
-  },
-  trustStrip: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: spacing.xs
-  },
-  privacyNote: {
-    color: palette.dusk,
-    fontSize: 12,
-    lineHeight: 18,
-    fontWeight: "600"
-  },
-  fitLabel: {
-    color: palette.ink,
-    fontSize: 14,
-    lineHeight: 22,
-    fontWeight: "700"
-  },
-  pillRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: spacing.xs
-  },
-  offerCard: {
-    borderRadius: radii.md,
-    backgroundColor: palette.surface,
-    borderWidth: 1,
-    borderColor: palette.line,
-    padding: spacing.md,
-    gap: 4
-  },
-  metaGroup: {
-    gap: spacing.xs
-  },
-  metaHeading: {
-    color: palette.ink,
-    fontSize: 15,
-    fontWeight: "800"
-  },
-  offerHeadline: {
-    color: palette.ink,
-    fontSize: 20,
-    lineHeight: 26,
-    fontWeight: "900"
-  },
-  metaText: {
-    color: palette.inkSoft,
-    fontSize: 14,
-    lineHeight: 21
-  },
-  metaSubtle: {
-    color: palette.palmSoft,
-    fontSize: 13,
-    lineHeight: 18,
-    fontWeight: "600"
-  },
-  sourceSummary: {
-    color: palette.clay,
-    fontSize: 12,
-    lineHeight: 18,
-    fontWeight: "700"
-  },
-  divider: {
-    height: 1,
-    backgroundColor: palette.line,
-    marginVertical: spacing.xs
-  }
-});
+const getStyles = (colors: ReturnType<typeof useColors>) =>
+  StyleSheet.create({
+    card: {
+      overflow: "hidden",
+      borderRadius: radii.xl,
+      backgroundColor: colors.surface,
+      borderWidth: borders.card.borderWidth,
+      borderColor: colors.line,
+      ...shadows.card
+    },
+    cardPressed: {
+      opacity: 0.94
+    },
+    heroImageWrap: {
+      minHeight: 210
+    },
+    heroImage: {
+      borderTopLeftRadius: radii.xl,
+      borderTopRightRadius: radii.xl
+    },
+    hero: {
+      minHeight: 210,
+      padding: spacing.lg,
+      justifyContent: "space-between",
+      backgroundColor: "rgba(25, 28, 29, 0.08)"
+    },
+    heroChipRow: {
+      alignItems: "flex-start",
+      flexWrap: "wrap",
+      gap: spacing.xs
+    },
+    titleGroup: {
+      gap: 6
+    },
+    district: {
+      color: colors.palmSoft,
+      fontSize: 12,
+      fontWeight: "800",
+      letterSpacing: 0,
+      textTransform: "uppercase"
+    },
+    title: {
+      color: colors.ink,
+      fontSize: 26,
+      lineHeight: 30,
+      fontWeight: "900"
+    },
+    commute: {
+      color: colors.inkSoft,
+      fontSize: 14,
+      lineHeight: 20,
+      fontWeight: "600"
+    },
+    body: {
+      padding: spacing.lg,
+      gap: spacing.md
+    },
+    shortlistRow: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: spacing.xs
+    },
+    shortlistButton: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 6,
+      borderRadius: radii.sm,
+      borderWidth: 1,
+      borderColor: colors.line,
+      backgroundColor: colors.surface,
+      paddingHorizontal: spacing.md,
+      paddingVertical: 8
+    },
+    shortlistButtonSaved: {
+      borderColor: colors.palm,
+      backgroundColor: colors.palm
+    },
+    shortlistButtonPressed: {
+      opacity: 0.92
+    },
+    shortlistButtonText: {
+      color: colors.palm,
+      fontSize: 12,
+      fontWeight: "800"
+    },
+    shortlistButtonTextSaved: {
+      color: colors.surface
+    },
+    row: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      gap: spacing.sm
+    },
+    price: {
+      color: colors.ink,
+      fontSize: 18,
+      fontWeight: "800"
+    },
+    availability: {
+      color: colors.clay,
+      fontSize: 13,
+      fontWeight: "700"
+    },
+    intro: {
+      color: colors.inkSoft,
+      fontSize: 13,
+      lineHeight: 20,
+      fontWeight: "600"
+    },
+    metaLabel: {
+      color: colors.clay,
+      fontSize: 11,
+      lineHeight: 16,
+      fontWeight: "800",
+      textTransform: "uppercase",
+      letterSpacing: 0
+    },
+    trustCard: {
+      borderRadius: radii.md,
+      backgroundColor: colors.surface,
+      borderWidth: borders.trustCard.borderWidth,
+      borderColor: colors.palm,
+      padding: spacing.md,
+      gap: spacing.xs
+    },
+    trustStrip: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: spacing.xs
+    },
+    privacyNote: {
+      color: colors.palmSoft,
+      fontSize: 12,
+      lineHeight: 18,
+      fontWeight: "700"
+    },
+    fitLabel: {
+      color: colors.ink,
+      fontSize: 14,
+      lineHeight: 22,
+      fontWeight: "700"
+    },
+    pillRow: {
+      flexDirection: "row",
+      flexWrap: "wrap",
+      gap: spacing.xs
+    },
+    offerCard: {
+      borderRadius: radii.md,
+      backgroundColor: colors.surface,
+      borderWidth: 1,
+      borderColor: colors.line,
+      padding: spacing.md,
+      gap: 4
+    },
+    metaGroup: {
+      gap: spacing.xs
+    },
+    metaHeading: {
+      color: colors.ink,
+      fontSize: 15,
+      fontWeight: "800"
+    },
+    offerHeadline: {
+      color: colors.ink,
+      fontSize: 20,
+      lineHeight: 26,
+      fontWeight: "900"
+    },
+    metaText: {
+      color: colors.inkSoft,
+      fontSize: 14,
+      lineHeight: 21
+    },
+    metaSubtle: {
+      color: colors.palmSoft,
+      fontSize: 13,
+      lineHeight: 18,
+      fontWeight: "600"
+    },
+    sourceSummary: {
+      color: colors.clay,
+      fontSize: 12,
+      lineHeight: 18,
+      fontWeight: "700"
+    },
+    divider: {
+      height: 1,
+      backgroundColor: colors.line,
+      marginVertical: spacing.xs
+    }
+  });

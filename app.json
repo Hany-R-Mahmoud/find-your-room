@@ -22,11 +22,11 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#f6f1e9"
-      }
+      },
+      "package": "com.anonymous.findyourroom"
     },
     "web": {
       "bundler": "metro"
     }
   }
 }
-
